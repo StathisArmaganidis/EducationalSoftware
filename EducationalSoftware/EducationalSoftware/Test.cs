@@ -72,7 +72,7 @@ namespace EducationalSoftware
             do
             {
                 leftnum = rnd.Next(1, 11);
-            } while (done[leftnum-1]==1&&done.Contains(0));
+            } while (done[leftnum-1]==1);
             done[leftnum - 1] = 1;
             if (!done.Contains(0))
             {
@@ -80,13 +80,21 @@ namespace EducationalSoftware
             }
             int ans = leftnum * rightnum;
 
+            pictureBox1.Location = LeftNumText.Location;
+            pictureBox1.Visible = true;
+            pictureBox1.ImageLocation = @"..\..\Numbers\" + leftnum + ".png";
+
+            LeftNumText.Value = leftnum;
+            LeftNumText.Visible = false;
             if (blank == 0)//the right number box is blank.
             {
-                LeftNumText.Value = leftnum;
-                LeftNumText.Enabled = false;
+
+                pictureBox3.Location = ResultNum.Location;
+                pictureBox3.Visible = true;
+                pictureBox3.ImageLocation = @"..\..\Numbers\" + ans + ".png";
 
                 ResultNum.Value = ans;
-                ResultNum.Enabled = false;
+                ResultNum.Visible = false;
 
                 RightNumText.Value = 0;
                 RightNumText.Enabled = true;
@@ -95,9 +103,6 @@ namespace EducationalSoftware
             {
                 RightNumText.Value = rightnum;
                 RightNumText.Enabled = false;
-
-                LeftNumText.Value = leftnum;
-                LeftNumText.Enabled = false;
 
                 ResultNum.Value = 0;
                 ResultNum.Enabled = true;
@@ -126,8 +131,7 @@ namespace EducationalSoftware
                 MessageBox.Show("yay! "+points.ToString()+" out of "+TotalQuestionsNum.ToString()+" correct answets!");//test
                 BackButton.Enabled = true;
                 ConfirmButton.Enabled = false;
-            }
-            
+            }            
         }
     }
 }
