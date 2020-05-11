@@ -120,7 +120,8 @@ namespace EducationalSoftware
             }
             else
             {
-                MessageBox.Show("yay! "+points.ToString()+" points!");//test
+                float percent = points * 100 / TotalQuestionsNum ;
+                MessageBox.Show("yay! "+percent.ToString()+"% correct answets!");//test
             }
             
         }
