@@ -10,12 +10,13 @@ using System.Windows.Forms;
 
 namespace EducationalSoftware
 {
-    public partial class Form1 : Form
+    public partial class LearningForm : Form
     {
-        public Form1()
+        public LearningForm()
         {
             InitializeComponent();
         }
+
 
     }
 }
