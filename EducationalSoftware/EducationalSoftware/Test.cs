@@ -21,6 +21,8 @@ namespace EducationalSoftware
         private int ThisQuestionNum = 0;
         private int points = 0;
         Random rnd = new Random();
+
+        private int[] done = new int[10];
         private void TestForm_Load(object sender, EventArgs e)
         {
             DifficultyGroup.Location = new Point(this.Size.Width / 2 - DifficultyGroup.Size.Width / 2, this.Size.Height / 2 - DifficultyGroup.Size.Height / 2);
@@ -64,22 +66,21 @@ namespace EducationalSoftware
         {
             ThisQuestionNum++;
             ThisQuestionsText.Text = ThisQuestionNum.ToString();
-            int blank = rnd.Next(0, 3);//chooses randomly which number box of the multiplication will be blank.
-            int leftnum = rnd.Next(0, 10);
+            int blank = rnd.Next(0, 2);//chooses randomly which number box of the multiplication will be blank.
             int rightnum = rnd.Next(0, 10);
-            int ans = leftnum * rightnum;
-            if (blank == 0)//the left number box is blank.
+            int leftnum;
+            do
             {
-                RightNumText.Value = rightnum;
-                RightNumText.Enabled = false;
-
-                ResultNum.Value = ans;
-                ResultNum.Enabled = false;
-
-                LeftNumText.Value = 0;
-                LeftNumText.Enabled = true;
+                leftnum = rnd.Next(1, 11);
+            } while (done[leftnum-1]==1&&done.Contains(0));
+            done[leftnum - 1] = 1;
+            if (!done.Contains(0))
+            {
+                Array.Clear(done, 0, done.Length);
             }
-            else if(blank==1)//the right number box is blank.
+            int ans = leftnum * rightnum;
+
+            if (blank == 0)//the right number box is blank.
             {
                 LeftNumText.Value = leftnum;
                 LeftNumText.Enabled = false;
@@ -90,7 +91,7 @@ namespace EducationalSoftware
                 RightNumText.Value = 0;
                 RightNumText.Enabled = true;
             }
-            else
+            else//the result box is blank.
             {
                 RightNumText.Value = rightnum;
                 RightNumText.Enabled = false;
@@ -116,12 +117,15 @@ namespace EducationalSoftware
             }
             if (ThisQuestionNum < TotalQuestionsNum)
             {
+                ConfirmButton.Enabled = true;
+                BackButton.Enabled = false;
                 CreateQuestion();
             }
             else
             {
-                float percent = points * 100 / TotalQuestionsNum ;
-                MessageBox.Show("yay! "+percent.ToString()+"% correct answets!");//test
+                MessageBox.Show("yay! "+points.ToString()+" out of "+TotalQuestionsNum.ToString()+" correct answets!");//test
+                BackButton.Enabled = true;
+                ConfirmButton.Enabled = false;
             }
             
         }
