@@ -82,7 +82,8 @@ namespace EducationalSoftware
 
             pictureBox1.Location = LeftNumText.Location;
             pictureBox1.Visible = true;
-            pictureBox1.ImageLocation = @"..\..\Numbers\" + leftnum + ".png";
+
+            pictureBox1.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + leftnum);
 
             LeftNumText.Value = leftnum;
             LeftNumText.Visible = false;
@@ -91,21 +92,35 @@ namespace EducationalSoftware
 
                 pictureBox3.Location = ResultNum.Location;
                 pictureBox3.Visible = true;
-                pictureBox3.ImageLocation = @"..\..\Numbers\" + ans + ".png";
+                int div = ans / 10;
+                pictureBox3.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + div);
+
+                pictureBox4.Location = new Point(pictureBox3.Location.X + pictureBox3.Width+5, pictureBox3.Location.Y);
+                pictureBox4.Visible = true;
+                int remains = ans - div*10;
+                pictureBox4.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + remains);
+
 
                 ResultNum.Value = ans;
                 ResultNum.Visible = false;
 
+                pictureBox2.Visible = false;
                 RightNumText.Value = 0;
-                RightNumText.Enabled = true;
+                RightNumText.Visible = true;
             }
             else//the result box is blank.
             {
-                RightNumText.Value = rightnum;
-                RightNumText.Enabled = false;
+                pictureBox2.Location = RightNumText.Location;
+                pictureBox2.Visible = true;
+                pictureBox2.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + rightnum);
 
+                RightNumText.Value = rightnum;
+                RightNumText.Visible = false;
+
+                pictureBox3.Visible = false;
+                pictureBox4.Visible = false;
                 ResultNum.Value = 0;
-                ResultNum.Enabled = true;
+                ResultNum.Visible = true;
             }
         }
 

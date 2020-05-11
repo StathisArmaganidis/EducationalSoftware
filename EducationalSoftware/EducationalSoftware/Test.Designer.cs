@@ -121,7 +121,7 @@
             this.QuestionGroup.Controls.Add(this.LeftNumText);
             this.QuestionGroup.Location = new System.Drawing.Point(287, 42);
             this.QuestionGroup.Name = "QuestionGroup";
-            this.QuestionGroup.Size = new System.Drawing.Size(427, 211);
+            this.QuestionGroup.Size = new System.Drawing.Size(501, 211);
             this.QuestionGroup.TabIndex = 9;
             this.QuestionGroup.TabStop = false;
             this.QuestionGroup.Visible = false;
@@ -157,7 +157,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Visible = false;
             // 
             // ResultNum
             // 

@@ -81,7 +81,43 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\num_0.png" />
+    <None Include="Numbers\0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\equal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\times.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
