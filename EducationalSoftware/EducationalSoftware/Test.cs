@@ -64,7 +64,7 @@ namespace EducationalSoftware
         {
             ThisQuestionNum++;
             ThisQuestionsText.Text = ThisQuestionNum.ToString();
-            int blank = rnd.Next(0, 2);//chooses randomly which number box of the multiplication will be blank.
+            int blank = rnd.Next(0, 3);//chooses randomly which number box of the multiplication will be blank.
             int leftnum = rnd.Next(0, 10);
             int rightnum = rnd.Next(0, 10);
             int ans = leftnum * rightnum;
@@ -120,7 +120,7 @@ namespace EducationalSoftware
             }
             else
             {
-                MessageBox.Show("yay");//test
+                MessageBox.Show("yay! "+points.ToString()+" points!");//test
             }
             
         }
