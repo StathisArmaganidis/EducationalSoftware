@@ -49,10 +49,11 @@
     <Compile Include="Equation.cs" />
     <Compile Include="Equation_Factory.cs" />
     <Compile Include="Form1.cs">
+    <Compile Include="Test.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
     </Compile>
     <Compile Include="LearningForm.cs">
       <SubType>Form</SubType>
@@ -73,6 +74,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LearningForm.resx">
       <DependentUpon>LearningForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -195,6 +199,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\times.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\equal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\times.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\questionmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\confirm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\delete.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:\Github\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.csprojAssemblyReference.cache
 D:\Github\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.Form1.resources
 D:\Github\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.LearningForm.resources
@@ -9,3 +10,15 @@ D:\Github\EducationalSoftware\EducationalSoftware\EducationalSoftware\bin\Debug\
 D:\Github\EducationalSoftware\EducationalSoftware\EducationalSoftware\bin\Debug\EducationalSoftware.pdb
 D:\Github\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.exe
 D:\Github\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.pdb
+=======
+D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\bin\Debug\EducationalSoftware.exe.config
+D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\bin\Debug\EducationalSoftware.exe
+D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\bin\Debug\EducationalSoftware.pdb
+D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.csprojAssemblyReference.cache
+D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.TestForm.resources
+D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.Properties.Resources.resources
+D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.csproj.GenerateResource.cache
+D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.csproj.CoreCompileInputs.cache
+D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.exe
+D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.pdb
+>>>>>>> EvaluationTest
