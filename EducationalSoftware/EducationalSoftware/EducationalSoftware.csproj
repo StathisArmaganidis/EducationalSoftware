@@ -48,7 +48,7 @@
   <ItemGroup>
     <Compile Include="Equation.cs" />
     <Compile Include="Equation_Factory.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Form1.cs"/>
     <Compile Include="Test.cs">
       <SubType>Form</SubType>
     </Compile>
