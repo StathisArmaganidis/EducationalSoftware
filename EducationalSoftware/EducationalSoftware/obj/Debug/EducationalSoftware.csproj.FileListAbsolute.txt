@@ -22,3 +22,4 @@ D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\ob
 D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.exe
 D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.pdb
 >>>>>>> EvaluationTest
+D:\Github\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.TestForm.resources

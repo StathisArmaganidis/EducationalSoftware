@@ -124,8 +124,20 @@
   <data name="delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Numbers\delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Eight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Eight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="equal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Numbers\equal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Five" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Five.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Four" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Four.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Nine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Nine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="num_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Numbers\0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,10 +172,28 @@
   <data name="num_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Numbers\9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="One" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\One.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="questionmark" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Numbers\questionmark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Seven" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Seven.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Six" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Six.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ten" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ten.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Three" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Three.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="times" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Numbers\times.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Two" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Two.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
