@@ -10,12 +10,16 @@ using System.Windows.Forms;
 
 namespace EducationalSoftware
 {
-    public partial class Form1 : Form
+    public partial class LearningForm : Form
     {
-        public Form1()
+        public LearningForm()
         {
             InitializeComponent();
         }
 
+        private void number_button_Click(object sender, EventArgs e)
+        {
+            new TimesLearning(((Button)sender).Name, int.Parse(((Button)sender).Tag.ToString())).Show();
+        }
     }
 }
