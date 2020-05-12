@@ -17,6 +17,9 @@ namespace EducationalSoftware
             InitializeComponent();
         }
 
-
+        private void number_button_Click(object sender, EventArgs e)
+        {
+            new TimesLearning(((Button)sender).Name, int.Parse(((Button)sender).Tag.ToString())).Show();
+        }
     }
 }
