@@ -119,5 +119,14 @@
   <ItemGroup>
     <None Include="Numbers\times.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\questionmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\confirm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Numbers\delete.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

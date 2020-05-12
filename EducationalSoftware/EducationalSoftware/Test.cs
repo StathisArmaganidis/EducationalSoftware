@@ -61,13 +61,15 @@ namespace EducationalSoftware
             TotalQuestionsText.Text = TotalQuestionsNum.ToString();
             CreateQuestion();
         }
-
+        /// <summary>
+        /// chooses randomly where the blank number will be and creates the equation.
+        /// </summary>
         private void CreateQuestion()
         {
             ThisQuestionNum++;
             ThisQuestionsText.Text = ThisQuestionNum.ToString();
             int blank = rnd.Next(0, 2);//chooses randomly which number box of the multiplication will be blank.
-            int rightnum = rnd.Next(0, 10);
+            int rightnum = rnd.Next(0, 11);
             int leftnum;
             do
             {
@@ -80,47 +82,39 @@ namespace EducationalSoftware
             }
             int ans = leftnum * rightnum;
 
-            pictureBox1.Location = LeftNumText.Location;
             pictureBox1.Visible = true;
 
             pictureBox1.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + leftnum);
 
             LeftNumText.Value = leftnum;
-            LeftNumText.Visible = false;
             if (blank == 0)//the right number box is blank.
             {
 
-                pictureBox3.Location = ResultNum.Location;
-                pictureBox3.Visible = true;
+
+                ///Result
                 int div = ans / 10;
                 pictureBox3.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + div);
 
                 pictureBox4.Location = new Point(pictureBox3.Location.X + pictureBox3.Width+5, pictureBox3.Location.Y);
-                pictureBox4.Visible = true;
                 int remains = ans - div*10;
                 pictureBox4.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + remains);
-
+                pictureBox4.Visible = true;
 
                 ResultNum.Value = ans;
-                ResultNum.Visible = false;
 
-                pictureBox2.Visible = false;
+                //Right number
+                pictureBox2.Image = Properties.Resources.questionmark;
                 RightNumText.Value = 0;
-                RightNumText.Visible = true;
             }
             else//the result box is blank.
             {
-                pictureBox2.Location = RightNumText.Location;
-                pictureBox2.Visible = true;
                 pictureBox2.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + rightnum);
 
                 RightNumText.Value = rightnum;
-                RightNumText.Visible = false;
 
-                pictureBox3.Visible = false;
+                pictureBox3.Image = Properties.Resources.questionmark;
                 pictureBox4.Visible = false;
                 ResultNum.Value = 0;
-                ResultNum.Visible = true;
             }
         }
 
