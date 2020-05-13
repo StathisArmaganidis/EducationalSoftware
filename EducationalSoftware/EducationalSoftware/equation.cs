@@ -16,23 +16,30 @@ namespace EducationalSoftware
        public List<int> right_mult_digits = new List<int>();
        public List<int> equal_digits = new List<int>();
 
-        public Equation(int left_side,int right_side)
-        {
-            this.left_side_number = left_side;
-            this.right_side_number = right_side;
-            this.equal_number = multiply();
-            left_mult_digits = find_digits(left_side);
-            right_mult_digits = find_digits(right_side);
-            equal_digits = find_digits(equal_number);
-
-        }
-       public Equation(int left_side)
+        public Equation(int left_side,int right_side,string type)
         {
             this.left_side_number = left_side;
             left_mult_digits = find_digits(left_side);
+            if (type == "right")
+            {
+              
+                this.right_side_number = right_side;
+                this.equal_number = multiply();
+                right_mult_digits = find_digits(right_side);
+                equal_digits = find_digits(equal_number);
+            }
+            else
+            {
+                this.left_side_number = left_side;
+                this.equal_number= right_side;
+                this.right_side_number = divide();
+                right_mult_digits = find_digits(right_side);
+                equal_digits = find_digits(equal_number);
+            }
 
         }
         public int multiply() { return left_side_number * right_side_number;}
+        public int divide() { return right_side_number / left_side_number; }
         public List<int> find_digits(int number)
         {
             List<int> digits = new List<int>();
