@@ -95,7 +95,6 @@ namespace EducationalSoftware
             }
             Equation eq = new Equation(leftnum, rightnum, "right");
 
-            MessageBox.Show(leftnum + " * " + rightnum + " = " + leftnum * rightnum);
             int blank = rnd.Next(0, 2);//chooses randomly which number box of the multiplication will be blank.
 
             
@@ -175,6 +174,7 @@ namespace EducationalSoftware
 
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
+            FixResult();
             if (LeftNum.Value * RightNum.Value == ResultNum.Value)
             {
                 points++;
@@ -198,6 +198,21 @@ namespace EducationalSoftware
             }            
         }
 
+        private void FixResult()
+        {
+            if (picture_res3.Image == null&&picture_res3.Tag.ToString()=="empty") {
+                ResultNum.Value = ResultNum.Value / 10;
+            }
+            if (picture_res2.Image == null && picture_res2.Tag.ToString() == "empty")
+            {
+                ResultNum.Value = ResultNum.Value / 10;
+            }
+            if (picture_r2.Image == null && picture_r2.Tag.ToString() == "empty")
+            {
+                RightNum.Value = RightNum.Value / 10;
+            }
+        }
+
         private void AddNumber(object sender, EventArgs e)
         {
             Button clickedbutton = (Button)sender;
@@ -206,14 +221,45 @@ namespace EducationalSoftware
                 if (boxes[i].Tag.ToString() == "empty")
                 {
                     InsertNumber(clickedbutton, boxes[i]);
+                    AddValue(clickedbutton, i);
                     break;
+                }
+            }
+        }
+
+        private void AddValue(Button clicked,int i)
+        {
+            if (i < 2)
+            {
+                if (i == 0)
+                {
+                    RightNum.Value += Int32.Parse(clicked.Tag.ToString()) * 10;
+                }
+                else
+                {
+                    RightNum.Value += Int32.Parse(clicked.Tag.ToString());
+                }
+                RightNum.Value.ToString();
+            }
+            else
+            {
+                if (i == 2)
+                {
+                    ResultNum.Value += Int32.Parse(clicked.Tag.ToString()) * 100;
+                }else if (i == 3)
+                {
+                    ResultNum.Value += Int32.Parse(clicked.Tag.ToString()) * 10;
+                }
+                else
+                {
+                    ResultNum.Value += Int32.Parse(clicked.Tag.ToString());
                 }
             }
         }
 
         private void InsertNumber(Button source, PictureBox target)
         {
-            target.Tag = "filled";
+            target.Tag = source.Tag.ToString();
             target.Image = source.BackgroundImage;
         }
 
@@ -226,11 +272,43 @@ namespace EducationalSoftware
         {
             for (int i = boxes.Length-1; i >= 0; i--)
             {
-                if(boxes[i].Tag.ToString() == "filled")
+                if(boxes[i].Tag.ToString() != "empty"&&boxes[i].Tag.ToString()!="given")
                 {
+                    SubtractValue(i);
                     boxes[i].Tag = "empty";
                     boxes[i].Image = null;
                     break;
+                }
+            }
+        }
+
+        private void SubtractValue(int i)
+        {
+            if (i < 2)
+            {
+                if (i == 0)
+                {
+                    RightNum.Value -= Int32.Parse(boxes[i].Tag.ToString()) * 10;
+                }
+                else
+                {
+                    RightNum.Value -= Int32.Parse(boxes[i].Tag.ToString());
+                }
+                RightNum.Value.ToString();
+            }
+            else
+            {
+                if (i == 2)
+                {
+                    ResultNum.Value -= Int32.Parse(boxes[i].Tag.ToString()) * 100;
+                }
+                else if (i == 3)
+                {
+                    ResultNum.Value -= Int32.Parse(boxes[i].Tag.ToString()) * 10;
+                }
+                else
+                {
+                    ResultNum.Value -= Int32.Parse(boxes[i].Tag.ToString());
                 }
             }
         }

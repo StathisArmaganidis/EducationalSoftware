@@ -394,6 +394,11 @@
             // 
             this.ResultNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ResultNum.Location = new System.Drawing.Point(413, 28);
+            this.ResultNum.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
             this.ResultNum.Name = "ResultNum";
             this.ResultNum.Size = new System.Drawing.Size(62, 29);
             this.ResultNum.TabIndex = 15;
