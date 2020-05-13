@@ -25,10 +25,24 @@ namespace EducationalSoftware
 
         private void Next_Click(object sender, EventArgs e)
         {
-            Equation eq = Equation_Factory.BuildEquation("known", chosen_number, current_number);
+            Equation eq = new Equation(chosen_number, current_number, "right");
             if (current_number == 1)
             {
                 this.pictureBox1.Visible = false;
+                this.times.Visible = true;
+                this.equal.Visible = true;
+                this.button0.Visible = true;
+                this.button1.Visible = true;
+                this.button2.Visible = true;
+                this.button3.Visible = true;
+                this.button4.Visible = true;
+                this.button5.Visible = true;
+                this.button6.Visible = true;
+                this.button7.Visible = true;
+                this.button8.Visible = true;
+                this.button9.Visible = true;
+                this.button11.Visible = true;
+                this.ConfirmButton.Visible = true;
             }
             if (eq.left_mult_digits.Count == 1)
             {
@@ -60,7 +74,52 @@ namespace EducationalSoftware
                 this.Equal_2.Visible = true;
                 this.Equal_1.Visible = true;
             current_number++;
+            this.Next.Enabled = false;
+        }
 
+        private void Left_mult_1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void times_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Right_mult_2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Right_mult_1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void equal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Equal_3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Equal_2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Equal_1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ConfirmButton_Click(object sender, EventArgs e)
+        {
+            this.Next.Enabled = true;
         }
     }
 }
