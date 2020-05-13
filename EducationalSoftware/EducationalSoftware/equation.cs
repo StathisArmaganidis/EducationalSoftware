@@ -43,12 +43,12 @@ namespace EducationalSoftware
         public List<int> find_digits(int number)
         {
             List<int> digits = new List<int>();
-            while (number > 0)
+            do
             {
                 int digit = number % 10;
                 digits.Add(digit);
                 number /= 10;
-            }
+            } while (number > 0);
             return digits;
         }
 

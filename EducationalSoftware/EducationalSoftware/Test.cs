@@ -30,7 +30,7 @@ namespace EducationalSoftware
         private void TestForm_Load(object sender, EventArgs e)
         {
             DifficultyGroup.Location = new Point(this.Size.Width / 2 - DifficultyGroup.Size.Width / 2, this.Size.Height / 2 - DifficultyGroup.Size.Height / 2);
-            boxes = new PictureBox[5] { picture_r1, picture_r2, picture_res1, picture_res3, picture_res3 };
+            boxes = new PictureBox[5] { picture_r1, picture_r2, picture_res1, picture_res2, picture_res3 };
         }
 
         private void EasyButton_Click(object sender, EventArgs e)
@@ -71,9 +71,17 @@ namespace EducationalSoftware
         /// </summary>
         private void CreateQuestion()
         {
+            picture_l1.Image = null;
+            picture_l2.Image = null;
+            picture_r1.Image = null;
+            picture_r2.Image = null;
+            picture_res1.Image = null;
+            picture_res2.Image = null;
+            picture_res3.Image = null;
+
             ThisQuestionNum++;
             ThisQuestionsText.Text = ThisQuestionNum.ToString();
-            int blank = rnd.Next(0, 2);//chooses randomly which number box of the multiplication will be blank.
+            
             int rightnum = rnd.Next(0, 11);
             int leftnum;
             do
@@ -85,84 +93,89 @@ namespace EducationalSoftware
             {
                 Array.Clear(done, 0, done.Length);
             }
-            int ans = leftnum * rightnum;
+            Equation eq = new Equation(leftnum, rightnum, "right");
 
-            picture_l2.Visible = true;
+            MessageBox.Show(leftnum + " * " + rightnum + " = " + leftnum * rightnum);
+            int blank = rnd.Next(0, 2);//chooses randomly which number box of the multiplication will be blank.
 
-            picture_l2.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + leftnum);
+            
+            if (eq.left_mult_digits.Count == 2)
+            {
+                picture_l1.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + eq.left_mult_digits[1]);
+                picture_l2.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + eq.left_mult_digits[0]);
+            }
+            else
+            {
+                picture_l1.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + eq.left_mult_digits[0]);
+            }
 
-            LeftNumText.Value = leftnum;
+
+            LeftNum.Value = leftnum;
             if (blank == 0)//the right number box is blank.
             {
+                ResultNum.Value = leftnum*rightnum;
+                RightNum.Value = 0;        
 
-
-                ///Result
-                int div100 = ans / 100;
-                int div10 = ans / 10;
-                int remains = ans - div100 * 100 - div10 * 10;
-                if (div100 > 0)
+                if (eq.equal_digits.Count >= 2)
                 {
-                    picture_res1.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + div100);
+                    if (eq.right_mult_digits.Count == 3)
+                    {
+                        picture_res1.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + eq.equal_digits[2]);
+                        picture_res2.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + eq.equal_digits[1]);
+                        picture_res3.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + eq.equal_digits[0]);
+                    }
+                    else
+                    {
+                        picture_res1.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + eq.equal_digits[1]);
+                        picture_res2.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + eq.equal_digits[0]);
+                    }
                 }
                 else
                 {
-                    picture_res1.Image = null;
+                    picture_res1.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + eq.equal_digits[0]);
                 }
-                if (div10 > 0)
-                {
-                    picture_res2.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + div10);
-                }
-                else
-                {
-                    picture_res2.Image = null;
-                }
-                picture_res3.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + remains);
 
+                
 
-                picture_res2.Visible = true;
-                picture_res3.Visible = true;
-
-                ResultNum.Value = ans;
-
-                //Right number
-                picture_r1.Visible = false;
-                picture_r2.Image = Properties.Resources.questionmark;
-                RightNumText.Value = 0;
+                picture_r1.Image = Properties.Resources.questionmark;
+                
 
                 picture_r1.Tag = "empty";
                 picture_r2.Tag = "empty";
 
-                picture_res1.Tag = "filled";
-                picture_res2.Tag = "filled";
-                picture_res3.Tag = "filled";
+                picture_res1.Tag = "given";
+                picture_res2.Tag = "given";
+                picture_res3.Tag = "given";
             }
             else//the result box is blank.
             {
-                picture_r1.Visible = true;
-                int div10 = rightnum / 10;
-                int remains = rightnum - div10 * 10;
-                picture_r1.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + div10);
-                picture_r2.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + remains);
-
-                RightNumText.Value = rightnum;
+                ResultNum.Value = 0;
+                RightNum.Value = rightnum;
+                                
+                if (eq.right_mult_digits.Count == 2)
+                {
+                    picture_r1.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + eq.right_mult_digits[1]);
+                    picture_r2.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + eq.right_mult_digits[0]);
+                }
+                else
+                {
+                    picture_r1.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + eq.right_mult_digits[0]);
+                }
 
                 picture_res1.Image = Properties.Resources.questionmark;
-                picture_res2.Visible = false;
-                picture_res3.Visible = false;
-                ResultNum.Value = 0;
-
+                
                 picture_res1.Tag = "empty";
                 picture_res2.Tag = "empty";
                 picture_res3.Tag = "empty";
 
-                picture_r1.Tag = "filled";
-                picture_r2.Tag = "filled";
+                picture_r1.Tag = "given";
+                picture_r2.Tag = "given";
             }
         }
 
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
-            if (LeftNumText.Value * RightNumText.Value == ResultNum.Value)
+            if (LeftNum.Value * RightNum.Value == ResultNum.Value)
             {
                 points++;
                 MessageBox.Show("Correct Answer! Well Done");
@@ -193,13 +206,33 @@ namespace EducationalSoftware
                 if (boxes[i].Tag.ToString() == "empty")
                 {
                     InsertNumber(clickedbutton, boxes[i]);
+                    break;
                 }
             }
         }
 
         private void InsertNumber(Button source, PictureBox target)
         {
+            target.Tag = "filled";
             target.Image = source.BackgroundImage;
+        }
+
+        private void del_button_Click(object sender, EventArgs e)
+        {
+            DelNumber();
+        }
+
+        private void DelNumber()
+        {
+            for (int i = boxes.Length-1; i >= 0; i--)
+            {
+                if(boxes[i].Tag.ToString() == "filled")
+                {
+                    boxes[i].Tag = "empty";
+                    boxes[i].Image = null;
+                    break;
+                }
+            }
         }
     }
 }

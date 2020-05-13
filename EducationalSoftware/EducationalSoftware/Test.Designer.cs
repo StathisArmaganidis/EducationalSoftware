@@ -34,6 +34,9 @@
             this.QuestionSlash = new System.Windows.Forms.Label();
             this.TotalQuestionsText = new System.Windows.Forms.Label();
             this.QuestionGroup = new System.Windows.Forms.GroupBox();
+            this.picture_res3 = new System.Windows.Forms.PictureBox();
+            this.picture_r1 = new System.Windows.Forms.PictureBox();
+            this.picture_l1 = new System.Windows.Forms.PictureBox();
             this.del_button = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -53,18 +56,18 @@
             this.picture_l2 = new System.Windows.Forms.PictureBox();
             this.ResultNum = new System.Windows.Forms.NumericUpDown();
             this.ConfirmButton = new System.Windows.Forms.Button();
-            this.RightNumText = new System.Windows.Forms.NumericUpDown();
-            this.LeftNumText = new System.Windows.Forms.NumericUpDown();
+            this.RightNum = new System.Windows.Forms.NumericUpDown();
+            this.LeftNum = new System.Windows.Forms.NumericUpDown();
             this.EasyButton = new System.Windows.Forms.Button();
             this.MediumButton = new System.Windows.Forms.Button();
             this.HardButton = new System.Windows.Forms.Button();
             this.ChooseText = new System.Windows.Forms.Label();
             this.DifficultyGroup = new System.Windows.Forms.GroupBox();
             this.BackButton = new System.Windows.Forms.Button();
-            this.picture_l1 = new System.Windows.Forms.PictureBox();
-            this.picture_r1 = new System.Windows.Forms.PictureBox();
-            this.picture_res3 = new System.Windows.Forms.PictureBox();
             this.QuestionGroup.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_res3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_r1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_l1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_res2)).BeginInit();
@@ -72,12 +75,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.picture_r2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_l2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ResultNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RightNumText)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LeftNumText)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RightNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LeftNum)).BeginInit();
             this.DifficultyGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picture_l1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picture_r1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picture_res3)).BeginInit();
             this.SuspendLayout();
             // 
             // QuestionLabel
@@ -148,14 +148,44 @@
             this.QuestionGroup.Controls.Add(this.picture_l2);
             this.QuestionGroup.Controls.Add(this.ResultNum);
             this.QuestionGroup.Controls.Add(this.ConfirmButton);
-            this.QuestionGroup.Controls.Add(this.RightNumText);
-            this.QuestionGroup.Controls.Add(this.LeftNumText);
+            this.QuestionGroup.Controls.Add(this.RightNum);
+            this.QuestionGroup.Controls.Add(this.LeftNum);
             this.QuestionGroup.Location = new System.Drawing.Point(171, 42);
             this.QuestionGroup.Name = "QuestionGroup";
             this.QuestionGroup.Size = new System.Drawing.Size(617, 321);
             this.QuestionGroup.TabIndex = 9;
             this.QuestionGroup.TabStop = false;
             this.QuestionGroup.Visible = false;
+            // 
+            // picture_res3
+            // 
+            this.picture_res3.InitialImage = null;
+            this.picture_res3.Location = new System.Drawing.Point(549, 91);
+            this.picture_res3.Name = "picture_res3";
+            this.picture_res3.Size = new System.Drawing.Size(62, 57);
+            this.picture_res3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picture_res3.TabIndex = 47;
+            this.picture_res3.TabStop = false;
+            // 
+            // picture_r1
+            // 
+            this.picture_r1.InitialImage = null;
+            this.picture_r1.Location = new System.Drawing.Point(210, 91);
+            this.picture_r1.Name = "picture_r1";
+            this.picture_r1.Size = new System.Drawing.Size(62, 57);
+            this.picture_r1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picture_r1.TabIndex = 46;
+            this.picture_r1.TabStop = false;
+            // 
+            // picture_l1
+            // 
+            this.picture_l1.InitialImage = null;
+            this.picture_l1.Location = new System.Drawing.Point(6, 91);
+            this.picture_l1.Name = "picture_l1";
+            this.picture_l1.Size = new System.Drawing.Size(62, 57);
+            this.picture_l1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picture_l1.TabIndex = 45;
+            this.picture_l1.TabStop = false;
             // 
             // del_button
             // 
@@ -167,6 +197,7 @@
             this.del_button.Size = new System.Drawing.Size(62, 58);
             this.del_button.TabIndex = 44;
             this.del_button.UseVisualStyleBackColor = true;
+            this.del_button.Click += new System.EventHandler(this.del_button_Click);
             // 
             // button9
             // 
@@ -177,6 +208,7 @@
             this.button9.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button9.Size = new System.Drawing.Size(62, 58);
             this.button9.TabIndex = 42;
+            this.button9.Tag = "9";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.AddNumber);
             // 
@@ -189,6 +221,7 @@
             this.button8.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button8.Size = new System.Drawing.Size(62, 58);
             this.button8.TabIndex = 41;
+            this.button8.Tag = "8";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.AddNumber);
             // 
@@ -201,6 +234,7 @@
             this.button7.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button7.Size = new System.Drawing.Size(62, 58);
             this.button7.TabIndex = 40;
+            this.button7.Tag = "7";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.AddNumber);
             // 
@@ -213,6 +247,7 @@
             this.button6.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button6.Size = new System.Drawing.Size(62, 58);
             this.button6.TabIndex = 39;
+            this.button6.Tag = "6";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.AddNumber);
             // 
@@ -225,6 +260,7 @@
             this.button5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button5.Size = new System.Drawing.Size(62, 58);
             this.button5.TabIndex = 38;
+            this.button5.Tag = "5";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.AddNumber);
             // 
@@ -237,6 +273,7 @@
             this.button4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button4.Size = new System.Drawing.Size(62, 58);
             this.button4.TabIndex = 37;
+            this.button4.Tag = "4";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.AddNumber);
             // 
@@ -249,6 +286,7 @@
             this.button3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button3.Size = new System.Drawing.Size(62, 58);
             this.button3.TabIndex = 36;
+            this.button3.Tag = "3";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.AddNumber);
             // 
@@ -261,6 +299,7 @@
             this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button2.Size = new System.Drawing.Size(62, 58);
             this.button2.TabIndex = 35;
+            this.button2.Tag = "2";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.AddNumber);
             // 
@@ -273,6 +312,7 @@
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button1.Size = new System.Drawing.Size(62, 58);
             this.button1.TabIndex = 34;
+            this.button1.Tag = "1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.AddNumber);
             // 
@@ -284,6 +324,7 @@
             this.button0.Name = "button0";
             this.button0.Size = new System.Drawing.Size(62, 58);
             this.button0.TabIndex = 33;
+            this.button0.Tag = "0";
             this.button0.UseVisualStyleBackColor = true;
             this.button0.Click += new System.EventHandler(this.AddNumber);
             // 
@@ -369,23 +410,23 @@
             this.ConfirmButton.UseVisualStyleBackColor = true;
             this.ConfirmButton.Click += new System.EventHandler(this.ConfirmButton_Click);
             // 
-            // RightNumText
+            // RightNum
             // 
-            this.RightNumText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RightNumText.Location = new System.Drawing.Point(210, 28);
-            this.RightNumText.Name = "RightNumText";
-            this.RightNumText.Size = new System.Drawing.Size(62, 29);
-            this.RightNumText.TabIndex = 14;
-            this.RightNumText.Visible = false;
+            this.RightNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RightNum.Location = new System.Drawing.Point(210, 28);
+            this.RightNum.Name = "RightNum";
+            this.RightNum.Size = new System.Drawing.Size(62, 29);
+            this.RightNum.TabIndex = 14;
+            this.RightNum.Visible = false;
             // 
-            // LeftNumText
+            // LeftNum
             // 
-            this.LeftNumText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LeftNumText.Location = new System.Drawing.Point(6, 28);
-            this.LeftNumText.Name = "LeftNumText";
-            this.LeftNumText.Size = new System.Drawing.Size(62, 29);
-            this.LeftNumText.TabIndex = 13;
-            this.LeftNumText.Visible = false;
+            this.LeftNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LeftNum.Location = new System.Drawing.Point(6, 28);
+            this.LeftNum.Name = "LeftNum";
+            this.LeftNum.Size = new System.Drawing.Size(62, 29);
+            this.LeftNum.TabIndex = 13;
+            this.LeftNum.Visible = false;
             // 
             // EasyButton
             // 
@@ -449,36 +490,6 @@
             this.BackButton.Text = "Go Back";
             this.BackButton.UseVisualStyleBackColor = true;
             // 
-            // picture_l1
-            // 
-            this.picture_l1.InitialImage = null;
-            this.picture_l1.Location = new System.Drawing.Point(6, 91);
-            this.picture_l1.Name = "picture_l1";
-            this.picture_l1.Size = new System.Drawing.Size(62, 57);
-            this.picture_l1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picture_l1.TabIndex = 45;
-            this.picture_l1.TabStop = false;
-            // 
-            // picture_r1
-            // 
-            this.picture_r1.InitialImage = null;
-            this.picture_r1.Location = new System.Drawing.Point(210, 91);
-            this.picture_r1.Name = "picture_r1";
-            this.picture_r1.Size = new System.Drawing.Size(62, 57);
-            this.picture_r1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picture_r1.TabIndex = 46;
-            this.picture_r1.TabStop = false;
-            // 
-            // picture_res3
-            // 
-            this.picture_res3.InitialImage = null;
-            this.picture_res3.Location = new System.Drawing.Point(549, 91);
-            this.picture_res3.Name = "picture_res3";
-            this.picture_res3.Size = new System.Drawing.Size(62, 57);
-            this.picture_res3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picture_res3.TabIndex = 47;
-            this.picture_res3.TabStop = false;
-            // 
             // TestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -496,6 +507,9 @@
             this.Text = "Evaluation Test";
             this.Load += new System.EventHandler(this.TestForm_Load);
             this.QuestionGroup.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picture_res3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_r1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_l1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_res2)).EndInit();
@@ -503,13 +517,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.picture_r2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_l2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ResultNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RightNumText)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LeftNumText)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RightNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LeftNum)).EndInit();
             this.DifficultyGroup.ResumeLayout(false);
             this.DifficultyGroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picture_l1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picture_r1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picture_res3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -530,8 +541,8 @@
         private System.Windows.Forms.Button ConfirmButton;
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.NumericUpDown ResultNum;
-        private System.Windows.Forms.NumericUpDown RightNumText;
-        private System.Windows.Forms.NumericUpDown LeftNumText;
+        private System.Windows.Forms.NumericUpDown RightNum;
+        private System.Windows.Forms.NumericUpDown LeftNum;
         private System.Windows.Forms.PictureBox picture_l2;
         private System.Windows.Forms.PictureBox picture_res1;
         private System.Windows.Forms.PictureBox picture_r2;
