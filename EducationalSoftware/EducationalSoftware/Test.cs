@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace EducationalSoftware
         public TestForm()
         {
             InitializeComponent();
+            
         }
 
         private int TotalQuestionsNum;
@@ -23,9 +25,12 @@ namespace EducationalSoftware
         Random rnd = new Random();
 
         private int[] done = new int[10];
+
+        PictureBox[] boxes;
         private void TestForm_Load(object sender, EventArgs e)
         {
             DifficultyGroup.Location = new Point(this.Size.Width / 2 - DifficultyGroup.Size.Width / 2, this.Size.Height / 2 - DifficultyGroup.Size.Height / 2);
+            boxes = new PictureBox[5] { picture_r1, picture_r2, picture_res1, picture_res3, picture_res3 };
         }
 
         private void EasyButton_Click(object sender, EventArgs e)
@@ -82,9 +87,9 @@ namespace EducationalSoftware
             }
             int ans = leftnum * rightnum;
 
-            pictureBox1.Visible = true;
+            picture_l2.Visible = true;
 
-            pictureBox1.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + leftnum);
+            picture_l2.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + leftnum);
 
             LeftNumText.Value = leftnum;
             if (blank == 0)//the right number box is blank.
@@ -92,29 +97,66 @@ namespace EducationalSoftware
 
 
                 ///Result
-                int div = ans / 10;
-                pictureBox3.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + div);
+                int div100 = ans / 100;
+                int div10 = ans / 10;
+                int remains = ans - div100 * 100 - div10 * 10;
+                if (div100 > 0)
+                {
+                    picture_res1.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + div100);
+                }
+                else
+                {
+                    picture_res1.Image = null;
+                }
+                if (div10 > 0)
+                {
+                    picture_res2.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + div10);
+                }
+                else
+                {
+                    picture_res2.Image = null;
+                }
+                picture_res3.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + remains);
 
-                pictureBox4.Location = new Point(pictureBox3.Location.X + pictureBox3.Width+5, pictureBox3.Location.Y);
-                int remains = ans - div*10;
-                pictureBox4.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + remains);
-                pictureBox4.Visible = true;
+
+                picture_res2.Visible = true;
+                picture_res3.Visible = true;
 
                 ResultNum.Value = ans;
 
                 //Right number
-                pictureBox2.Image = Properties.Resources.questionmark;
+                picture_r1.Visible = false;
+                picture_r2.Image = Properties.Resources.questionmark;
                 RightNumText.Value = 0;
+
+                picture_r1.Tag = "empty";
+                picture_r2.Tag = "empty";
+
+                picture_res1.Tag = "filled";
+                picture_res2.Tag = "filled";
+                picture_res3.Tag = "filled";
             }
             else//the result box is blank.
             {
-                pictureBox2.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + rightnum);
+                picture_r1.Visible = true;
+                int div10 = rightnum / 10;
+                int remains = rightnum - div10 * 10;
+                picture_r1.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + div10);
+                picture_r2.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + remains);
 
                 RightNumText.Value = rightnum;
 
-                pictureBox3.Image = Properties.Resources.questionmark;
-                pictureBox4.Visible = false;
+                picture_res1.Image = Properties.Resources.questionmark;
+                picture_res2.Visible = false;
+                picture_res3.Visible = false;
                 ResultNum.Value = 0;
+
+                picture_res1.Tag = "empty";
+                picture_res2.Tag = "empty";
+                picture_res3.Tag = "empty";
+
+                picture_r1.Tag = "filled";
+                picture_r2.Tag = "filled";
             }
         }
 
@@ -141,6 +183,23 @@ namespace EducationalSoftware
                 BackButton.Enabled = true;
                 ConfirmButton.Enabled = false;
             }            
+        }
+
+        private void AddNumber(object sender, EventArgs e)
+        {
+            Button clickedbutton = (Button)sender;
+            for(int i = 0; i < boxes.Length; i++)
+            {
+                if (boxes[i].Tag.ToString() == "empty")
+                {
+                    InsertNumber(clickedbutton, boxes[i]);
+                }
+            }
+        }
+
+        private void InsertNumber(Button source, PictureBox target)
+        {
+            target.Image = source.BackgroundImage;
         }
     }
 }
