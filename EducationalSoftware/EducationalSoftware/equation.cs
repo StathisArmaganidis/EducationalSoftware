@@ -9,13 +9,19 @@ namespace EducationalSoftware
     public class Equation
     {
        
-        int left_side_number { get; set; }
-        int right_side_number { get; set; }
-        int equal_number { get; set; }
+       public int left_side_number { get; set; }
+       public int right_side_number { get; set; }
+       public int equal_number { get; set; }
        public List<int> left_mult_digits = new List<int>();
        public List<int> right_mult_digits = new List<int>();
        public List<int> equal_digits = new List<int>();
 
+        /// <summary>
+        /// Creates the equation and calculates the missing numbers.
+        /// </summary>
+        /// <param name="left_side"></param>
+        /// <param name="right_side"></param>
+        /// <param name="type"></param>
         public Equation(int left_side,int right_side,string type)
         {
             this.left_side_number = left_side;
@@ -38,8 +44,21 @@ namespace EducationalSoftware
             }
 
         }
+        /// <summary>
+        /// Multiplies two numbers.
+        /// </summary>
+        /// <returns></returns>
         public int multiply() { return left_side_number * right_side_number;}
+        /// <summary>
+        /// Divides the second number from the first one.
+        /// </summary>
+        /// <returns></returns>
         public int divide() { return right_side_number / left_side_number; }
+        /// <summary>
+        ///Finds the digits of a number and returns a list.
+        /// </summary>
+        /// <param name="number"></param>
+        /// <returns></returns>
         public List<int> find_digits(int number)
         {
             List<int> digits = new List<int>();
