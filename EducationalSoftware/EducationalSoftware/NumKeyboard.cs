@@ -14,7 +14,7 @@ namespace EducationalSoftware
         private NumericUpDown result_num;
         public NumKeyboard(PictureBox picture_r1, PictureBox picture_r2, PictureBox picture_res1, PictureBox picture_res2, PictureBox picture_res3, NumericUpDown right, NumericUpDown result)
         {
-            boxes = new PictureBox[5] { picture_r1, picture_r2, picture_res1, picture_res2, picture_res3};
+            boxes = new PictureBox[5] { picture_r1, picture_r2, picture_res1, picture_res2, picture_res3 };
             right_num = right;
             result_num = result;
         }
@@ -150,3 +150,4 @@ namespace EducationalSoftware
         }
     }
 }
+
