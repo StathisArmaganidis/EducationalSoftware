@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Equation.cs" />
+    <Compile Include="NumKeyboard.cs" />
     <Compile Include="Test.cs">
       <SubType>Form</SubType>
     </Compile>

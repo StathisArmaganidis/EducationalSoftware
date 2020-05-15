@@ -19,6 +19,10 @@ namespace EducationalSoftware
             result_num = result;
         }
 
+        /// <summary>
+        /// Checks for the rightmost empty box in the equation
+        /// </summary>
+        /// <param name="sender"></param>
         public void CheckEmpty(object sender)
         {
             Button clickedbutton = (Button)sender;
@@ -132,7 +136,9 @@ namespace EducationalSoftware
             }
         }
 
-
+        /// <summary>
+        /// Divides the right / result values by 10 for every empty box in the equation.
+        /// </summary>
         public void FixResult()
         {
             if (boxes[4].Image == null && boxes[4].Tag.ToString() == "empty")
