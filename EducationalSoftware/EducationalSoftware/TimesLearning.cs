@@ -11,8 +11,10 @@ using System.Linq;
 
 namespace EducationalSoftware
 {
+   
     public partial class TimesLearning : Form
     {
+        NumKeyboard keyboard;
         int current_index;
         Equation eq;
         List<(Equation,int)> equations = new List<(Equation,int)>();
@@ -32,16 +34,22 @@ namespace EducationalSoftware
             this.left_pict =new PictureBox[2]{Left_mult_1,Left_mult_2};
             this.right_pict = new PictureBox[2] {Right_mult_1, Right_mult_2 };
             this.eq_pict = new PictureBox[3] { Equal_1, Equal_2,Equal_3 };
+            this.leftnum.Value = innumber;
             current_index = 0;
+            keyboard = new NumKeyboard(Right_mult_2, Right_mult_1, Equal_3, Equal_2, Equal_1, rightnum, eqnum);
         }
 
         private void Next_Click(object sender, EventArgs e)
         {
+            this.eqnum.Value = 0;
             this.ConfirmButton.Enabled = true;
+            this.keyboardpanel.Enabled = true;
             this.panel1.BackColor = SystemColors.Control;
+            
             for(int i = 0; i < eq_pict.Length; i++)
             {
                 eq_pict[i].Image = null;
+                eq_pict[i].Tag = "empty";
             }
             left_pict[0].Visible = false;
             left_pict[1].Visible = false;
@@ -51,6 +59,7 @@ namespace EducationalSoftware
             {
                 
                 this.pictureBox1.Visible = false;
+                this.keyboardpanel.Visible = true;
                 questionpanel.Visible = true;
                 first = !first;
             }
@@ -74,16 +83,20 @@ namespace EducationalSoftware
             else
             {
                 questionpanel.Visible = false;
+                keyboardpanel.Visible = false;
                 endlabel.Visible = true;
                 backtomenu.Visible = true;
+                Next.Visible = false;
             }
         }
 
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
             this.ConfirmButton.Enabled = false;
+            this.keyboardpanel.Enabled = false;
             this.Next.Enabled = true;
-            if (this.numericUpDown1.Value == equations[current_index].Item1.equal_number)
+            keyboard.FixResult();
+            if (this.eqnum.Value == equations[current_index].Item1.equal_number)
             {
                 this.panel1.BackColor = Color.Green;
                 equations.RemoveAt(current_index);
@@ -100,6 +113,11 @@ namespace EducationalSoftware
                     DialogResult wrong = MessageBox.Show("Would you like to see the solution?", "Wrong", MessageBoxButtons.YesNo);
                     if (wrong == DialogResult.Yes)
                     {
+                        for (int i = 0; i < eq_pict.Length; i++)
+                        {
+                            eq_pict[i].Image = null;
+                            eq_pict[i].Tag = "empty";
+                        }
                         for (int i = 0; i < equations[current_index].Item1.equal_digits.Count; i++)
                         {
                             eq_pict[i].Visible = true;
@@ -109,7 +127,6 @@ namespace EducationalSoftware
                     }
                     else if (wrong == DialogResult.No)
                     {
-                        //do something else
                     }
 
                 }
@@ -122,5 +139,17 @@ namespace EducationalSoftware
         {
             this.Close();
         }
+
+        private void keyboard_click(object sender, EventArgs e)
+        {
+            keyboard.CheckEmpty(sender);
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            keyboard.DelNumber();
+        }
+
+
     }
 }
