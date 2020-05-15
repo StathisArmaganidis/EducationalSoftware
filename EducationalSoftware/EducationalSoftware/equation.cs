@@ -67,14 +67,8 @@ namespace EducationalSoftware
                 int digit = number % 10;
                 digits.Add(digit);
                 number /= 10;
-<<<<<<< HEAD
             } while (number > 0);
             return digits;
-=======
-
-            } while (number > 0);
-                return digits;
->>>>>>> learning
         }
 
     }
