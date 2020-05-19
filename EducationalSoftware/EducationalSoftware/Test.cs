@@ -25,8 +25,6 @@ namespace EducationalSoftware
         Random rnd = new Random();
 
         private int[] done = new int[10];
-
-        PictureBox[] boxes;
         NumKeyboard keys;
         private void TestForm_Load(object sender, EventArgs e)
         {
@@ -215,5 +213,6 @@ namespace EducationalSoftware
         {
             this.Close();
         }
+
     }
 }

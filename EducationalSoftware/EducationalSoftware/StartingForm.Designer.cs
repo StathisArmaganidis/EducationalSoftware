@@ -30,9 +30,9 @@
         {
             this.userBox = new System.Windows.Forms.TextBox();
             this.LoginGroup = new System.Windows.Forms.GroupBox();
-            this.passBox = new System.Windows.Forms.TextBox();
-            this.userLabel = new System.Windows.Forms.Label();
             this.passLabel = new System.Windows.Forms.Label();
+            this.userLabel = new System.Windows.Forms.Label();
+            this.passBox = new System.Windows.Forms.TextBox();
             this.GotoTestForm = new System.Windows.Forms.Button();
             this.GotoLearningForm = new System.Windows.Forms.Button();
             this.GotoLearningTest = new System.Windows.Forms.Button();
@@ -59,13 +59,15 @@
             this.LoginGroup.TabIndex = 1;
             this.LoginGroup.TabStop = false;
             // 
-            // passBox
+            // passLabel
             // 
-            this.passBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passBox.Location = new System.Drawing.Point(174, 118);
-            this.passBox.Name = "passBox";
-            this.passBox.Size = new System.Drawing.Size(100, 29);
-            this.passBox.TabIndex = 1;
+            this.passLabel.AutoSize = true;
+            this.passLabel.Font = new System.Drawing.Font("Ravie", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passLabel.Location = new System.Drawing.Point(9, 119);
+            this.passLabel.Name = "passLabel";
+            this.passLabel.Size = new System.Drawing.Size(137, 26);
+            this.passLabel.TabIndex = 3;
+            this.passLabel.Text = "Password";
             // 
             // userLabel
             // 
@@ -78,15 +80,13 @@
             this.userLabel.TabIndex = 2;
             this.userLabel.Text = "Username";
             // 
-            // passLabel
+            // passBox
             // 
-            this.passLabel.AutoSize = true;
-            this.passLabel.Font = new System.Drawing.Font("Ravie", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passLabel.Location = new System.Drawing.Point(9, 119);
-            this.passLabel.Name = "passLabel";
-            this.passLabel.Size = new System.Drawing.Size(137, 26);
-            this.passLabel.TabIndex = 3;
-            this.passLabel.Text = "Password";
+            this.passBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passBox.Location = new System.Drawing.Point(174, 118);
+            this.passBox.Name = "passBox";
+            this.passBox.Size = new System.Drawing.Size(100, 29);
+            this.passBox.TabIndex = 1;
             // 
             // GotoTestForm
             // 
@@ -119,6 +119,7 @@
             this.GotoLearningTest.TabIndex = 4;
             this.GotoLearningTest.Text = "Practice Test!";
             this.GotoLearningTest.UseVisualStyleBackColor = true;
+            this.GotoLearningTest.Click += new System.EventHandler(this.GotoLearningTest_Click);
             // 
             // StartingForm
             // 
