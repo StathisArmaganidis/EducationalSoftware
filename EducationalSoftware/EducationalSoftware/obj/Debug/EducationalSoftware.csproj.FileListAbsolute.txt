@@ -9,6 +9,7 @@ D:\Github\EducationalSoftware\EducationalSoftware\EducationalSoftware\bin\Debug\
 D:\Github\EducationalSoftware\EducationalSoftware\EducationalSoftware\bin\Debug\EducationalSoftware.pdb
 D:\Github\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.exe
 D:\Github\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.pdb
+<<<<<<< HEAD
 D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\bin\Debug\EducationalSoftware.exe.config
 D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\bin\Debug\EducationalSoftware.exe
 D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\bin\Debug\EducationalSoftware.pdb
@@ -22,3 +23,6 @@ D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\ob
 D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.exe
 D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.pdb
 D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.StartingForm.resources
+=======
+D:\Github\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.LearningTest.resources
+>>>>>>> Helping

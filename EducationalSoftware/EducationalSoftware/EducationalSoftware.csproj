@@ -47,7 +47,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Equation.cs" />
+    <Compile Include="LearningTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LearningTest.Designer.cs">
+      <DependentUpon>LearningTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="NumKeyboard.cs" />
+    <Compile Include="RandomProbability.cs" />
     <Compile Include="StartingForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +83,9 @@
     </Compile>
     <EmbeddedResource Include="LearningForm.resx">
       <DependentUpon>LearningForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LearningTest.resx">
+      <DependentUpon>LearningTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StartingForm.resx">
       <DependentUpon>StartingForm.cs</DependentUpon>
