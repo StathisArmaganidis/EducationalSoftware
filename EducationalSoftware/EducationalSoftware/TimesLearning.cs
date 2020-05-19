@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Linq;
 
 namespace EducationalSoftware
 {
@@ -16,7 +15,6 @@ namespace EducationalSoftware
     {
         NumKeyboard keyboard;
         int current_index;
-        Equation eq;
         List<(Equation,int)> equations = new List<(Equation,int)>();
         PictureBox[] left_pict;
         PictureBox[] right_pict ;
