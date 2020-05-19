@@ -210,5 +210,10 @@ namespace EducationalSoftware
         {
             keys.DelNumber();
         }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

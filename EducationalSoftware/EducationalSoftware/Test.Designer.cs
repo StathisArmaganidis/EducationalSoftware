@@ -494,6 +494,7 @@
             this.BackButton.TabIndex = 11;
             this.BackButton.Text = "Go Back";
             this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // TestForm
             // 
