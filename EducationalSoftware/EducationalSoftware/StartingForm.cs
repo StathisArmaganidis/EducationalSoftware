@@ -52,7 +52,7 @@ namespace EducationalSoftware
             RegisterGroup.Visible = false;
             LoginGroup.Visible = true;
         }
-        }
+        
 
         private void GotoLearningTest_Click(object sender, EventArgs e)
         {
