@@ -20,8 +20,9 @@ namespace EducationalSoftware
 
         private void StartingForm_Load(object sender, EventArgs e)
         {
-            //LoginGroup.Location = new Point(this.Size.Width / 2 - LoginGroup.Size.Width / 2, this.Size.Height / 2 - LoginGroup.Size.Height / 2);
-
+            LoginGroup.Location = new Point(this.Size.Width / 2 - LoginGroup.Size.Width / 2, this.Size.Height / 2 - LoginGroup.Size.Height);
+            RegisterGroup.Location = new Point(this.Size.Width / 2 - RegisterGroup.Size.Width / 2, this.Size.Height / 2 - RegisterGroup.Size.Height);
+            RegisterGroup.Visible = false;
         }
 
         private void GotoTestForm_Click(object sender, EventArgs e)
@@ -39,6 +40,19 @@ namespace EducationalSoftware
             lf.ShowDialog();
             this.Visible = true;
         }
+
+        private void GoRegister_Click(object sender, EventArgs e)
+        {
+            LoginGroup.Visible = false;
+            RegisterGroup.Visible = true;
+        }
+
+        private void GoLogin_Click(object sender, EventArgs e)
+        {
+            RegisterGroup.Visible = false;
+            LoginGroup.Visible = true;
+        }
+        
 
         private void GotoLearningTest_Click(object sender, EventArgs e)
         {
