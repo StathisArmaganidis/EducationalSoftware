@@ -284,9 +284,7 @@
     <None Include="Resources\Five.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Database.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Database.accdb" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

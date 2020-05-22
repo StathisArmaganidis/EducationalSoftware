@@ -13,9 +13,12 @@ namespace EducationalSoftware
 {
     public partial class StartingForm : Form
     {
+        Datamapper dm ;
         public StartingForm()
         {
             InitializeComponent();
+            dm = new Datamapper();
+            dm.GetConnection();
         }
 
         private void StartingForm_Load(object sender, EventArgs e)
@@ -56,24 +59,13 @@ namespace EducationalSoftware
 
         private void GotoLearningTest_Click(object sender, EventArgs e)
         {
-            try
+            float[] n = dm.GetStats("kostas");
+            foreach (float f in n)
             {
-                Datamapper.getConnection();
-                Datamapper.openConnection();
-                string cmd = "SELECT username FROM students";
-                OleDbCommand command = new OleDbCommand(cmd, Datamapper.connection);
-                using (OleDbDataReader reader = command.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        MessageBox.Show(reader["Username"].ToString());
-                    }
-                }
+                MessageBox.Show(f.ToString());
             }
-            catch (Exception se)
-            {
-                throw new Exception(se.ToString());
-            }
+            bool hi= dm.SaveStats(new float[] { 10f, 15f, 10f, 10f, 10f, 5f, 10f, 10f, 10f, 10f },"kostas");
+          MessageBox.Show(hi.ToString());
 
         }
     }

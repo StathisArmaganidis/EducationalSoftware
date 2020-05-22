@@ -1,4 +1,3 @@
-D:\Github\EducationalSoftware\EducationalSoftware\EducationalSoftware\bin\Debug\Database.accdb
 D:\Github\EducationalSoftware\EducationalSoftware\EducationalSoftware\bin\Debug\EducationalSoftware.exe.config
 D:\Github\EducationalSoftware\EducationalSoftware\EducationalSoftware\bin\Debug\EducationalSoftware.exe
 D:\Github\EducationalSoftware\EducationalSoftware\EducationalSoftware\bin\Debug\EducationalSoftware.pdb
@@ -27,3 +26,4 @@ D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\bi
 D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\bin\Debug\EducationalSoftware.exe.config
 D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\bin\Debug\EducationalSoftware.exe
 D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\bin\Debug\EducationalSoftware.pdb
+D:\Github\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.csproj.CoreCompileInputs.cache
