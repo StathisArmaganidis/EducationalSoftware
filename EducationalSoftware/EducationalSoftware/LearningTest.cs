@@ -12,10 +12,15 @@ namespace EducationalSoftware
 {
     public partial class LearningTest : Form
     {
-        List<(string, float)> probabilities = new List<(string, float)>();
+        Datamapper dm;
+        float[] probabilities;
+        float[] multipliers;
         public LearningTest()
         {
             InitializeComponent();
+            dm = new Datamapper();
+            probabilities = dm.GetStats();
+            multipliers = dm.GetMultipliers();
         }
 
         private int TotalQuestionsNum;
