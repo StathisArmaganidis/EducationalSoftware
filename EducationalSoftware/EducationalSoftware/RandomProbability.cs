@@ -13,8 +13,10 @@ namespace EducationalSoftware
         /// </summary>
         /// <param name="probabilities"></param>
         /// <returns></returns>
-        public static string Choose(List<(string, float)> probabilities)
+        public static string Choose(float[] floatprobabilities,string[] stringprobabilities)
         {
+            List<(string, float)> probabilities = new List<(string, float)>();
+            probabilities= (List<(string, float)>)floatprobabilities.Zip(stringprobabilities, (First, Second) => (Second,First));
             probabilities.Sort((p, q) => p.Item2.CompareTo(q.Item2));
             double prob = new Random().NextDouble();
             int item = -1;
