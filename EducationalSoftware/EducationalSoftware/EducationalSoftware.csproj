@@ -284,7 +284,13 @@
     <None Include="Resources\Five.png" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< master
     <Content Include="Database.accdb" />
+=======
+    <Content Include="Database.accdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+>>>>>>> Register to database with hash n salt
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

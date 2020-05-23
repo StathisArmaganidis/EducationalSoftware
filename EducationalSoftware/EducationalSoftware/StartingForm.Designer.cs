@@ -132,6 +132,7 @@
             this.loginPassBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginPassBox.Location = new System.Drawing.Point(184, 116);
             this.loginPassBox.Name = "loginPassBox";
+            this.loginPassBox.PasswordChar = '*';
             this.loginPassBox.Size = new System.Drawing.Size(100, 29);
             this.loginPassBox.TabIndex = 1;
             // 
@@ -166,7 +167,6 @@
             this.GotoLearningTest.TabIndex = 4;
             this.GotoLearningTest.Text = "Practice Test!";
             this.GotoLearningTest.UseVisualStyleBackColor = true;
-            this.GotoLearningTest.Click += new System.EventHandler(this.GotoLearningTest_Click);
             // 
             // RegisterGroup
             // 
@@ -203,6 +203,7 @@
             this.RegisterButton.TabIndex = 5;
             this.RegisterButton.Text = "Register";
             this.RegisterButton.UseVisualStyleBackColor = true;
+            this.RegisterButton.Click += new System.EventHandler(this.RegisterButton_Click);
             // 
             // registerLabel
             // 
@@ -241,6 +242,7 @@
             this.registerPassBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.registerPassBox.Location = new System.Drawing.Point(184, 116);
             this.registerPassBox.Name = "registerPassBox";
+            this.registerPassBox.PasswordChar = '*';
             this.registerPassBox.Size = new System.Drawing.Size(100, 29);
             this.registerPassBox.TabIndex = 1;
             // 
