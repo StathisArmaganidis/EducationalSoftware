@@ -4,12 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.OleDb;
+using System.Security.Cryptography;
 using System.Windows.Forms;
 
 namespace EducationalSoftware
 {
     class Datamapper
     {
+        /// <summary>
+        /// Gets the cionnection string. Must be initialized once before any other method from the DataMapper is used by a class.
+        /// </summary>
         OleDbConnection connection;
         public void GetConnection()
         {
@@ -32,13 +36,48 @@ namespace EducationalSoftware
         {
             connection.Close();
         }
+        public bool Register(string user, string pass)
+        {
+            try
+            {
+              
+
+                //passwrod salt and hashing
+                byte[] salt;
+                new RNGCryptoServiceProvider().GetBytes(salt = new byte[16]);
+
+                var pk = new Rfc2898DeriveBytes(pass, salt, 10000);
+                byte[] hash = pk.GetBytes(20);
+
+                byte[] hashBytes = new byte[36];
+                Array.Copy(salt, 0, hashBytes, 0, 16);
+                Array.Copy(hash, 0, hashBytes, 16, 20);
+
+                string encryptedPass = Convert.ToBase64String(hashBytes);
+                OpenConnection();
+                string cmd = "INSERT INTO [students] ([username],[password]) VALUES (@user,@pass);";
+                OleDbCommand command = new OleDbCommand(cmd, connection);
+                command.Parameters.AddWithValue("@user", user);
+                command.Parameters.AddWithValue("@pass", encryptedPass);
+                command.ExecuteNonQuery();
+                cmd ="INSERT INTO [Stats]([Username],[Stat_1],[Stat_2],[Stat_3],[Stat_4],[Stat_5],[Stat_6],[Stat_7],[Stat_8],[Stat_9],[Stat_10]) VALUES(@username,10, 10, 10, 10, 10, 10, 10, 10, 10, 10)";
+                command = new OleDbCommand(cmd, connection);
+                command.Parameters.AddWithValue("@username", user);
+                command.ExecuteNonQuery();
+                CloseConnection();
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+            return true;
+        }
         public float[] GetMultipliers(string username)
         {
             string cmd = "SELECT multiplier_1,multiplier_2,multiplier_3,multiplier_4,multiplier_5,multiplier_6,multiplier_7,multiplier_8,multiplier_9,multiplier_10 FROM Multipliers WHERE Username=?";
             float[] multipliers = new float[10];
             OleDbCommand command = new OleDbCommand(cmd, connection);
             command.Parameters.AddWithValue("@username", username);
-            int index = 0;
             OpenConnection();
             using (OleDbDataReader reader = command.ExecuteReader())
             {
@@ -61,7 +100,6 @@ namespace EducationalSoftware
             float[] stats = new float[10];
             OleDbCommand command = new OleDbCommand(cmd,connection);
             command.Parameters.AddWithValue("@username",username);
-            int index = 0;
             OpenConnection();
             using (OleDbDataReader reader = command.ExecuteReader())
             {
