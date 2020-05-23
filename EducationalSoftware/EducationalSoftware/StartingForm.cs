@@ -26,7 +26,6 @@ namespace EducationalSoftware
             LoginGroup.Location = new Point(this.Size.Width / 2 - LoginGroup.Size.Width / 2, this.Size.Height / 2 - LoginGroup.Size.Height);
             RegisterGroup.Location = new Point(this.Size.Width / 2 - RegisterGroup.Size.Width / 2, this.Size.Height / 2 - RegisterGroup.Size.Height);
             RegisterGroup.Visible = false;
-            Datamapper.getConnection();
         }
 
         private void GotoTestForm_Click(object sender, EventArgs e)
@@ -56,51 +55,38 @@ namespace EducationalSoftware
             RegisterGroup.Visible = false;
             LoginGroup.Visible = true;
         }
-        
-
-        private void GotoLearningTest_Click(object sender, EventArgs e)
-        {
-            float[] n = dm.GetStats("kostas");
-            foreach (float f in n)
-            {
-                MessageBox.Show(f.ToString());
-            }
-            bool hi= dm.SaveStats(new float[] { 10f, 15f, 10f, 10f, 10f, 5f, 10f, 10f, 10f, 10f },"kostas");
-          MessageBox.Show(hi.ToString());
-
-        }
         
 
+
+
         private void GotoLearningTest_Click(object sender, EventArgs e)
+
         {
-            /*
-            try
+
+            float[] n = dm.GetStats("kostas");
+
+            foreach (float f in n)
+
             {
-                Datamapper.getConnection();
-                Datamapper.openConnection();
-                string cmd = "SELECT username FROM students";
-                OleDbCommand command = new OleDbCommand(cmd, Datamapper.connection);
-                using (OleDbDataReader reader = command.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        MessageBox.Show(reader["Username"].ToString());
-                    }
-                }
+
+                MessageBox.Show(f.ToString());
+
             }
-            catch (Exception se)
-            {
-                throw new Exception(se.ToString());
-            }
-            Datamapper.closeConnection();
-            */
+
+            bool hi= dm.SaveStats(new float[] { 10f, 15f, 10f, 10f, 10f, 5f, 10f, 10f, 10f, 10f },"kostas");
+
+          MessageBox.Show(hi.ToString());
+
+
+
         }
 
+        
         private void RegisterButton_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrWhiteSpace(registerUserBox.Text) && !string.IsNullOrWhiteSpace(registerPassBox.Text))
             {
-                bool success = Datamapper.Register(registerUserBox.Text, registerPassBox.Text);
+                bool success = dm.Register(registerUserBox.Text, registerPassBox.Text);
                 Console.WriteLine("Registration Executed Succesfully? Answer: " + success);
                 if (success)
                 {
@@ -116,6 +102,11 @@ namespace EducationalSoftware
             {
                 MessageBox.Show("Please fill both username and password");
             }
+        }
+
+        private void GotoLearningTest_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

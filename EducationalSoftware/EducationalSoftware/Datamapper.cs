@@ -5,18 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.OleDb;
 using System.Security.Cryptography;
-using System.Security.Cryptography;
 using System.Windows.Forms;
 
 namespace EducationalSoftware
 {
     class Datamapper
     {
-        public static OleDbConnection connection;
         /// <summary>
         /// Gets the cionnection string. Must be initialized once before any other method from the DataMapper is used by a class.
         /// </summary>
-        public static void getConnection()
         OleDbConnection connection;
         public void GetConnection()
         {
@@ -39,12 +36,11 @@ namespace EducationalSoftware
         {
             connection.Close();
         }
-
-        public static bool Register(string user, string pass)
+        public bool Register(string user, string pass)
         {
             try
             {
-                openConnection();
+              
 
                 //passwrod salt and hashing
                 byte[] salt;
@@ -58,50 +54,17 @@ namespace EducationalSoftware
                 Array.Copy(hash, 0, hashBytes, 16, 20);
 
                 string encryptedPass = Convert.ToBase64String(hashBytes);
-
-                string cmd = "INSERT INTO students ([username],[password],stat_1,stat_2,stat_3,stat_4,stat_5,stat_6,stat_7,stat_8,stat_9,stat_10) VALUES (@user,@pass,10,10,10,10,10,10,10,10,10,10)";
+                OpenConnection();
+                string cmd = "INSERT INTO [students] ([username],[password]) VALUES (@user,@pass);";
                 OleDbCommand command = new OleDbCommand(cmd, connection);
-                command.Parameters.AddWithValue("@user",OleDbType.LongVarChar).Value = user;
-                command.Parameters.AddWithValue("@pass", OleDbType.LongVarChar).Value = encryptedPass;
-
+                command.Parameters.AddWithValue("@user", user);
+                command.Parameters.AddWithValue("@pass", encryptedPass);
                 command.ExecuteNonQuery();
-                
-                closeConnection();
-            }
-            catch (Exception e)
-            {
-                return false;
-            }
-            return true;
-        }
-
-        public static bool Register(string user, string pass)
-        {
-            try
-            {
-                openConnection();
-
-                //passwrod salt and hashing
-                byte[] salt;
-                new RNGCryptoServiceProvider().GetBytes(salt = new byte[16]);
-
-                var pk = new Rfc2898DeriveBytes(pass, salt, 10000);
-                byte[] hash = pk.GetBytes(20);
-
-                byte[] hashBytes = new byte[36];
-                Array.Copy(salt, 0, hashBytes, 0, 16);
-                Array.Copy(hash, 0, hashBytes, 16, 20);
-
-                string encryptedPass = Convert.ToBase64String(hashBytes);
-
-                string cmd = "INSERT INTO students ([username],[password],stat_1,stat_2,stat_3,stat_4,stat_5,stat_6,stat_7,stat_8,stat_9,stat_10) VALUES (@user,@pass,10,10,10,10,10,10,10,10,10,10)";
-                OleDbCommand command = new OleDbCommand(cmd, connection);
-                command.Parameters.AddWithValue("@user",OleDbType.LongVarChar).Value = user;
-                command.Parameters.AddWithValue("@pass", OleDbType.LongVarChar).Value = encryptedPass;
-
+                cmd ="INSERT INTO [Stats]([Username],[Stat_1],[Stat_2],[Stat_3],[Stat_4],[Stat_5],[Stat_6],[Stat_7],[Stat_8],[Stat_9],[Stat_10]) VALUES(@username,10, 10, 10, 10, 10, 10, 10, 10, 10, 10)";
+                command = new OleDbCommand(cmd, connection);
+                command.Parameters.AddWithValue("@username", user);
                 command.ExecuteNonQuery();
-                
-                closeConnection();
+                CloseConnection();
             }
             catch (Exception e)
             {
@@ -115,7 +78,6 @@ namespace EducationalSoftware
             float[] multipliers = new float[10];
             OleDbCommand command = new OleDbCommand(cmd, connection);
             command.Parameters.AddWithValue("@username", username);
-            int index = 0;
             OpenConnection();
             using (OleDbDataReader reader = command.ExecuteReader())
             {
@@ -138,7 +100,6 @@ namespace EducationalSoftware
             float[] stats = new float[10];
             OleDbCommand command = new OleDbCommand(cmd,connection);
             command.Parameters.AddWithValue("@username",username);
-            int index = 0;
             OpenConnection();
             using (OleDbDataReader reader = command.ExecuteReader())
             {

@@ -167,6 +167,7 @@
             this.GotoLearningTest.TabIndex = 4;
             this.GotoLearningTest.Text = "Practice Test!";
             this.GotoLearningTest.UseVisualStyleBackColor = true;
+            this.GotoLearningTest.Click += new System.EventHandler(this.GotoLearningTest_Click_1);
             // 
             // RegisterGroup
             // 
