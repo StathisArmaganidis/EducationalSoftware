@@ -25,8 +25,12 @@ D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\ob
 D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\bin\Debug\EducationalSoftware.exe.config
 D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\bin\Debug\EducationalSoftware.exe
 D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\bin\Debug\EducationalSoftware.pdb
+<<<<<<< HEAD
 <<<<<<< master
 D:\Github\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.csproj.CoreCompileInputs.cache
 =======
 D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\bin\Debug\Database.accdb
 >>>>>>> Register to database with hash n salt
+=======
+D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\bin\Debug\Database.accdb
+>>>>>>> Registration
