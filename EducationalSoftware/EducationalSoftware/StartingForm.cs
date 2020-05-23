@@ -23,6 +23,7 @@ namespace EducationalSoftware
             LoginGroup.Location = new Point(this.Size.Width / 2 - LoginGroup.Size.Width / 2, this.Size.Height / 2 - LoginGroup.Size.Height);
             RegisterGroup.Location = new Point(this.Size.Width / 2 - RegisterGroup.Size.Width / 2, this.Size.Height / 2 - RegisterGroup.Size.Height);
             RegisterGroup.Visible = false;
+            Datamapper.getConnection();
         }
 
         private void GotoTestForm_Click(object sender, EventArgs e)
@@ -56,6 +57,7 @@ namespace EducationalSoftware
 
         private void GotoLearningTest_Click(object sender, EventArgs e)
         {
+            /*
             try
             {
                 Datamapper.getConnection();
@@ -74,7 +76,30 @@ namespace EducationalSoftware
             {
                 throw new Exception(se.ToString());
             }
+            Datamapper.closeConnection();
+            */
+        }
 
+        private void RegisterButton_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(registerUserBox.Text) && !string.IsNullOrWhiteSpace(registerPassBox.Text))
+            {
+                bool success = Datamapper.Register(registerUserBox.Text, registerPassBox.Text);
+                Console.WriteLine("Registration Executed Succesfully? Answer: " + success);
+                if (success)
+                {
+                    registerUserBox.Text = "";
+                    registerPassBox.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show("There was a problem with the database, please try again...");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please fill both username and password");
+            }
         }
     }
 }

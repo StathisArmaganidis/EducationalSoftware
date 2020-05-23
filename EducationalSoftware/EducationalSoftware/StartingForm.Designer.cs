@@ -30,23 +30,23 @@
         {  
             this.loginUserBox = new System.Windows.Forms.TextBox();
             this.LoginGroup = new System.Windows.Forms.GroupBox();
+            this.GoRegister = new System.Windows.Forms.Button();
+            this.LoginButton = new System.Windows.Forms.Button();
+            this.loginLabel = new System.Windows.Forms.Label();
             this.loginPassLabel = new System.Windows.Forms.Label();
             this.loginUserLabel = new System.Windows.Forms.Label();
             this.loginPassBox = new System.Windows.Forms.TextBox();
             this.GotoTestForm = new System.Windows.Forms.Button();
             this.GotoLearningForm = new System.Windows.Forms.Button();
             this.GotoLearningTest = new System.Windows.Forms.Button();
-            this.loginLabel = new System.Windows.Forms.Label();
             this.RegisterGroup = new System.Windows.Forms.GroupBox();
+            this.GoLogin = new System.Windows.Forms.Button();
+            this.RegisterButton = new System.Windows.Forms.Button();
             this.registerLabel = new System.Windows.Forms.Label();
             this.registerPassLabel = new System.Windows.Forms.Label();
             this.registerUserLabel = new System.Windows.Forms.Label();
             this.registerPassBox = new System.Windows.Forms.TextBox();
             this.registerUserBox = new System.Windows.Forms.TextBox();
-            this.RegisterButton = new System.Windows.Forms.Button();
-            this.GoLogin = new System.Windows.Forms.Button();
-            this.LoginButton = new System.Windows.Forms.Button();
-            this.GoRegister = new System.Windows.Forms.Button();
             this.LoginGroup.SuspendLayout();
             this.RegisterGroup.SuspendLayout();
             this.SuspendLayout();
@@ -74,6 +74,38 @@
             this.LoginGroup.TabIndex = 1;
             this.LoginGroup.TabStop = false;
             // 
+            // GoRegister
+            // 
+            this.GoRegister.Font = new System.Drawing.Font("Ravie", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GoRegister.Location = new System.Drawing.Point(6, 167);
+            this.GoRegister.Name = "GoRegister";
+            this.GoRegister.Size = new System.Drawing.Size(93, 33);
+            this.GoRegister.TabIndex = 8;
+            this.GoRegister.Text = "Register";
+            this.GoRegister.UseVisualStyleBackColor = true;
+            this.GoRegister.Click += new System.EventHandler(this.GoRegister_Click);
+            // 
+            // LoginButton
+            // 
+            this.LoginButton.Font = new System.Drawing.Font("Ravie", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginButton.Location = new System.Drawing.Point(201, 167);
+            this.LoginButton.Name = "LoginButton";
+            this.LoginButton.Size = new System.Drawing.Size(93, 33);
+            this.LoginButton.TabIndex = 7;
+            this.LoginButton.Text = "Login";
+            this.LoginButton.UseVisualStyleBackColor = true;
+            // 
+            // loginLabel
+            // 
+            this.loginLabel.AutoSize = true;
+            this.loginLabel.Font = new System.Drawing.Font("Ravie", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginLabel.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.loginLabel.Location = new System.Drawing.Point(99, 16);
+            this.loginLabel.Name = "loginLabel";
+            this.loginLabel.Size = new System.Drawing.Size(78, 26);
+            this.loginLabel.TabIndex = 4;
+            this.loginLabel.Text = "Login";
+            // 
             // loginPassLabel
             // 
             this.loginPassLabel.AutoSize = true;
@@ -100,6 +132,7 @@
             this.loginPassBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginPassBox.Location = new System.Drawing.Point(184, 116);
             this.loginPassBox.Name = "loginPassBox";
+            this.loginPassBox.PasswordChar = '*';
             this.loginPassBox.Size = new System.Drawing.Size(100, 29);
             this.loginPassBox.TabIndex = 1;
             // 
@@ -135,17 +168,6 @@
             this.GotoLearningTest.Text = "Practice Test!";
             this.GotoLearningTest.UseVisualStyleBackColor = true;
             // 
-            // loginLabel
-            // 
-            this.loginLabel.AutoSize = true;
-            this.loginLabel.Font = new System.Drawing.Font("Ravie", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginLabel.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.loginLabel.Location = new System.Drawing.Point(99, 16);
-            this.loginLabel.Name = "loginLabel";
-            this.loginLabel.Size = new System.Drawing.Size(78, 26);
-            this.loginLabel.TabIndex = 4;
-            this.loginLabel.Text = "Login";
-            // 
             // RegisterGroup
             // 
             this.RegisterGroup.Controls.Add(this.GoLogin);
@@ -160,6 +182,28 @@
             this.RegisterGroup.Size = new System.Drawing.Size(300, 206);
             this.RegisterGroup.TabIndex = 5;
             this.RegisterGroup.TabStop = false;
+            // 
+            // GoLogin
+            // 
+            this.GoLogin.Font = new System.Drawing.Font("Ravie", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GoLogin.Location = new System.Drawing.Point(6, 167);
+            this.GoLogin.Name = "GoLogin";
+            this.GoLogin.Size = new System.Drawing.Size(93, 33);
+            this.GoLogin.TabIndex = 6;
+            this.GoLogin.Text = "Login";
+            this.GoLogin.UseVisualStyleBackColor = true;
+            this.GoLogin.Click += new System.EventHandler(this.GoLogin_Click);
+            // 
+            // RegisterButton
+            // 
+            this.RegisterButton.Font = new System.Drawing.Font("Ravie", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RegisterButton.Location = new System.Drawing.Point(201, 167);
+            this.RegisterButton.Name = "RegisterButton";
+            this.RegisterButton.Size = new System.Drawing.Size(93, 33);
+            this.RegisterButton.TabIndex = 5;
+            this.RegisterButton.Text = "Register";
+            this.RegisterButton.UseVisualStyleBackColor = true;
+            this.RegisterButton.Click += new System.EventHandler(this.RegisterButton_Click);
             // 
             // registerLabel
             // 
@@ -198,6 +242,7 @@
             this.registerPassBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.registerPassBox.Location = new System.Drawing.Point(184, 116);
             this.registerPassBox.Name = "registerPassBox";
+            this.registerPassBox.PasswordChar = '*';
             this.registerPassBox.Size = new System.Drawing.Size(100, 29);
             this.registerPassBox.TabIndex = 1;
             // 
@@ -208,48 +253,6 @@
             this.registerUserBox.Name = "registerUserBox";
             this.registerUserBox.Size = new System.Drawing.Size(100, 29);
             this.registerUserBox.TabIndex = 0;
-            // 
-            // RegisterButton
-            // 
-            this.RegisterButton.Font = new System.Drawing.Font("Ravie", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegisterButton.Location = new System.Drawing.Point(201, 167);
-            this.RegisterButton.Name = "RegisterButton";
-            this.RegisterButton.Size = new System.Drawing.Size(93, 33);
-            this.RegisterButton.TabIndex = 5;
-            this.RegisterButton.Text = "Register";
-            this.RegisterButton.UseVisualStyleBackColor = true;
-            // 
-            // GoLogin
-            // 
-            this.GoLogin.Font = new System.Drawing.Font("Ravie", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GoLogin.Location = new System.Drawing.Point(6, 167);
-            this.GoLogin.Name = "GoLogin";
-            this.GoLogin.Size = new System.Drawing.Size(93, 33);
-            this.GoLogin.TabIndex = 6;
-            this.GoLogin.Text = "Login";
-            this.GoLogin.UseVisualStyleBackColor = true;
-            this.GoLogin.Click += new System.EventHandler(this.GoLogin_Click);
-            // 
-            // LoginButton
-            // 
-            this.LoginButton.Font = new System.Drawing.Font("Ravie", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoginButton.Location = new System.Drawing.Point(201, 167);
-            this.LoginButton.Name = "LoginButton";
-            this.LoginButton.Size = new System.Drawing.Size(93, 33);
-            this.LoginButton.TabIndex = 7;
-            this.LoginButton.Text = "Login";
-            this.LoginButton.UseVisualStyleBackColor = true;
-            // 
-            // GoRegister
-            // 
-            this.GoRegister.Font = new System.Drawing.Font("Ravie", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GoRegister.Location = new System.Drawing.Point(6, 167);
-            this.GoRegister.Name = "GoRegister";
-            this.GoRegister.Size = new System.Drawing.Size(93, 33);
-            this.GoRegister.TabIndex = 8;
-            this.GoRegister.Text = "Register";
-            this.GoRegister.UseVisualStyleBackColor = true;
-            this.GoRegister.Click += new System.EventHandler(this.GoRegister_Click);
             // 
             // StartingForm
             // 
