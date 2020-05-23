@@ -15,12 +15,15 @@ namespace EducationalSoftware
         Datamapper dm;
         float[] probabilities;
         float[] multipliers;
+        string[] numbers;
+        string username = "";
         public LearningTest()
         {
             InitializeComponent();
             dm = new Datamapper();
-            probabilities = dm.GetStats();
-            multipliers = dm.GetMultipliers();
+            probabilities = dm.GetStats(username);
+            multipliers = dm.GetMultipliers(username);
+            numbers = new string[10] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" };
         }
 
         private int TotalQuestionsNum;
@@ -88,7 +91,7 @@ namespace EducationalSoftware
 
            
             int rightnum = rnd.Next(0, 11);
-            string chosen_number = RandomProbability.Choose(probabilities);
+            string chosen_number = RandomProbability.Choose(probabilities,numbers);
             int leftnum = Int32.Parse(chosen_number);
             Equation eq = new Equation(leftnum, rightnum, "right");
 
@@ -176,10 +179,14 @@ namespace EducationalSoftware
             {
                 points++;
                 MessageBox.Show("Correct Answer! Well Done");
+                int index = (int)LeftNum.Value;
+                fix_probabilities(index, "-", 0.5f);
             }
             else
             {
                 MessageBox.Show("Oh, no! Wrong answer. \nBetter luck next time!");
+                int index = (int)LeftNum.Value;
+                fix_probabilities(index, "+", 1f);
             }
             if (ThisQuestionNum < TotalQuestionsNum)
             {
@@ -204,6 +211,42 @@ namespace EducationalSoftware
         private void del_button_Click(object sender, EventArgs e)
         {
             keys.DelNumber();
+        }
+        private void fix_probabilities(int index, string operation,float dif)
+        {
+            if (operation == "+")
+            {
+                multipliers[index] += dif;
+                for (int i = 0; i < index; i++)
+                {
+                    multipliers[i] -= dif / 4f;
+                }
+                for(int j = multipliers.Length; j > index; j--)
+                {
+                    multipliers[j] -= dif / 4f;
+                }
+                for(int v = 0; v < probabilities.Length; v++)
+                {
+                    probabilities[v] *= multipliers[v];
+                }
+            }
+            else
+            {
+                multipliers[index] -= dif;
+                for (int i = 0; i < index; i++)
+                {
+                    multipliers[i] += dif / 4f;
+                }
+                for (int j = multipliers.Length; j > index; j--)
+                {
+                    multipliers[j] += dif / 4f;
+                }
+                for (int v = 0; v < probabilities.Length; v++)
+                {
+                    probabilities[v] *= multipliers[v];
+                }
+            }
+            
         }
     }
 }
