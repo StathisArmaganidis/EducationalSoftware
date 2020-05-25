@@ -11,15 +11,19 @@ namespace EducationalSoftware
 {
     class Datamapper
     {
-        /// <summary>
-        /// Gets the cionnection string. Must be initialized once before any other method from the DataMapper is used by a class.
-        /// </summary>
         OleDbConnection connection;
+        /// <summary>
+        /// Gets the connection string. Must be initialized once before any other method from the DataMapper is used by a class.
+        /// </summary>
         public void GetConnection()
         {
             string connetionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=../../Database.accdb";
             connection=new OleDbConnection(connetionString);
         }
+        /// <summary>
+        /// Tries to open the connection and returns true if succeeded or false if not.
+        /// </summary>
+        /// <returns></returns>
         public bool OpenConnection()
         {
             try
@@ -32,16 +36,30 @@ namespace EducationalSoftware
                 return false;
             }
         }
-        public void CloseConnection()
+        /// <summary>
+        /// Tries to close the connection and returns true if succeeded or false if not.
+        /// </summary>
+        public bool CloseConnection()
         {
-            connection.Close();
+            try
+            {
+                connection.Close();
+            }catch(Exception e)
+            {
+                return false;
+            }
+            return true;
         }
+        /// <summary>
+        /// Creates new entry in database, with hash n salt for the password.
+        /// </summary>
+        /// <param name="user"></param>
+        /// <param name="pass"></param>
+        /// <returns></returns>
         public bool Register(string user, string pass)
         {
             try
             {
-              
-
                 //passwrod salt and hashing
                 byte[] salt;
                 new RNGCryptoServiceProvider().GetBytes(salt = new byte[16]);
@@ -72,6 +90,11 @@ namespace EducationalSoftware
             }
             return true;
         }
+        /// <summary>
+        /// Gets the multiplier for the stats or given user and returns them as a float array.
+        /// </summary>
+        /// <param name="username"></param>
+        /// <returns></returns>
         public float[] GetMultipliers(string username)
         {
             string cmd = "SELECT multiplier_1,multiplier_2,multiplier_3,multiplier_4,multiplier_5,multiplier_6,multiplier_7,multiplier_8,multiplier_9,multiplier_10 FROM Multipliers WHERE Username=?";
@@ -94,6 +117,11 @@ namespace EducationalSoftware
             return multipliers;
 
         }
+        /// <summary>
+        /// Gets stats of given user and returns them as a float array.
+        /// </summary>
+        /// <param name="username"></param>
+        /// <returns></returns>
         public float[] GetStats(string username)
         {
             string cmd = "SELECT Stat_1,Stat_2,Stat_3,Stat_4,Stat_5,Stat_6,Stat_7,Stat_8,Stat_9,Stat_10 FROM Stats WHERE Username=?";
@@ -116,6 +144,12 @@ namespace EducationalSoftware
             return stats;
 
         }
+        /// <summary>
+        /// Updates stats into the databse.
+        /// </summary>
+        /// <param name="stats"></param>
+        /// <param name="username"></param>
+        /// <returns></returns>
         public bool SaveStats(float[] stats,string username)
         {
             try
@@ -144,6 +178,12 @@ namespace EducationalSoftware
             }
 
         }
+        /// <summary>
+        /// Updates multipliers into database.
+        /// </summary>
+        /// <param name="multipliers"></param>
+        /// <param name="username"></param>
+        /// <returns></returns>
         public bool SaveMultipliers(float[] multipliers, string username)
         {
             try
@@ -170,7 +210,7 @@ namespace EducationalSoftware
             {
                 return false;
             }
-
         }
+
     }
 }
