@@ -212,5 +212,65 @@ namespace EducationalSoftware
             }
         }
 
+        public bool LoginUser(string username, string password)
+        {
+            try
+            {
+                string fetcher = "Select [password] From students Where [username] = @user";
+                OleDbCommand command = new OleDbCommand(fetcher, connection);
+                command.Parameters.AddWithValue("@user", username);
+                OpenConnection();
+                string hashedpass = null;
+                using (OleDbDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        hashedpass = reader.ToString();
+                    }
+                }
+                CloseConnection();
+                //extracts the bytes.
+                byte[] hashBytes = Convert.FromBase64String(hashedpass);
+                //retrieving the salt.
+                byte[] salt = new byte[16];
+                Array.Copy(hashBytes, 0, salt, 0, 16);
+                //computes the hash on the password entered at login.
+                var pwhash = new Rfc2898DeriveBytes(password, salt, 10000);
+                byte[] hash = pwhash.GetBytes(20);
+
+                //compares results.
+                for (int i = 0; i < 20; i++)
+                {
+                    if (hashBytes[i + 16] != hash[i])
+                    {
+                        throw new UnauthorizedAccessException();
+                    }
+                }
+
+                //get user's username and password.
+                string cmd = "Select * from students Where [username] = @user And [password]=@pass";
+                command = new OleDbCommand(cmd, connection);
+                command.Parameters.AddWithValue("@user", username);
+                command.Parameters.AddWithValue("@user", hashedpass);
+                OpenConnection();
+                string user;
+                string pass;
+                using (OleDbDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        user = reader[0].ToString();
+                        MessageBox.Show(user);
+                    }
+                }
+                CloseConnection();
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+            return true;
+        }
+
     }
 }
