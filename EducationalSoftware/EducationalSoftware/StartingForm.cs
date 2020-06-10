@@ -106,7 +106,7 @@ namespace EducationalSoftware
 
         private void GotoLearningTest_Click_1(object sender, EventArgs e)
         {
-
+            new LearningTest().ShowDialog();
         }
     }
 }

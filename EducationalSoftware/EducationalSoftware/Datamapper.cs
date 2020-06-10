@@ -12,6 +12,11 @@ namespace EducationalSoftware
     class Datamapper
     {
         OleDbConnection connection;
+
+       public Datamapper()
+        {
+            GetConnection();
+        }
         /// <summary>
         /// Gets the connection string. Must be initialized once before any other method from the DataMapper is used by a class.
         /// </summary>
@@ -124,7 +129,7 @@ namespace EducationalSoftware
         /// <returns></returns>
         public float[] GetStats(string username)
         {
-            string cmd = "SELECT Stat_1,Stat_2,Stat_3,Stat_4,Stat_5,Stat_6,Stat_7,Stat_8,Stat_9,Stat_10 FROM Stats WHERE Username=?";
+            string cmd = "SELECT [Stat_1],[Stat_2],[Stat_3],[Stat_4],[Stat_5],[Stat_6],[Stat_7],[Stat_8],[Stat_9],[Stat_10] FROM Stats WHERE [Username]=@username";
             float[] stats = new float[10];
             OleDbCommand command = new OleDbCommand(cmd,connection);
             command.Parameters.AddWithValue("@username",username);
@@ -188,7 +193,7 @@ namespace EducationalSoftware
         {
             try
             {
-                string cmd = "UPDATE Stats SET multiplier_1 = ?,multiplier_2= ?,multiplier_3= ?,multiplier_4= ?,multiplier_5= ?,multiplier_6= ?,multiplier_7= ?,multiplier_8= ?,multiplier_9= ?,multiplier_10= ? WHERE Username=?";
+                string cmd = "UPDATE [Multipliers] SET [multiplier_1] = @multiplier_1,[multiplier_2] = @multiplier_2,[multiplier_3] = @multiplier_3,[multiplier_4] = @multiplier_4,[multiplier_5] = @multiplier_5,[multiplier_6] = @multiplier_6,[multiplier_7] = @multiplier_7,[multiplier_8] = @multiplier_8,[multiplier_9] = @multiplier_9,[multiplier_10] = @multiplier_10 WHERE [Username]=@username";
                 OleDbCommand command = new OleDbCommand(cmd, connection);
                 command.Parameters.AddWithValue("@multiplier_1", multipliers[0]);
                 command.Parameters.AddWithValue("@multiplier_2", multipliers[1]);

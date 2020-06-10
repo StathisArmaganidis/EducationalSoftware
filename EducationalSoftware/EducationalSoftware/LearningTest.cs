@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,44 +17,25 @@ namespace EducationalSoftware
         float[] probabilities;
         float[] multipliers;
         string[] numbers;
-        string username = "";
+        string username = "kostas";
+        float starting_Prob;
         public LearningTest()
         {
             InitializeComponent();
+            msglabel.Location = new Point(300, 200);
             dm = new Datamapper();
             probabilities = dm.GetStats(username);
             multipliers = dm.GetMultipliers(username);
             numbers = new string[10] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" };
+            starting_Prob = probabilities[0] / multipliers[0];
         }
-
-        private int TotalQuestionsNum;
-        private int ThisQuestionNum = 0;
-        private int points = 0;
         Random rnd = new Random();
 
         private int[] done = new int[10];
         NumKeyboard keys;
         private void LearningTest_Load(object sender, EventArgs e)
         {
-            DifficultyGroup.Location = new Point(this.Size.Width / 2 - DifficultyGroup.Size.Width / 2, this.Size.Height / 2 - DifficultyGroup.Size.Height / 2);
             keys = new NumKeyboard(picture_r1, picture_r2, picture_res1, picture_res2, picture_res3, RightNum, ResultNum);
-        }
-
-        private void EasyButton_Click(object sender, EventArgs e)
-        {
-            TotalQuestionsNum = 10;
-            CreateQuestionaire();
-        }
-
-        private void MediumButton_Click(object sender, EventArgs e)
-        {
-            TotalQuestionsNum = 15;
-            CreateQuestionaire();
-        }
-
-        private void HardButton_Click(object sender, EventArgs e)
-        {
-            TotalQuestionsNum = 20;
             CreateQuestionaire();
         }
 
@@ -62,14 +44,8 @@ namespace EducationalSoftware
         /// </summary>
         private void CreateQuestionaire()
         {
-            DifficultyGroup.Visible = false;
             QuestionGroup.Location = new Point(this.Size.Width / 2 - QuestionGroup.Size.Width / 2, this.Size.Height / 2 - QuestionGroup.Size.Height / 2);
             QuestionGroup.Visible = true;
-            QuestionLabel.Visible = true;
-            ThisQuestionsText.Visible = true;
-            QuestionSlash.Visible = true;
-            TotalQuestionsText.Visible = true;
-            TotalQuestionsText.Text = TotalQuestionsNum.ToString();
             CreateQuestion();
         }
         /// <summary>
@@ -84,10 +60,6 @@ namespace EducationalSoftware
             picture_res1.Image = null;
             picture_res2.Image = null;
             picture_res3.Image = null;
-
-            ThisQuestionNum++;
-            ThisQuestionsText.Text = ThisQuestionNum.ToString();
-
 
            
             int rightnum = rnd.Next(0, 11);
@@ -175,31 +147,45 @@ namespace EducationalSoftware
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
             keys.FixResult();
+            int index = (int)LeftNum.Value - 1;
             if (LeftNum.Value * RightNum.Value == ResultNum.Value)
             {
-                points++;
-                MessageBox.Show("Correct Answer! Well Done");
-                int index = (int)LeftNum.Value;
-                fix_probabilities(index, "-", 0.5f);
+                msglabel.Text = "Correct!";
+                msglabel.ForeColor = Color.Green;
+                QuestionGroup.Visible = false;
+                msglabel.Visible = true;
+                Wait();
+
+
+                if (multipliers[index] > 0.9f)
+                {
+                    fix_probabilities(index, "-", 0.9f);
+                }
             }
             else
             {
-                MessageBox.Show("Oh, no! Wrong answer. \nBetter luck next time!");
-                int index = (int)LeftNum.Value;
-                fix_probabilities(index, "+", 1f);
-            }
-            if (ThisQuestionNum < TotalQuestionsNum)
-            {
-                ConfirmButton.Enabled = true;
-                BackButton.Enabled = false;
+                msglabel.Text = "Wrong!";
+                msglabel.ForeColor = Color.Maroon;
+                QuestionGroup.Visible = false;
+                msglabel.Visible = true;
+                Wait();
+                if (multipliers[index] <= 7.2)
+                {
+                    fix_probabilities(index, "+", 1.8f);
+                }
                 CreateQuestion();
+
             }
-            else
+            for (int i = 0; i < probabilities.Length; i++)
             {
-                MessageBox.Show("yay! " + points.ToString() + " out of " + TotalQuestionsNum.ToString() + " correct answets!");//test
-                BackButton.Enabled = true;
-                ConfirmButton.Enabled = false;
+                Console.WriteLine(probabilities[i] + " , " + multipliers[i]);
             }
+
+            Datamapper dm = new Datamapper();
+            dm.GetConnection();
+            dm.SaveMultipliers(multipliers,username);
+            dm.SaveStats(probabilities,username);
+            CreateQuestion();
         }
 
         private void AddNumber(object sender, EventArgs e)
@@ -219,34 +205,46 @@ namespace EducationalSoftware
                 multipliers[index] += dif;
                 for (int i = 0; i < index; i++)
                 {
-                    multipliers[i] -= dif / 4f;
+                    multipliers[i] -= dif / 9;
                 }
-                for(int j = multipliers.Length; j > index; j--)
+                for(int j = multipliers.Length-1; j > index; j--)
                 {
-                    multipliers[j] -= dif / 4f;
+                    multipliers[j] -= dif / 9;
                 }
                 for(int v = 0; v < probabilities.Length; v++)
                 {
-                    probabilities[v] *= multipliers[v];
+                    probabilities[v] =starting_Prob*multipliers[v];
                 }
             }
             else
             {
-                multipliers[index] -= dif;
+                multipliers[index] = multipliers[index]-dif;
                 for (int i = 0; i < index; i++)
                 {
-                    multipliers[i] += dif / 4f;
+                    multipliers[i] += dif / 9;
                 }
-                for (int j = multipliers.Length; j > index; j--)
+                for (int j = multipliers.Length-1; j > index; j--)
                 {
-                    multipliers[j] += dif / 4f;
+                    multipliers[j] += dif / 9;
                 }
                 for (int v = 0; v < probabilities.Length; v++)
                 {
-                    probabilities[v] *= multipliers[v];
+                    probabilities[v] = starting_Prob* multipliers[v];
                 }
             }
             
+        }
+        public async void Wait()
+        {
+            await Task.Delay(1000);
+            msglabel.Visible = false;
+            QuestionGroup.Visible = true;
+
+        }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
