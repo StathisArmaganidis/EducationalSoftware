@@ -60,7 +60,10 @@ namespace EducationalSoftware
         {
             try
             {
-                //passwrod salt and hashing
+
+
+
+                //password salt and hashing
                 byte[] salt;
                 new RNGCryptoServiceProvider().GetBytes(salt = new byte[16]);
 
@@ -72,11 +75,13 @@ namespace EducationalSoftware
                 Array.Copy(hash, 0, hashBytes, 16, 20);
 
                 string encryptedPass = Convert.ToBase64String(hashBytes);
+                string encryptedSalt = Convert.ToBase64String(salt);
                 OpenConnection();
-                string cmd = "INSERT INTO [students] ([username],[password]) VALUES (@user,@pass);";
+                string cmd = "INSERT INTO [students] ([username],[password],[salt]) VALUES (@user,@pass,@salt);";
                 OleDbCommand command = new OleDbCommand(cmd, connection);
                 command.Parameters.AddWithValue("@user", user);
                 command.Parameters.AddWithValue("@pass", encryptedPass);
+                command.Parameters.AddWithValue("@salt", encryptedSalt);
                 command.ExecuteNonQuery();
                 cmd ="INSERT INTO [Stats]([Username],[Stat_1],[Stat_2],[Stat_3],[Stat_4],[Stat_5],[Stat_6],[Stat_7],[Stat_8],[Stat_9],[Stat_10]) VALUES(@username,10, 10, 10, 10, 10, 10, 10, 10, 10, 10)";
                 command = new OleDbCommand(cmd, connection);
@@ -216,26 +221,28 @@ namespace EducationalSoftware
         {
             try
             {
-                string fetcher = "Select [password] From students Where [username] = @user";
+                string fetcher = "Select [password],[salt] From students Where [username] = @user";
                 OleDbCommand command = new OleDbCommand(fetcher, connection);
                 command.Parameters.AddWithValue("@user", username);
                 OpenConnection();
                 string hashedpass = null;
+                string salt = null;
                 using (OleDbDataReader reader = command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        hashedpass = reader.ToString();
+                        hashedpass = reader[0].ToString();
+                        salt = reader[1].ToString();
                     }
                 }
                 CloseConnection();
                 //extracts the bytes.
                 byte[] hashBytes = Convert.FromBase64String(hashedpass);
                 //retrieving the salt.
-                byte[] salt = new byte[16];
-                Array.Copy(hashBytes, 0, salt, 0, 16);
+                byte[] saltBytes = Encoding.ASCII.GetBytes(salt);
+                Array.Copy(hashBytes, 0, saltBytes, 0, 16);
                 //computes the hash on the password entered at login.
-                var pwhash = new Rfc2898DeriveBytes(password, salt, 10000);
+                var pwhash = new Rfc2898DeriveBytes(password, saltBytes, 10000);
                 byte[] hash = pwhash.GetBytes(20);
 
                 //compares results.
@@ -246,24 +253,6 @@ namespace EducationalSoftware
                         throw new UnauthorizedAccessException();
                     }
                 }
-
-                //get user's username and password.
-                string cmd = "Select * from students Where [username] = @user And [password]=@pass";
-                command = new OleDbCommand(cmd, connection);
-                command.Parameters.AddWithValue("@user", username);
-                command.Parameters.AddWithValue("@user", hashedpass);
-                OpenConnection();
-                string user;
-                string pass;
-                using (OleDbDataReader reader = command.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        user = reader[0].ToString();
-                        MessageBox.Show(user);
-                    }
-                }
-                CloseConnection();
             }
             catch (Exception e)
             {
