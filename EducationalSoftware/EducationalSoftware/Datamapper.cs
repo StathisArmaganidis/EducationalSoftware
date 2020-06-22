@@ -217,5 +217,35 @@ namespace EducationalSoftware
             }
         }
 
+        public int[] GetStatistics(string username, string year,string month)
+        {
+            try
+            {
+                string cmd = "SELECT * FROM Statistics WHERE [Username]=@username AND Year([Date]) >= @year AND Month([Date])>= @month";
+                int[] statistics = new int[20];
+                OleDbCommand command = new OleDbCommand(cmd, connection);
+                command.Parameters.AddWithValue("@username", username);
+                command.Parameters.AddWithValue("@year",year);
+                command.Parameters.AddWithValue("@month",month);
+                OpenConnection();
+                using (OleDbDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        for (int i = 0; i < 20; i++)
+                        {
+                            statistics[i] += int.Parse(reader[i+3].ToString());
+                        }
+
+                    }
+                }
+                CloseConnection();
+                return statistics;
+            }
+            catch(Exception e)
+            {
+                throw new Exception("Data error.");
+            }
+        }
     }
 }

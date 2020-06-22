@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -63,6 +64,12 @@
       <DependentUpon>LearningTest.cs</DependentUpon>
     </Compile>
     <Compile Include="NumKeyboard.cs" />
+    <Compile Include="Profile_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile_Form.Designer.cs">
+      <DependentUpon>Profile_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="RandomProbability.cs" />
     <Compile Include="StartingForm.cs">
       <SubType>Form</SubType>
@@ -90,11 +97,20 @@
     <Compile Include="TimesLearning.Designer.cs">
       <DependentUpon>TimesLearning.cs</DependentUpon>
     </Compile>
+    <Compile Include="User_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_Form.Designer.cs">
+      <DependentUpon>User_Form.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="LearningForm.resx">
       <DependentUpon>LearningForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LearningTest.resx">
       <DependentUpon>LearningTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile_Form.resx">
+      <DependentUpon>Profile_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StartingForm.resx">
       <DependentUpon>StartingForm.cs</DependentUpon>
@@ -114,6 +130,9 @@
     </Compile>
     <EmbeddedResource Include="TimesLearning.resx">
       <DependentUpon>TimesLearning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Form.resx">
+      <DependentUpon>User_Form.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DatabaseDataSet1.xsc">
       <DependentUpon>DatabaseDataSet1.xsd</DependentUpon>
