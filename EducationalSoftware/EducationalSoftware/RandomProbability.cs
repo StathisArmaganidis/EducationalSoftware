@@ -16,18 +16,23 @@ namespace EducationalSoftware
         public static string Choose(float[] floatprobabilities,string[] stringprobabilities)
         {
             List<(string, float)> probabilities = new List<(string, float)>();
-            probabilities= (List<(string, float)>)floatprobabilities.Zip(stringprobabilities, (First, Second) => (Second,First));
-            probabilities.Sort((p, q) => p.Item2.CompareTo(q.Item2));
-            double prob = new Random().NextDouble();
-            int item = -1;
-            double counter = 0;
-            while (prob > counter)
+            for(int i=0; i < floatprobabilities.Length; i++)
             {
-                item++;
-                counter += probabilities[item].Item2;
-
+                probabilities.Add((stringprobabilities[i], floatprobabilities[i]));
             }
-            return probabilities[item].Item1;
+            probabilities.Sort((p, q) => p.Item2.CompareTo(q.Item2));
+            int prob = new Random().Next(0, 101);
+            int item = 0;
+            double counter = -1;
+            for(int i = 0; i < probabilities.Count; i++)
+            {
+                counter += probabilities[item].Item2;
+                if (prob < counter)
+                {
+                    return probabilities[i].Item1;
+                }
+            }
+            return probabilities.Last().Item1;
 
 
         }

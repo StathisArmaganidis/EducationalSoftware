@@ -30,11 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LearningTest));
             this.BackButton = new System.Windows.Forms.Button();
-            this.DifficultyGroup = new System.Windows.Forms.GroupBox();
-            this.ChooseText = new System.Windows.Forms.Label();
-            this.HardButton = new System.Windows.Forms.Button();
-            this.MediumButton = new System.Windows.Forms.Button();
-            this.EasyButton = new System.Windows.Forms.Button();
             this.QuestionGroup = new System.Windows.Forms.GroupBox();
             this.picture_res3 = new System.Windows.Forms.PictureBox();
             this.picture_r1 = new System.Windows.Forms.PictureBox();
@@ -60,11 +55,7 @@
             this.ConfirmButton = new System.Windows.Forms.Button();
             this.RightNum = new System.Windows.Forms.NumericUpDown();
             this.LeftNum = new System.Windows.Forms.NumericUpDown();
-            this.TotalQuestionsText = new System.Windows.Forms.Label();
-            this.QuestionSlash = new System.Windows.Forms.Label();
-            this.ThisQuestionsText = new System.Windows.Forms.Label();
-            this.QuestionLabel = new System.Windows.Forms.Label();
-            this.DifficultyGroup.SuspendLayout();
+            this.msglabel = new System.Windows.Forms.Label();
             this.QuestionGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture_res3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_r1)).BeginInit();
@@ -89,58 +80,7 @@
             this.BackButton.TabIndex = 18;
             this.BackButton.Text = "Go Back";
             this.BackButton.UseVisualStyleBackColor = true;
-            // 
-            // DifficultyGroup
-            // 
-            this.DifficultyGroup.Controls.Add(this.ChooseText);
-            this.DifficultyGroup.Controls.Add(this.HardButton);
-            this.DifficultyGroup.Controls.Add(this.MediumButton);
-            this.DifficultyGroup.Controls.Add(this.EasyButton);
-            this.DifficultyGroup.Location = new System.Drawing.Point(12, 440);
-            this.DifficultyGroup.Name = "DifficultyGroup";
-            this.DifficultyGroup.Size = new System.Drawing.Size(221, 244);
-            this.DifficultyGroup.TabIndex = 19;
-            this.DifficultyGroup.TabStop = false;
-            // 
-            // ChooseText
-            // 
-            this.ChooseText.AutoSize = true;
-            this.ChooseText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChooseText.Location = new System.Drawing.Point(37, 16);
-            this.ChooseText.Name = "ChooseText";
-            this.ChooseText.Size = new System.Drawing.Size(148, 24);
-            this.ChooseText.TabIndex = 12;
-            this.ChooseText.Text = "Choose Difficulty";
-            // 
-            // HardButton
-            // 
-            this.HardButton.Location = new System.Drawing.Point(59, 175);
-            this.HardButton.Name = "HardButton";
-            this.HardButton.Size = new System.Drawing.Size(101, 43);
-            this.HardButton.TabIndex = 11;
-            this.HardButton.Text = "Hard";
-            this.HardButton.UseVisualStyleBackColor = true;
-            this.HardButton.Click += new System.EventHandler(this.HardButton_Click);
-            // 
-            // MediumButton
-            // 
-            this.MediumButton.Location = new System.Drawing.Point(59, 126);
-            this.MediumButton.Name = "MediumButton";
-            this.MediumButton.Size = new System.Drawing.Size(101, 43);
-            this.MediumButton.TabIndex = 10;
-            this.MediumButton.Text = "Medium";
-            this.MediumButton.UseVisualStyleBackColor = true;
-            this.MediumButton.Click += new System.EventHandler(this.MediumButton_Click);
-            // 
-            // EasyButton
-            // 
-            this.EasyButton.Location = new System.Drawing.Point(59, 77);
-            this.EasyButton.Name = "EasyButton";
-            this.EasyButton.Size = new System.Drawing.Size(101, 43);
-            this.EasyButton.TabIndex = 9;
-            this.EasyButton.Text = "Easy";
-            this.EasyButton.UseVisualStyleBackColor = true;
-            this.EasyButton.Click += new System.EventHandler(this.EasyButton_Click);
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // QuestionGroup
             // 
@@ -451,67 +391,29 @@
             this.LeftNum.TabIndex = 13;
             this.LeftNum.Visible = false;
             // 
-            // TotalQuestionsText
+            // msglabel
             // 
-            this.TotalQuestionsText.AutoSize = true;
-            this.TotalQuestionsText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalQuestionsText.Location = new System.Drawing.Point(155, 14);
-            this.TotalQuestionsText.Name = "TotalQuestionsText";
-            this.TotalQuestionsText.Size = new System.Drawing.Size(18, 20);
-            this.TotalQuestionsText.TabIndex = 16;
-            this.TotalQuestionsText.Text = "0";
-            this.TotalQuestionsText.Visible = false;
-            // 
-            // QuestionSlash
-            // 
-            this.QuestionSlash.AutoSize = true;
-            this.QuestionSlash.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.QuestionSlash.Location = new System.Drawing.Point(136, 14);
-            this.QuestionSlash.Name = "QuestionSlash";
-            this.QuestionSlash.Size = new System.Drawing.Size(13, 20);
-            this.QuestionSlash.TabIndex = 15;
-            this.QuestionSlash.Text = "/";
-            this.QuestionSlash.Visible = false;
-            // 
-            // ThisQuestionsText
-            // 
-            this.ThisQuestionsText.AutoSize = true;
-            this.ThisQuestionsText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ThisQuestionsText.Location = new System.Drawing.Point(112, 14);
-            this.ThisQuestionsText.Name = "ThisQuestionsText";
-            this.ThisQuestionsText.Size = new System.Drawing.Size(18, 20);
-            this.ThisQuestionsText.TabIndex = 14;
-            this.ThisQuestionsText.Text = "1";
-            this.ThisQuestionsText.Visible = false;
-            // 
-            // QuestionLabel
-            // 
-            this.QuestionLabel.AutoSize = true;
-            this.QuestionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.QuestionLabel.Location = new System.Drawing.Point(20, 11);
-            this.QuestionLabel.Name = "QuestionLabel";
-            this.QuestionLabel.Size = new System.Drawing.Size(86, 24);
-            this.QuestionLabel.TabIndex = 13;
-            this.QuestionLabel.Text = "Question";
-            this.QuestionLabel.Visible = false;
+            this.msglabel.AutoSize = true;
+            this.msglabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.msglabel.ForeColor = System.Drawing.Color.Green;
+            this.msglabel.Location = new System.Drawing.Point(-57, -22);
+            this.msglabel.Name = "msglabel";
+            this.msglabel.Size = new System.Drawing.Size(323, 91);
+            this.msglabel.TabIndex = 19;
+            this.msglabel.Text = "Correct!";
+            this.msglabel.Visible = false;
             // 
             // LearningTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(918, 541);
+            this.Controls.Add(this.msglabel);
             this.Controls.Add(this.BackButton);
-            this.Controls.Add(this.DifficultyGroup);
             this.Controls.Add(this.QuestionGroup);
-            this.Controls.Add(this.TotalQuestionsText);
-            this.Controls.Add(this.QuestionSlash);
-            this.Controls.Add(this.ThisQuestionsText);
-            this.Controls.Add(this.QuestionLabel);
             this.Name = "LearningTest";
             this.Text = "LearningTest";
             this.Load += new System.EventHandler(this.LearningTest_Load);
-            this.DifficultyGroup.ResumeLayout(false);
-            this.DifficultyGroup.PerformLayout();
             this.QuestionGroup.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picture_res3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_r1)).EndInit();
@@ -533,11 +435,6 @@
         #endregion
 
         private System.Windows.Forms.Button BackButton;
-        private System.Windows.Forms.GroupBox DifficultyGroup;
-        private System.Windows.Forms.Label ChooseText;
-        private System.Windows.Forms.Button HardButton;
-        private System.Windows.Forms.Button MediumButton;
-        private System.Windows.Forms.Button EasyButton;
         private System.Windows.Forms.GroupBox QuestionGroup;
         private System.Windows.Forms.PictureBox picture_res3;
         private System.Windows.Forms.PictureBox picture_r1;
@@ -563,9 +460,6 @@
         private System.Windows.Forms.Button ConfirmButton;
         private System.Windows.Forms.NumericUpDown RightNum;
         private System.Windows.Forms.NumericUpDown LeftNum;
-        private System.Windows.Forms.Label TotalQuestionsText;
-        private System.Windows.Forms.Label QuestionSlash;
-        private System.Windows.Forms.Label ThisQuestionsText;
-        private System.Windows.Forms.Label QuestionLabel;
+        private System.Windows.Forms.Label msglabel;
     }
 }

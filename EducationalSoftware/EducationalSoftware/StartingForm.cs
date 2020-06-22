@@ -28,21 +28,9 @@ namespace EducationalSoftware
             RegisterGroup.Visible = false;
         }
 
-        private void GotoTestForm_Click(object sender, EventArgs e)
-        {
-            TestForm tf = new TestForm();
-            this.Visible = false;
-            tf.ShowDialog();
-            this.Visible = true;
-        }
 
-        private void GotoLearningForm_Click(object sender, EventArgs e)
-        {
-            LearningForm lf = new LearningForm();
-            this.Visible = false;
-            lf.ShowDialog();
-            this.Visible = true;
-        }
+
+
 
         private void GoRegister_Click(object sender, EventArgs e)
         {
@@ -59,27 +47,7 @@ namespace EducationalSoftware
 
 
 
-        private void GotoLearningTest_Click(object sender, EventArgs e)
-
-        {
-
-            float[] n = dm.GetStats("kostas");
-
-            foreach (float f in n)
-
-            {
-
-                MessageBox.Show(f.ToString());
-
-            }
-
-            bool hi= dm.SaveStats(new float[] { 10f, 15f, 10f, 10f, 10f, 5f, 10f, 10f, 10f, 10f },"kostas");
-
-          MessageBox.Show(hi.ToString());
-
-
-
-        }
+   
 
         
         private void RegisterButton_Click(object sender, EventArgs e)
@@ -104,9 +72,6 @@ namespace EducationalSoftware
             }
         }
 
-        private void GotoLearningTest_Click_1(object sender, EventArgs e)
-        {
 
-        }
     }
 }

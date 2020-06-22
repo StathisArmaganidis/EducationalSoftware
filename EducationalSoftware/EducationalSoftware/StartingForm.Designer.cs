@@ -36,9 +36,6 @@
             this.loginPassLabel = new System.Windows.Forms.Label();
             this.loginUserLabel = new System.Windows.Forms.Label();
             this.loginPassBox = new System.Windows.Forms.TextBox();
-            this.GotoTestForm = new System.Windows.Forms.Button();
-            this.GotoLearningForm = new System.Windows.Forms.Button();
-            this.GotoLearningTest = new System.Windows.Forms.Button();
             this.RegisterGroup = new System.Windows.Forms.GroupBox();
             this.GoLogin = new System.Windows.Forms.Button();
             this.RegisterButton = new System.Windows.Forms.Button();
@@ -136,39 +133,6 @@
             this.loginPassBox.Size = new System.Drawing.Size(100, 29);
             this.loginPassBox.TabIndex = 1;
             // 
-            // GotoTestForm
-            // 
-            this.GotoTestForm.Font = new System.Drawing.Font("Ravie", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GotoTestForm.Location = new System.Drawing.Point(602, 341);
-            this.GotoTestForm.Name = "GotoTestForm";
-            this.GotoTestForm.Size = new System.Drawing.Size(146, 75);
-            this.GotoTestForm.TabIndex = 2;
-            this.GotoTestForm.Text = "Final Test!";
-            this.GotoTestForm.UseVisualStyleBackColor = true;
-            this.GotoTestForm.Click += new System.EventHandler(this.GotoTestForm_Click);
-            // 
-            // GotoLearningForm
-            // 
-            this.GotoLearningForm.Font = new System.Drawing.Font("Ravie", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GotoLearningForm.Location = new System.Drawing.Point(43, 341);
-            this.GotoLearningForm.Name = "GotoLearningForm";
-            this.GotoLearningForm.Size = new System.Drawing.Size(146, 75);
-            this.GotoLearningForm.TabIndex = 3;
-            this.GotoLearningForm.Text = "Let\'s Practice";
-            this.GotoLearningForm.UseVisualStyleBackColor = true;
-            this.GotoLearningForm.Click += new System.EventHandler(this.GotoLearningForm_Click);
-            // 
-            // GotoLearningTest
-            // 
-            this.GotoLearningTest.Font = new System.Drawing.Font("Ravie", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GotoLearningTest.Location = new System.Drawing.Point(323, 341);
-            this.GotoLearningTest.Name = "GotoLearningTest";
-            this.GotoLearningTest.Size = new System.Drawing.Size(146, 75);
-            this.GotoLearningTest.TabIndex = 4;
-            this.GotoLearningTest.Text = "Practice Test!";
-            this.GotoLearningTest.UseVisualStyleBackColor = true;
-            this.GotoLearningTest.Click += new System.EventHandler(this.GotoLearningTest_Click_1);
-            // 
             // RegisterGroup
             // 
             this.RegisterGroup.Controls.Add(this.GoLogin);
@@ -261,9 +225,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.RegisterGroup);
-            this.Controls.Add(this.GotoLearningTest);
-            this.Controls.Add(this.GotoLearningForm);
-            this.Controls.Add(this.GotoTestForm);
             this.Controls.Add(this.LoginGroup);
             this.Name = "StartingForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -284,9 +245,6 @@
         private System.Windows.Forms.Label loginPassLabel;
         private System.Windows.Forms.Label loginUserLabel;
         private System.Windows.Forms.TextBox loginPassBox;
-        private System.Windows.Forms.Button GotoTestForm;
-        private System.Windows.Forms.Button GotoLearningForm;
-        private System.Windows.Forms.Button GotoLearningTest;
         private System.Windows.Forms.Label loginLabel;
         private System.Windows.Forms.GroupBox RegisterGroup;
         private System.Windows.Forms.Label registerLabel;

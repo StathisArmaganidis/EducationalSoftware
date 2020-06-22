@@ -12,3 +12,5 @@ D:\Github\EducationalSoftware\EducationalSoftware\EducationalSoftware\bin\Debug\
 D:\Github\EducationalSoftware\EducationalSoftware\EducationalSoftware\bin\Debug\EducationalSoftware.pdb
 D:\Github\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.exe
 D:\Github\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.pdb
+D:\Github\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.User_Form.resources
+D:\Github\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.Profile_Form.resources
