@@ -87,12 +87,16 @@ namespace EducationalSoftware
                 new RNGCryptoServiceProvider().GetBytes(salt = new byte[16]);
                 byte[] hash = GenerateHash(pass, salt);
 
+                //convert byte to equivelant string
+                string str_salt = Convert.ToBase64String(salt);
+                string str_hash = Convert.ToBase64String(hash);
+
                 OpenConnection();
                 string cmd = "INSERT INTO [students] ([username],[password],[salt]) VALUES (@user,@pass,@salt);";
                 OleDbCommand command = new OleDbCommand(cmd, connection);
                 command.Parameters.AddWithValue("@user", user);
-                command.Parameters.AddWithValue("@pass", hash);
-                command.Parameters.AddWithValue("@salt", salt);
+                command.Parameters.AddWithValue("@pass", str_hash);
+                command.Parameters.AddWithValue("@salt", str_salt);
                 command.ExecuteNonQuery();
                 cmd ="INSERT INTO [Stats]([Username],[Stat_1],[Stat_2],[Stat_3],[Stat_4],[Stat_5],[Stat_6],[Stat_7],[Stat_8],[Stat_9],[Stat_10]) VALUES(@username,10, 10, 10, 10, 10, 10, 10, 10, 10, 10)";
                 command = new OleDbCommand(cmd, connection);

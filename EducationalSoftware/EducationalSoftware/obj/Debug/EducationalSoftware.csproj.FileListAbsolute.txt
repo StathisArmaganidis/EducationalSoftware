@@ -15,7 +15,6 @@ D:\Github\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\
 D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\bin\Debug\EducationalSoftware.exe.config
 D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\bin\Debug\EducationalSoftware.exe
 D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\bin\Debug\EducationalSoftware.pdb
-D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.csprojAssemblyReference.cache
 D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.LearningForm.resources
 D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.LearningTest.resources
 D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.StartingForm.resources
@@ -26,3 +25,4 @@ D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\ob
 D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.csproj.CoreCompileInputs.cache
 D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.exe
 D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.pdb
+D:\DESKTOP\GitHub\EducationalSoftware\EducationalSoftware\EducationalSoftware\obj\Debug\EducationalSoftware.csprojAssemblyReference.cache
