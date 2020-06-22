@@ -73,5 +73,13 @@ namespace EducationalSoftware
         }
 
 
+        private void LoginButton_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(loginUserBox.Text) && !string.IsNullOrWhiteSpace(loginPassBox.Text))
+            {
+                bool success = dm.LoginUser(loginUserBox.Text, loginPassBox.Text);
+                Console.WriteLine("Login Executed Successfully? Answer: " + success);
+            }
+        }
     }
 }

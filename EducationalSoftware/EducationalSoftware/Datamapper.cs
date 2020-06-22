@@ -55,6 +55,27 @@ namespace EducationalSoftware
             }
             return true;
         }
+
+        private byte[] GenerateHash(string pass,byte[] salt)
+        {
+            byte[] text = Encoding.ASCII.GetBytes(pass);
+
+            HashAlgorithm alg = new SHA256Managed();
+            byte[] txt_salt = new byte[text.Length + salt.Length];
+
+            for (int i = 0; i < pass.Length; i++)
+            {
+                txt_salt[i] = text[i];
+            }
+
+            for (int i = 0; i < salt.Length; i++)
+            {
+                txt_salt[text.Length + i] = salt[i];
+            }
+
+            return alg.ComputeHash(txt_salt);
+        }
+
         /// <summary>
         /// Creates new entry in database, with hash n salt for the password.
         /// </summary>
@@ -65,23 +86,22 @@ namespace EducationalSoftware
         {
             try
             {
-                //passwrod salt and hashing
+                //password salt and hashing
                 byte[] salt;
+
                 new RNGCryptoServiceProvider().GetBytes(salt = new byte[16]);
+                byte[] hash = GenerateHash(pass, salt);
 
-                var pk = new Rfc2898DeriveBytes(pass, salt, 10000);
-                byte[] hash = pk.GetBytes(20);
+                //convert byte to equivelant string
+                string str_salt = Convert.ToBase64String(salt);
+                string str_hash = Convert.ToBase64String(hash);
 
-                byte[] hashBytes = new byte[36];
-                Array.Copy(salt, 0, hashBytes, 0, 16);
-                Array.Copy(hash, 0, hashBytes, 16, 20);
-
-                string encryptedPass = Convert.ToBase64String(hashBytes);
                 OpenConnection();
-                string cmd = "INSERT INTO [students] ([username],[password]) VALUES (@user,@pass);";
+                string cmd = "INSERT INTO [students] ([username],[password],[salt]) VALUES (@user,@pass,@salt);";
                 OleDbCommand command = new OleDbCommand(cmd, connection);
                 command.Parameters.AddWithValue("@user", user);
-                command.Parameters.AddWithValue("@pass", encryptedPass);
+                command.Parameters.AddWithValue("@pass", str_hash);
+                command.Parameters.AddWithValue("@salt", str_salt);
                 command.ExecuteNonQuery();
                 cmd ="INSERT INTO [Stats]([Username],[Stat_1],[Stat_2],[Stat_3],[Stat_4],[Stat_5],[Stat_6],[Stat_7],[Stat_8],[Stat_9],[Stat_10]) VALUES(@username,10, 10, 10, 10, 10, 10, 10, 10, 10, 10)";
                 command = new OleDbCommand(cmd, connection);
@@ -247,5 +267,51 @@ namespace EducationalSoftware
                 throw new Exception("Data error.");
             }
         }
+        public bool LoginUser(string username, string password)
+        {
+            try
+            {
+                string fetcher = "Select [password],[salt] From students Where [username] = @user";
+                OleDbCommand command = new OleDbCommand(fetcher, connection);
+                command.Parameters.AddWithValue("@user", username);
+                OpenConnection();
+                string hashedpass = null;
+                string salt = null;
+                using (OleDbDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        hashedpass = reader[0].ToString();
+                        salt = reader[1].ToString();
+                    }
+                }
+                CloseConnection();
+                //extracts the bytes.
+                byte[] hashed = Convert.FromBase64String(hashedpass);
+                //retrieving the salt.
+                byte[] saltBytes = Convert.FromBase64String(salt);
+                byte[] newhash = GenerateHash(password, saltBytes);
+
+                //compare results.
+                if (newhash.Length != hashed.Length)
+                {
+                    throw new UnauthorizedAccessException();
+                }
+
+                for(int i = 0; i < hashed.Length; i++)
+                {
+                    if (hashed[i] != newhash[i])
+                    {
+                        throw new UnauthorizedAccessException();
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+            return true;
+        }
+
     }
 }
