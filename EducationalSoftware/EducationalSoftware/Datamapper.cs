@@ -50,6 +50,27 @@ namespace EducationalSoftware
             }
             return true;
         }
+
+        private byte[] GenerateHash(string pass,byte[] salt)
+        {
+            byte[] text = Encoding.ASCII.GetBytes(pass);
+
+            HashAlgorithm alg = new SHA256Managed();
+            byte[] txt_salt = new byte[text.Length + salt.Length];
+
+            for (int i = 0; i < pass.Length; i++)
+            {
+                txt_salt[i] = text[i];
+            }
+
+            for (int i = 0; i < salt.Length; i++)
+            {
+                txt_salt[text.Length + i] = salt[i];
+            }
+
+            return alg.ComputeHash(txt_salt);
+        }
+
         /// <summary>
         /// Creates new entry in database, with hash n salt for the password.
         /// </summary>
@@ -60,28 +81,18 @@ namespace EducationalSoftware
         {
             try
             {
-
-
-
                 //password salt and hashing
                 byte[] salt;
+
                 new RNGCryptoServiceProvider().GetBytes(salt = new byte[16]);
+                byte[] hash = GenerateHash(pass, salt);
 
-                var pk = new Rfc2898DeriveBytes(pass, salt, 10000);
-                byte[] hash = pk.GetBytes(20);
-
-                byte[] hashBytes = new byte[36];
-                Array.Copy(salt, 0, hashBytes, 0, 16);
-                Array.Copy(hash, 0, hashBytes, 16, 20);
-
-                string encryptedPass = Convert.ToBase64String(hashBytes);
-                string encryptedSalt = Convert.ToBase64String(salt);
                 OpenConnection();
                 string cmd = "INSERT INTO [students] ([username],[password],[salt]) VALUES (@user,@pass,@salt);";
                 OleDbCommand command = new OleDbCommand(cmd, connection);
                 command.Parameters.AddWithValue("@user", user);
-                command.Parameters.AddWithValue("@pass", encryptedPass);
-                command.Parameters.AddWithValue("@salt", encryptedSalt);
+                command.Parameters.AddWithValue("@pass", hash);
+                command.Parameters.AddWithValue("@salt", salt);
                 command.ExecuteNonQuery();
                 cmd ="INSERT INTO [Stats]([Username],[Stat_1],[Stat_2],[Stat_3],[Stat_4],[Stat_5],[Stat_6],[Stat_7],[Stat_8],[Stat_9],[Stat_10]) VALUES(@username,10, 10, 10, 10, 10, 10, 10, 10, 10, 10)";
                 command = new OleDbCommand(cmd, connection);
@@ -237,18 +248,20 @@ namespace EducationalSoftware
                 }
                 CloseConnection();
                 //extracts the bytes.
-                byte[] hashBytes = Convert.FromBase64String(hashedpass);
+                byte[] hashed = Convert.FromBase64String(hashedpass);
                 //retrieving the salt.
-                byte[] saltBytes = Encoding.ASCII.GetBytes(salt);
-                Array.Copy(hashBytes, 0, saltBytes, 0, 16);
-                //computes the hash on the password entered at login.
-                var pwhash = new Rfc2898DeriveBytes(password, saltBytes, 10000);
-                byte[] hash = pwhash.GetBytes(20);
+                byte[] saltBytes = Convert.FromBase64String(salt);
+                byte[] newhash = GenerateHash(password, saltBytes);
 
-                //compares results.
-                for (int i = 0; i < 20; i++)
+                //compare results.
+                if (newhash.Length != hashed.Length)
                 {
-                    if (hashBytes[i + 16] != hash[i])
+                    throw new UnauthorizedAccessException();
+                }
+
+                for(int i = 0; i < hashed.Length; i++)
+                {
+                    if (hashed[i] != newhash[i])
                     {
                         throw new UnauthorizedAccessException();
                     }
