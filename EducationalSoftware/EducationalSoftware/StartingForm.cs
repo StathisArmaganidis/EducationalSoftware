@@ -13,7 +13,8 @@ namespace EducationalSoftware
 {
     public partial class StartingForm : Form
     {
-        Datamapper dm ;
+        Datamapper dm;
+        public static string username ="";
         public StartingForm()
         {
             InitializeComponent();
@@ -43,13 +44,13 @@ namespace EducationalSoftware
             RegisterGroup.Visible = false;
             LoginGroup.Visible = true;
         }
-        
 
 
 
-   
 
-        
+
+
+
         private void RegisterButton_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrWhiteSpace(registerUserBox.Text) && !string.IsNullOrWhiteSpace(registerPassBox.Text))
@@ -60,6 +61,8 @@ namespace EducationalSoftware
                 {
                     registerUserBox.Text = "";
                     registerPassBox.Text = "";
+                    RegisterGroup.Visible = false;
+                    LoginGroup.Visible = true;
                 }
                 else
                 {
@@ -79,6 +82,11 @@ namespace EducationalSoftware
             {
                 bool success = dm.LoginUser(loginUserBox.Text, loginPassBox.Text);
                 Console.WriteLine("Login Executed Successfully? Answer: " + success);
+                if (success)
+                {
+                    username = loginUserBox.Text;
+                    new User_Form().ShowDialog();
+                }
             }
         }
     }

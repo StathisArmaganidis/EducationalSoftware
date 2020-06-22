@@ -107,6 +107,10 @@ namespace EducationalSoftware
                 command = new OleDbCommand(cmd, connection);
                 command.Parameters.AddWithValue("@username", user);
                 command.ExecuteNonQuery();
+                cmd = "INSERT INTO [Multipliers]([Username],[multiplier_1],[multiplier_2],[multiplier_3],[multiplier_4],[multiplier_5],[multiplier_6],[multiplier_7],[multiplier_8],[multiplier_9],[multiplier_10]) VALUES(@username,1, 1, 1, 1, 1, 1, 1, 1, 1, 1)";
+                command = new OleDbCommand(cmd, connection);
+                command.Parameters.AddWithValue("@username", user);
+                command.ExecuteNonQuery();
                 CloseConnection();
             }
             catch (Exception e)

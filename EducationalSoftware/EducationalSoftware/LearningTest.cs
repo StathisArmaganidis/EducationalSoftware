@@ -17,7 +17,7 @@ namespace EducationalSoftware
         float[] probabilities;
         float[] multipliers;
         string[] numbers;
-        string username = "kostas";
+        string username = StartingForm.username;
         float starting_Prob;
         public LearningTest()
         {
