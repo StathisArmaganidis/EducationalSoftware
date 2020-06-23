@@ -19,14 +19,14 @@ namespace EducationalSoftware
 
            
         }
-        public void refresh_chart(string year, string month)
+        public void refresh_chart(DateTime date)
         {
             corr_chart.Series["Correct"].Points.Clear();
             corr_chart.Series["Wrong"].Points.Clear();
             Datamapper dm = new Datamapper();
             dm.GetConnection();
             List<(int, int)> differences = new List<(int, int)>();
-            int[] statistics = dm.GetStatistics("kostas", year, month);
+            int[] statistics = dm.GetStatistics("kostas",date);
             int label = 1;
             for (int i = 0; i < 20; i += 2)
             {
@@ -39,47 +39,36 @@ namespace EducationalSoftware
                     label++;
                 
             }
-            differences.Sort((p, q) => p.Item2.CompareTo(q.Item2));
-            this.need_practise_photo.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + differences.Last().Item1);
+            if (differences.Any())
+            {
+                differences.Sort((p, q) => p.Item2.CompareTo(q.Item2));
+                this.need_practise_photo.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + differences.Last().Item1);
+            }
         }
 
         private void datecombo_SelectedIndexChanged(object sender, EventArgs e)
         {
             DateTime date = DateTime.Now;
-            string year;
-            string month;
             string selected_el = datecombo.SelectedItem.ToString();
             switch (selected_el)
             {
-                case "This Month":
-                   
-                    year = date.ToString("yyyy");
-                    month = date.ToString("MM");
-                    break;
-                case "Last Month":;
-                    year =  date.ToString("yyyy");
-                    month = date.AddMonths(-1).ToString("MM");
+                case "Last Month":
+                    date = date.AddMonths(-1);
                     break;
                 case "Last Three Months":
-
-                    year = date.ToString("yyyy");
-                    month = date.AddMonths(-3).ToString("MM");
+                    date = date.AddMonths(-3);
                     break;
                 case "This Year":
-                    year = date.ToString("yyyy");
-                    month = "01";
-                    break;
+                    date = date.AddMonths(-(date.Month));
                     break;
                 case "Last Year":
-                    year = date.AddYears(-1).ToString("yyyy");
-                    month = "01";
+                    date = date.AddYears(-1);
+                    date = date.AddMonths(-(date.Month));
                     break;
                 default:
-                    year = date.ToString("yyyy");
-                    month = date.ToString("MM");
                     break;
             }
-            refresh_chart(year, month);
+            refresh_chart(date);
         }
     }
 }

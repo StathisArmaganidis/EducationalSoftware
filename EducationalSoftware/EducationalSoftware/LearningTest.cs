@@ -16,6 +16,7 @@ namespace EducationalSoftware
         Datamapper dm;
         float[] probabilities;
         float[] multipliers;
+        int[] statistics;
         string[] numbers;
         string username = StartingForm.username;
         float starting_Prob;
@@ -26,6 +27,7 @@ namespace EducationalSoftware
             dm = new Datamapper();
             probabilities = dm.GetStats(username);
             multipliers = dm.GetMultipliers(username);
+            statistics = dm.GetStatistics(username, DateTime.Now);
             numbers = new string[10] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" };
             starting_Prob = probabilities[0] / multipliers[0];
         }
@@ -151,6 +153,7 @@ namespace EducationalSoftware
             if (LeftNum.Value * RightNum.Value == ResultNum.Value)
             {
                 msglabel.Text = "Correct!";
+                statistics[2 * index]++;
                 msglabel.ForeColor = Color.Green;
                 QuestionGroup.Visible = false;
                 msglabel.Visible = true;
@@ -165,6 +168,7 @@ namespace EducationalSoftware
             else
             {
                 msglabel.Text = "Wrong!";
+                statistics[(2 * index)+1]++;
                 msglabel.ForeColor = Color.Maroon;
                 QuestionGroup.Visible = false;
                 msglabel.Visible = true;
@@ -183,8 +187,9 @@ namespace EducationalSoftware
 
             Datamapper dm = new Datamapper();
             dm.GetConnection();
-            dm.SaveMultipliers(multipliers,username);
-            dm.SaveStats(probabilities,username);
+            dm.SaveMultipliers(multipliers, StartingForm.username);
+            dm.SaveStats(probabilities, StartingForm.username);
+            dm.SaveStatistics(StartingForm.username, statistics,DateTime.Now);
             CreateQuestion();
         }
 
