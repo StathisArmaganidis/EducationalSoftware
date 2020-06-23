@@ -304,32 +304,31 @@ namespace EducationalSoftware
                 {
                     cmd = "INSERT INTO [Statistics] ([username],[date],[right_1],[wrong_1],[right_2],[wrong_2],[right_3],[wrong_3],[right_4],[wrong_4],[right_5],[wrong_5],[right_6],[wrong_6],[right_7],[wrong_7],[right_8],[wrong_8],[right_9],[wrong_9],[right_10],[wrong_10]) VALUES (@username,@date,@right_1,@wrong_1,@right_2,@wrong_2,@right_3,@wrong_3,@right_4,@wrong_4,@right_5,@wrong_5,@right_6,@wrong_6,@right_7,@wrong_7,@right_8,@wrong_8,@right_9,@wrong_9,@right_10,@wrong_10)";
                 }
-                OleDbCommand command1 = new OleDbCommand(cmd, connection);
-                command1 = new OleDbCommand(cmd, connection);
-                command1.Parameters.AddWithValue("@username", username);
-                command1.Parameters.AddWithValue("@date", Convert.ToDateTime(date));
-                command1.Parameters.AddWithValue("@right_1", statistics[0]);
-                command1.Parameters.AddWithValue("@wrong_1", statistics[1]);
-                command1.Parameters.AddWithValue("@right_2", statistics[2]);
-                command1.Parameters.AddWithValue("@wrong_2", statistics[3]);
-                command1.Parameters.AddWithValue("@right_3", statistics[4]);
-                command1.Parameters.AddWithValue("@wrong_3", statistics[5]);
-                command1.Parameters.AddWithValue("@right_4", statistics[6]);
-                command1.Parameters.AddWithValue("@wrong_4", statistics[7]);
-                command1.Parameters.AddWithValue("@right_5", statistics[8]);
-                command1.Parameters.AddWithValue("@wrong_5", statistics[9]);
-                command1.Parameters.AddWithValue("@right_6", statistics[10]);
-                command1.Parameters.AddWithValue("@wrong_6", statistics[11]);
-                command1.Parameters.AddWithValue("@right_7", statistics[12]);
-                command1.Parameters.AddWithValue("@wrong_7", statistics[13]);
-                command1.Parameters.AddWithValue("@right_8", statistics[14]);
-                command1.Parameters.AddWithValue("@wrong_8", statistics[15]);
-                command1.Parameters.AddWithValue("@right_9", statistics[16]);
-                command1.Parameters.AddWithValue("@wrong_9", statistics[17]);
-                command1.Parameters.AddWithValue("@right_10", statistics[18]);
-                command1.Parameters.AddWithValue("@wrong_10", statistics[19]);
+                command = new OleDbCommand(cmd, connection);
+                command.Parameters.AddWithValue("@username", username);
+                command.Parameters.AddWithValue("@date", Convert.ToDateTime(date));
+                command.Parameters.AddWithValue("@right_1", statistics[0]);
+                command.Parameters.AddWithValue("@wrong_1", statistics[1]);
+                command.Parameters.AddWithValue("@right_2", statistics[2]);
+                command.Parameters.AddWithValue("@wrong_2", statistics[3]);
+                command.Parameters.AddWithValue("@right_3", statistics[4]);
+                command.Parameters.AddWithValue("@wrong_3", statistics[5]);
+                command.Parameters.AddWithValue("@right_4", statistics[6]);
+                command.Parameters.AddWithValue("@wrong_4", statistics[7]);
+                command.Parameters.AddWithValue("@right_5", statistics[8]);
+                command.Parameters.AddWithValue("@wrong_5", statistics[9]);
+                command.Parameters.AddWithValue("@right_6", statistics[10]);
+                command.Parameters.AddWithValue("@wrong_6", statistics[11]);
+                command.Parameters.AddWithValue("@right_7", statistics[12]);
+                command.Parameters.AddWithValue("@wrong_7", statistics[13]);
+                command.Parameters.AddWithValue("@right_8", statistics[14]);
+                command.Parameters.AddWithValue("@wrong_8", statistics[15]);
+                command.Parameters.AddWithValue("@right_9", statistics[16]);
+                command.Parameters.AddWithValue("@wrong_9", statistics[17]);
+                command.Parameters.AddWithValue("@right_10", statistics[18]);
+                command.Parameters.AddWithValue("@wrong_10", statistics[19]);
 
-                int rows =command1.ExecuteNonQuery();
+                int rows =command.ExecuteNonQuery();
                 CloseConnection();
                 return true;
 
