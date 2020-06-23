@@ -105,6 +105,7 @@
             this.Controls.Add(this.practise_label);
             this.Controls.Add(this.need_practise_photo);
             this.Name = "Profile_Form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Profile_Form";
             ((System.ComponentModel.ISupportInitialize)(this.need_practise_photo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.corr_chart)).EndInit();
