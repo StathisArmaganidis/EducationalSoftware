@@ -22,7 +22,7 @@ namespace EducationalSoftware
         /// </summary>
         public void GetConnection()
         {
-            string connetionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=../../Database.accdb";
+            string connetionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=../../Database2.accdb";
             connection=new OleDbConnection(connetionString);
         }
         /// <summary>
