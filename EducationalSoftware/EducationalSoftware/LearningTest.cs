@@ -189,7 +189,7 @@ namespace EducationalSoftware
             dm.GetConnection();
             dm.SaveMultipliers(multipliers, StartingForm.username);
             dm.SaveStats(probabilities, StartingForm.username);
-            dm.SaveStatistics(StartingForm.username, statistics,DateTime.Now);
+            dm.SaveStatistics(StartingForm.username, statistics);
             CreateQuestion();
         }
 

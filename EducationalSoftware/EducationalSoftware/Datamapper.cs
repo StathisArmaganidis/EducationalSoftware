@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data.OleDb;
 using System.Security.Cryptography;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace EducationalSoftware
 {
@@ -276,11 +277,12 @@ namespace EducationalSoftware
             }
         }
 
-        public bool SaveStatistics(string username,int[] statistics,DateTime datet)
+        public bool SaveStatistics(string username,int[] statistics)
         {
             try
             {
                 int exists = 0;
+                /*
                 string date;
                 if (datet.Month > 9)
                 {
@@ -290,6 +292,8 @@ namespace EducationalSoftware
                 {
                     date = datet.ToString("M/dd/yyyy");
                 }
+                */
+                int date = Convert.ToInt32(DateTime.Now.ToOADate());//αυτη η γραμμη μετατρέπει σε αριθμό, εαν την σβησεις ΘΥΜΗΣΟΥ ΝΑ ΑΛΛΑΞΕΙΣ ΣΤΗΝ ΒΑΣΗ ΤΟΝ ΤΥΠΟ του date
                 string cmd = "SELECT * FROM [Statistics] WHERE [username]=@username AND [date]=@date";
                 OleDbCommand command = new OleDbCommand(cmd, connection);
                 command.Parameters.AddWithValue("@username", username);
@@ -298,15 +302,16 @@ namespace EducationalSoftware
                 exists=Convert.ToInt32(command.ExecuteScalar());
                 if (exists > 0)
                 {
-                    cmd = "UPDATE [Statistics] SET [right_1]=@right1,[wrong_1]=@wrong1,[right_2]=@right2,[wrong_2]=@wrong2,[right_3]=@right3,[wrong_3]=@wrong3,[right_4]=@right4,[wrong_4]=@wrong4,[right_5]=@right5,[wrong_5]=@wrong5,[right_6]=@right6,[wrong_6]=@wrong6,[right_7]=@right7,[wrong_7]=@wrong7,[right_8]=@right8,[wrong_8]=@wrong8,[right_9]=@right9,[wrong_9]=@wrong9,[right_10]=@right10,[wrong_10]=@wrong10 WHERE [username]=@username AND [date]=@date";
+                    cmd = "UPDATE [Statistics] SET [right_1]=@right_1,[wrong_1]=@wrong_1,[right_2]=@right_2,[wrong_2]=@wrong_2,[right_3]=@right_3,[wrong_3]=@wrong_3,[right_4]=@right_4,[wrong_4]=@wrong_4,[right_5]=@right_5,[wrong_5]=@wrong_5,[right_6]=@right_6,[wrong_6]=@wrong_6,[right_7]=@right_7,[wrong_7]=@wrong_7,[right_8]=@right_8,[wrong_8]=@wrong_8,[right_9]=@right_9,[wrong_9]=@wrong_9,[right_10]=@right_10,[wrong_10]=@wrong_10 WHERE [username]=@username AND [date]=44006";
                 }
                 else
                 {
                     cmd = "INSERT INTO [Statistics] ([username],[date],[right_1],[wrong_1],[right_2],[wrong_2],[right_3],[wrong_3],[right_4],[wrong_4],[right_5],[wrong_5],[right_6],[wrong_6],[right_7],[wrong_7],[right_8],[wrong_8],[right_9],[wrong_9],[right_10],[wrong_10]) VALUES (@username,@date,@right_1,@wrong_1,@right_2,@wrong_2,@right_3,@wrong_3,@right_4,@wrong_4,@right_5,@wrong_5,@right_6,@wrong_6,@right_7,@wrong_7,@right_8,@wrong_8,@right_9,@wrong_9,@right_10,@wrong_10)";
                 }
+
                 command = new OleDbCommand(cmd, connection);
                 command.Parameters.AddWithValue("@username", username);
-                command.Parameters.AddWithValue("@date", Convert.ToDateTime(date));
+                //command.Parameters.AddWithValue("@date", date);
                 command.Parameters.AddWithValue("@right_1", statistics[0]);
                 command.Parameters.AddWithValue("@wrong_1", statistics[1]);
                 command.Parameters.AddWithValue("@right_2", statistics[2]);
@@ -329,6 +334,8 @@ namespace EducationalSoftware
                 command.Parameters.AddWithValue("@wrong_10", statistics[19]);
 
                 int rows =command.ExecuteNonQuery();
+
+                Console.WriteLine("Rows: " + rows.ToString());
                 CloseConnection();
                 return true;
 
