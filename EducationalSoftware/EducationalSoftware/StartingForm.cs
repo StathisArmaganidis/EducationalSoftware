@@ -85,7 +85,9 @@ namespace EducationalSoftware
                 if (success)
                 {
                     username = loginUserBox.Text;
+                    this.Visible = false;
                     new User_Form().ShowDialog();
+                    this.Visible = true;
                 }
             }
         }

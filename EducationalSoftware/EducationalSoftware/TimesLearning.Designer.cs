@@ -454,6 +454,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.endlabel);
             this.Name = "TimesLearning";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TimesLearning";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Left_mult_2)).EndInit();

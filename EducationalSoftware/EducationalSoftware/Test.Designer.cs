@@ -509,7 +509,7 @@
             this.Controls.Add(this.ThisQuestionsText);
             this.Controls.Add(this.QuestionLabel);
             this.Name = "TestForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Evaluation Test";
             this.Load += new System.EventHandler(this.TestForm_Load);
             this.QuestionGroup.ResumeLayout(false);
