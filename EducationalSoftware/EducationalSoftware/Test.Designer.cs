@@ -37,6 +37,12 @@
             this.picture_res3 = new System.Windows.Forms.PictureBox();
             this.picture_r1 = new System.Windows.Forms.PictureBox();
             this.picture_l1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.picture_res2 = new System.Windows.Forms.PictureBox();
+            this.picture_res1 = new System.Windows.Forms.PictureBox();
+            this.picture_r2 = new System.Windows.Forms.PictureBox();
+            this.picture_l2 = new System.Windows.Forms.PictureBox();
             this.del_button = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -48,12 +54,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button0 = new System.Windows.Forms.Button();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.picture_res2 = new System.Windows.Forms.PictureBox();
-            this.picture_res1 = new System.Windows.Forms.PictureBox();
-            this.picture_r2 = new System.Windows.Forms.PictureBox();
-            this.picture_l2 = new System.Windows.Forms.PictureBox();
             this.ResultNum = new System.Windows.Forms.NumericUpDown();
             this.ConfirmButton = new System.Windows.Forms.Button();
             this.RightNum = new System.Windows.Forms.NumericUpDown();
@@ -139,12 +139,11 @@
             this.groupbox.Controls.Add(this.picture_res1);
             this.groupbox.Controls.Add(this.picture_r2);
             this.groupbox.Controls.Add(this.picture_l2);
-            this.groupbox.Location = new System.Drawing.Point(5, 15);
+            this.groupbox.Location = new System.Drawing.Point(8, 11);
             this.groupbox.Name = "groupbox";
             this.groupbox.Size = new System.Drawing.Size(624, 71);
             this.groupbox.TabIndex = 9;
             this.groupbox.TabStop = false;
-            this.groupbox.Visible = false;
             // 
             // picture_res3
             // 
@@ -175,6 +174,68 @@
             this.picture_l1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picture_l1.TabIndex = 45;
             this.picture_l1.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.InitialImage = null;
+            this.pictureBox6.Location = new System.Drawing.Point(350, 10);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(62, 57);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 21;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.InitialImage = null;
+            this.pictureBox5.Location = new System.Drawing.Point(146, 10);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(62, 57);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 20;
+            this.pictureBox5.TabStop = false;
+            // 
+            // picture_res2
+            // 
+            this.picture_res2.InitialImage = null;
+            this.picture_res2.Location = new System.Drawing.Point(485, 10);
+            this.picture_res2.Name = "picture_res2";
+            this.picture_res2.Size = new System.Drawing.Size(62, 57);
+            this.picture_res2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picture_res2.TabIndex = 19;
+            this.picture_res2.TabStop = false;
+            // 
+            // picture_res1
+            // 
+            this.picture_res1.InitialImage = null;
+            this.picture_res1.Location = new System.Drawing.Point(417, 10);
+            this.picture_res1.Name = "picture_res1";
+            this.picture_res1.Size = new System.Drawing.Size(62, 57);
+            this.picture_res1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picture_res1.TabIndex = 18;
+            this.picture_res1.TabStop = false;
+            // 
+            // picture_r2
+            // 
+            this.picture_r2.InitialImage = null;
+            this.picture_r2.Location = new System.Drawing.Point(282, 10);
+            this.picture_r2.Name = "picture_r2";
+            this.picture_r2.Size = new System.Drawing.Size(62, 57);
+            this.picture_r2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picture_r2.TabIndex = 17;
+            this.picture_r2.TabStop = false;
+            // 
+            // picture_l2
+            // 
+            this.picture_l2.InitialImage = null;
+            this.picture_l2.Location = new System.Drawing.Point(78, 10);
+            this.picture_l2.Name = "picture_l2";
+            this.picture_l2.Size = new System.Drawing.Size(62, 57);
+            this.picture_l2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picture_l2.TabIndex = 16;
+            this.picture_l2.TabStop = false;
             // 
             // del_button
             // 
@@ -317,68 +378,6 @@
             this.button0.UseVisualStyleBackColor = true;
             this.button0.Click += new System.EventHandler(this.AddNumber);
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.InitialImage = null;
-            this.pictureBox6.Location = new System.Drawing.Point(350, 10);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(62, 57);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 21;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.InitialImage = null;
-            this.pictureBox5.Location = new System.Drawing.Point(146, 10);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(62, 57);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 20;
-            this.pictureBox5.TabStop = false;
-            // 
-            // picture_res2
-            // 
-            this.picture_res2.InitialImage = null;
-            this.picture_res2.Location = new System.Drawing.Point(485, 10);
-            this.picture_res2.Name = "picture_res2";
-            this.picture_res2.Size = new System.Drawing.Size(62, 57);
-            this.picture_res2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picture_res2.TabIndex = 19;
-            this.picture_res2.TabStop = false;
-            // 
-            // picture_res1
-            // 
-            this.picture_res1.InitialImage = null;
-            this.picture_res1.Location = new System.Drawing.Point(417, 10);
-            this.picture_res1.Name = "picture_res1";
-            this.picture_res1.Size = new System.Drawing.Size(62, 57);
-            this.picture_res1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picture_res1.TabIndex = 18;
-            this.picture_res1.TabStop = false;
-            // 
-            // picture_r2
-            // 
-            this.picture_r2.InitialImage = null;
-            this.picture_r2.Location = new System.Drawing.Point(282, 10);
-            this.picture_r2.Name = "picture_r2";
-            this.picture_r2.Size = new System.Drawing.Size(62, 57);
-            this.picture_r2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picture_r2.TabIndex = 17;
-            this.picture_r2.TabStop = false;
-            // 
-            // picture_l2
-            // 
-            this.picture_l2.InitialImage = null;
-            this.picture_l2.Location = new System.Drawing.Point(78, 10);
-            this.picture_l2.Name = "picture_l2";
-            this.picture_l2.Size = new System.Drawing.Size(62, 57);
-            this.picture_l2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picture_l2.TabIndex = 16;
-            this.picture_l2.TabStop = false;
-            // 
             // ResultNum
             // 
             this.ResultNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -468,7 +467,7 @@
             this.DifficultyGroup.Controls.Add(this.HardButton);
             this.DifficultyGroup.Controls.Add(this.MediumButton);
             this.DifficultyGroup.Controls.Add(this.EasyButton);
-            this.DifficultyGroup.Location = new System.Drawing.Point(12, 377);
+            this.DifficultyGroup.Location = new System.Drawing.Point(9, 385);
             this.DifficultyGroup.Name = "DifficultyGroup";
             this.DifficultyGroup.Size = new System.Drawing.Size(221, 244);
             this.DifficultyGroup.TabIndex = 12;
@@ -513,7 +512,7 @@
             this.QuestionGroup.Controls.Add(this.button4);
             this.QuestionGroup.Controls.Add(this.button6);
             this.QuestionGroup.Controls.Add(this.button5);
-            this.QuestionGroup.Location = new System.Drawing.Point(164, 154);
+            this.QuestionGroup.Location = new System.Drawing.Point(132, 162);
             this.QuestionGroup.Name = "QuestionGroup";
             this.QuestionGroup.Size = new System.Drawing.Size(632, 217);
             this.QuestionGroup.TabIndex = 21;

@@ -12,6 +12,7 @@ namespace EducationalSoftware
 {
     public partial class Profile_Form : Form
     {
+        private string username = StartingForm.username;
         public Profile_Form()
         {
             InitializeComponent();
@@ -26,7 +27,7 @@ namespace EducationalSoftware
             Datamapper dm = new Datamapper();
             dm.GetConnection();
             List<(int, int)> differences = new List<(int, int)>();
-            int[] statistics = dm.GetStatistics("kostas",date);
+            int[] statistics = dm.GetStatistics(username,date);
             int label = 1;
             for (int i = 0; i < 20; i += 2)
             {

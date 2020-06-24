@@ -33,7 +33,6 @@ namespace EducationalSoftware
         }
         Random rnd = new Random();
 
-        private int[] done = new int[10];
         NumKeyboard keys;
         private void LearningTest_Load(object sender, EventArgs e)
         {

@@ -31,6 +31,7 @@ namespace EducationalSoftware
             msglabel.Location = new Point(300, 200);
             DifficultyGroup.Location = new Point(this.Size.Width / 2 - DifficultyGroup.Size.Width / 2, this.Size.Height / 2 - DifficultyGroup.Size.Height / 2);
             keys = new NumKeyboard(picture_r1, picture_r2, picture_res1, picture_res2, picture_res3, RightNum, ResultNum);
+            QuestionGroup.Visible = false;
         }
 
         private void EasyButton_Click(object sender, EventArgs e)
@@ -57,8 +58,7 @@ namespace EducationalSoftware
         private void CreateQuestionaire()
         {
             DifficultyGroup.Visible = false;
-            groupbox.Location = new Point(this.Size.Width / 2 - groupbox.Size.Width / 2, this.Size.Height / 2 - groupbox.Size.Height / 2);
-            groupbox.Visible = true;
+            QuestionGroup.Visible = true;
             QuestionLabel.Visible = true;
             ThisQuestionsText.Visible = true;
             QuestionSlash.Visible = true;
@@ -200,7 +200,7 @@ namespace EducationalSoftware
             }
             else
             {
-                MessageBox.Show("yay! "+points.ToString()+" out of "+TotalQuestionsNum.ToString()+" correct answets!");//test
+                MessageBox.Show("yay! "+points.ToString()+" out of "+TotalQuestionsNum.ToString()+" correct answets!");//THIS NEEDS TO BE EDITED! ASAP.
                 BackButton.Enabled = true;
                 ConfirmButton.Enabled = false;
             }            
