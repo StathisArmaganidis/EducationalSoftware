@@ -65,7 +65,7 @@
             this.LoginGroup.Controls.Add(this.loginUserLabel);
             this.LoginGroup.Controls.Add(this.loginPassBox);
             this.LoginGroup.Controls.Add(this.loginUserBox);
-            this.LoginGroup.Location = new System.Drawing.Point(12, 107);
+            this.LoginGroup.Location = new System.Drawing.Point(12, 12);
             this.LoginGroup.Name = "LoginGroup";
             this.LoginGroup.Size = new System.Drawing.Size(300, 206);
             this.LoginGroup.TabIndex = 1;
@@ -74,20 +74,20 @@
             // GoRegister
             // 
             this.GoRegister.Font = new System.Drawing.Font("Ravie", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GoRegister.Location = new System.Drawing.Point(6, 167);
+            this.GoRegister.Location = new System.Drawing.Point(6, 177);
             this.GoRegister.Name = "GoRegister";
-            this.GoRegister.Size = new System.Drawing.Size(93, 33);
+            this.GoRegister.Size = new System.Drawing.Size(137, 23);
             this.GoRegister.TabIndex = 8;
-            this.GoRegister.Text = "Register";
+            this.GoRegister.Text = "Create Account";
             this.GoRegister.UseVisualStyleBackColor = true;
             this.GoRegister.Click += new System.EventHandler(this.GoRegister_Click);
             // 
             // LoginButton
             // 
             this.LoginButton.Font = new System.Drawing.Font("Ravie", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoginButton.Location = new System.Drawing.Point(201, 167);
+            this.LoginButton.Location = new System.Drawing.Point(184, 162);
             this.LoginButton.Name = "LoginButton";
-            this.LoginButton.Size = new System.Drawing.Size(93, 33);
+            this.LoginButton.Size = new System.Drawing.Size(110, 38);
             this.LoginButton.TabIndex = 7;
             this.LoginButton.Text = "Login";
             this.LoginButton.UseVisualStyleBackColor = true;
@@ -143,7 +143,7 @@
             this.RegisterGroup.Controls.Add(this.registerUserLabel);
             this.RegisterGroup.Controls.Add(this.registerPassBox);
             this.RegisterGroup.Controls.Add(this.registerUserBox);
-            this.RegisterGroup.Location = new System.Drawing.Point(448, 107);
+            this.RegisterGroup.Location = new System.Drawing.Point(488, 232);
             this.RegisterGroup.Name = "RegisterGroup";
             this.RegisterGroup.Size = new System.Drawing.Size(300, 206);
             this.RegisterGroup.TabIndex = 5;
@@ -152,20 +152,20 @@
             // GoLogin
             // 
             this.GoLogin.Font = new System.Drawing.Font("Ravie", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GoLogin.Location = new System.Drawing.Point(6, 167);
+            this.GoLogin.Location = new System.Drawing.Point(6, 176);
             this.GoLogin.Name = "GoLogin";
-            this.GoLogin.Size = new System.Drawing.Size(93, 33);
+            this.GoLogin.Size = new System.Drawing.Size(109, 24);
             this.GoLogin.TabIndex = 6;
-            this.GoLogin.Text = "Login";
+            this.GoLogin.Text = "Back to login";
             this.GoLogin.UseVisualStyleBackColor = true;
             this.GoLogin.Click += new System.EventHandler(this.GoLogin_Click);
             // 
             // RegisterButton
             // 
             this.RegisterButton.Font = new System.Drawing.Font("Ravie", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegisterButton.Location = new System.Drawing.Point(201, 167);
+            this.RegisterButton.Location = new System.Drawing.Point(184, 162);
             this.RegisterButton.Name = "RegisterButton";
-            this.RegisterButton.Size = new System.Drawing.Size(93, 33);
+            this.RegisterButton.Size = new System.Drawing.Size(110, 38);
             this.RegisterButton.TabIndex = 5;
             this.RegisterButton.Text = "Register";
             this.RegisterButton.UseVisualStyleBackColor = true;
@@ -224,6 +224,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::EducationalSoftware.Properties.Resources.Login_Background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.RegisterGroup);
             this.Controls.Add(this.LoginGroup);

@@ -24,8 +24,8 @@ namespace EducationalSoftware
 
         private void StartingForm_Load(object sender, EventArgs e)
         {
-            LoginGroup.Location = new Point(this.Size.Width / 2 - LoginGroup.Size.Width / 2, this.Size.Height / 2 - LoginGroup.Size.Height);
-            RegisterGroup.Location = new Point(this.Size.Width / 2 - RegisterGroup.Size.Width / 2, this.Size.Height / 2 - RegisterGroup.Size.Height);
+            LoginGroup.Location = new Point(10, 10);// new Point(this.Size.Width / 2 - LoginGroup.Size.Width / 2, this.Size.Height / 2 - LoginGroup.Size.Height);
+            RegisterGroup.Location = new Point(10, 10);//new Point(this.Size.Width / 2 - RegisterGroup.Size.Width / 2, this.Size.Height / 2 - RegisterGroup.Size.Height);
             RegisterGroup.Visible = false;
         }
 

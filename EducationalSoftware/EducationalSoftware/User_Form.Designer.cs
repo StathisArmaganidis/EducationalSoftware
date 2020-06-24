@@ -37,7 +37,7 @@
             // GotoLearningTest
             // 
             this.GotoLearningTest.Font = new System.Drawing.Font("Ravie", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GotoLearningTest.Location = new System.Drawing.Point(319, 350);
+            this.GotoLearningTest.Location = new System.Drawing.Point(509, 193);
             this.GotoLearningTest.Name = "GotoLearningTest";
             this.GotoLearningTest.Size = new System.Drawing.Size(146, 75);
             this.GotoLearningTest.TabIndex = 7;
@@ -48,7 +48,7 @@
             // GotoLearningForm
             // 
             this.GotoLearningForm.Font = new System.Drawing.Font("Ravie", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GotoLearningForm.Location = new System.Drawing.Point(39, 350);
+            this.GotoLearningForm.Location = new System.Drawing.Point(509, 95);
             this.GotoLearningForm.Name = "GotoLearningForm";
             this.GotoLearningForm.Size = new System.Drawing.Size(146, 75);
             this.GotoLearningForm.TabIndex = 6;
@@ -59,7 +59,7 @@
             // GotoTestForm
             // 
             this.GotoTestForm.Font = new System.Drawing.Font("Ravie", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GotoTestForm.Location = new System.Drawing.Point(598, 350);
+            this.GotoTestForm.Location = new System.Drawing.Point(509, 350);
             this.GotoTestForm.Name = "GotoTestForm";
             this.GotoTestForm.Size = new System.Drawing.Size(146, 75);
             this.GotoTestForm.TabIndex = 5;
@@ -82,6 +82,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::EducationalSoftware.Properties.Resources.Main_Background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.GotoLearningTest);

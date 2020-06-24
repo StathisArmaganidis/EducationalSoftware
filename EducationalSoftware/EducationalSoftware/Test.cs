@@ -57,8 +57,8 @@ namespace EducationalSoftware
         private void CreateQuestionaire()
         {
             DifficultyGroup.Visible = false;
-            QuestionGroup.Location = new Point(this.Size.Width / 2 - QuestionGroup.Size.Width / 2, this.Size.Height / 2 - QuestionGroup.Size.Height / 2);
-            QuestionGroup.Visible = true;
+            groupbox.Location = new Point(this.Size.Width / 2 - groupbox.Size.Width / 2, this.Size.Height / 2 - groupbox.Size.Height / 2);
+            groupbox.Visible = true;
             QuestionLabel.Visible = true;
             ThisQuestionsText.Visible = true;
             QuestionSlash.Visible = true;
@@ -180,7 +180,7 @@ namespace EducationalSoftware
                 points++;
                 msglabel.Text = "Correct!";
                 msglabel.ForeColor = Color.Green;
-                QuestionGroup.Visible = false;
+                groupbox.Visible = false;
                 msglabel.Visible = true;
                 Wait();
             }
@@ -188,7 +188,7 @@ namespace EducationalSoftware
             {
                 msglabel.Text = "Wrong!";
                 msglabel.ForeColor = Color.Maroon;
-                QuestionGroup.Visible = false;
+                groupbox.Visible = false;
                 msglabel.Visible = true;
                 Wait();
             }
@@ -227,7 +227,7 @@ namespace EducationalSoftware
         {
             await Task.Delay(1000);
             msglabel.Visible = false;
-            QuestionGroup.Visible = true;
+            groupbox.Visible = true;
 
         }
 

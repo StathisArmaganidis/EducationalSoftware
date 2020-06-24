@@ -41,8 +41,15 @@ namespace EducationalSoftware
             }
             if (differences.Any())
             {
+                practise_label.Visible = true;
+                practise_label.Text = "You are doing Great!";
                 differences.Sort((p, q) => p.Item2.CompareTo(q.Item2));
                 this.need_practise_photo.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + differences.Last().Item1);
+            }
+            else
+            {
+                practise_label.Visible = false;
+                practise_label.Text = "You will need to practise";
             }
         }
 

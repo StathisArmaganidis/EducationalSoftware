@@ -33,7 +33,7 @@
             this.ThisQuestionsText = new System.Windows.Forms.Label();
             this.QuestionSlash = new System.Windows.Forms.Label();
             this.TotalQuestionsText = new System.Windows.Forms.Label();
-            this.QuestionGroup = new System.Windows.Forms.GroupBox();
+            this.groupbox = new System.Windows.Forms.GroupBox();
             this.picture_res3 = new System.Windows.Forms.PictureBox();
             this.picture_r1 = new System.Windows.Forms.PictureBox();
             this.picture_l1 = new System.Windows.Forms.PictureBox();
@@ -65,7 +65,8 @@
             this.DifficultyGroup = new System.Windows.Forms.GroupBox();
             this.BackButton = new System.Windows.Forms.Button();
             this.msglabel = new System.Windows.Forms.Label();
-            this.QuestionGroup.SuspendLayout();
+            this.QuestionGroup = new System.Windows.Forms.Panel();
+            this.groupbox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture_res3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_r1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_l1)).BeginInit();
@@ -79,6 +80,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.RightNum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LeftNum)).BeginInit();
             this.DifficultyGroup.SuspendLayout();
+            this.QuestionGroup.SuspendLayout();
             this.SuspendLayout();
             // 
             // QuestionLabel
@@ -125,43 +127,29 @@
             this.TotalQuestionsText.Text = "0";
             this.TotalQuestionsText.Visible = false;
             // 
-            // QuestionGroup
+            // groupbox
             // 
-            this.QuestionGroup.Controls.Add(this.picture_res3);
-            this.QuestionGroup.Controls.Add(this.picture_r1);
-            this.QuestionGroup.Controls.Add(this.picture_l1);
-            this.QuestionGroup.Controls.Add(this.del_button);
-            this.QuestionGroup.Controls.Add(this.button9);
-            this.QuestionGroup.Controls.Add(this.button8);
-            this.QuestionGroup.Controls.Add(this.button7);
-            this.QuestionGroup.Controls.Add(this.button6);
-            this.QuestionGroup.Controls.Add(this.button5);
-            this.QuestionGroup.Controls.Add(this.button4);
-            this.QuestionGroup.Controls.Add(this.button3);
-            this.QuestionGroup.Controls.Add(this.button2);
-            this.QuestionGroup.Controls.Add(this.button1);
-            this.QuestionGroup.Controls.Add(this.button0);
-            this.QuestionGroup.Controls.Add(this.pictureBox6);
-            this.QuestionGroup.Controls.Add(this.pictureBox5);
-            this.QuestionGroup.Controls.Add(this.picture_res2);
-            this.QuestionGroup.Controls.Add(this.picture_res1);
-            this.QuestionGroup.Controls.Add(this.picture_r2);
-            this.QuestionGroup.Controls.Add(this.picture_l2);
-            this.QuestionGroup.Controls.Add(this.ResultNum);
-            this.QuestionGroup.Controls.Add(this.ConfirmButton);
-            this.QuestionGroup.Controls.Add(this.RightNum);
-            this.QuestionGroup.Controls.Add(this.LeftNum);
-            this.QuestionGroup.Location = new System.Drawing.Point(171, 42);
-            this.QuestionGroup.Name = "QuestionGroup";
-            this.QuestionGroup.Size = new System.Drawing.Size(617, 321);
-            this.QuestionGroup.TabIndex = 9;
-            this.QuestionGroup.TabStop = false;
-            this.QuestionGroup.Visible = false;
+            this.groupbox.BackColor = System.Drawing.Color.Gray;
+            this.groupbox.Controls.Add(this.picture_res3);
+            this.groupbox.Controls.Add(this.picture_r1);
+            this.groupbox.Controls.Add(this.picture_l1);
+            this.groupbox.Controls.Add(this.pictureBox6);
+            this.groupbox.Controls.Add(this.pictureBox5);
+            this.groupbox.Controls.Add(this.picture_res2);
+            this.groupbox.Controls.Add(this.picture_res1);
+            this.groupbox.Controls.Add(this.picture_r2);
+            this.groupbox.Controls.Add(this.picture_l2);
+            this.groupbox.Location = new System.Drawing.Point(5, 15);
+            this.groupbox.Name = "groupbox";
+            this.groupbox.Size = new System.Drawing.Size(624, 71);
+            this.groupbox.TabIndex = 9;
+            this.groupbox.TabStop = false;
+            this.groupbox.Visible = false;
             // 
             // picture_res3
             // 
             this.picture_res3.InitialImage = null;
-            this.picture_res3.Location = new System.Drawing.Point(549, 91);
+            this.picture_res3.Location = new System.Drawing.Point(553, 10);
             this.picture_res3.Name = "picture_res3";
             this.picture_res3.Size = new System.Drawing.Size(62, 57);
             this.picture_res3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -171,7 +159,7 @@
             // picture_r1
             // 
             this.picture_r1.InitialImage = null;
-            this.picture_r1.Location = new System.Drawing.Point(210, 91);
+            this.picture_r1.Location = new System.Drawing.Point(214, 10);
             this.picture_r1.Name = "picture_r1";
             this.picture_r1.Size = new System.Drawing.Size(62, 57);
             this.picture_r1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -181,7 +169,7 @@
             // picture_l1
             // 
             this.picture_l1.InitialImage = null;
-            this.picture_l1.Location = new System.Drawing.Point(6, 91);
+            this.picture_l1.Location = new System.Drawing.Point(10, 10);
             this.picture_l1.Name = "picture_l1";
             this.picture_l1.Size = new System.Drawing.Size(62, 57);
             this.picture_l1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -192,7 +180,7 @@
             // 
             this.del_button.BackgroundImage = global::EducationalSoftware.Properties.Resources.delete;
             this.del_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.del_button.Location = new System.Drawing.Point(346, 257);
+            this.del_button.Location = new System.Drawing.Point(409, 152);
             this.del_button.Name = "del_button";
             this.del_button.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.del_button.Size = new System.Drawing.Size(62, 58);
@@ -204,7 +192,7 @@
             // 
             this.button9.BackgroundImage = global::EducationalSoftware.Properties.Resources.num_9;
             this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button9.Location = new System.Drawing.Point(278, 257);
+            this.button9.Location = new System.Drawing.Point(341, 152);
             this.button9.Name = "button9";
             this.button9.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button9.Size = new System.Drawing.Size(62, 58);
@@ -217,7 +205,7 @@
             // 
             this.button8.BackgroundImage = global::EducationalSoftware.Properties.Resources.num_8;
             this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button8.Location = new System.Drawing.Point(210, 257);
+            this.button8.Location = new System.Drawing.Point(273, 152);
             this.button8.Name = "button8";
             this.button8.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button8.Size = new System.Drawing.Size(62, 58);
@@ -230,7 +218,7 @@
             // 
             this.button7.BackgroundImage = global::EducationalSoftware.Properties.Resources.num_7;
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button7.Location = new System.Drawing.Point(142, 257);
+            this.button7.Location = new System.Drawing.Point(205, 152);
             this.button7.Name = "button7";
             this.button7.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button7.Size = new System.Drawing.Size(62, 58);
@@ -243,7 +231,7 @@
             // 
             this.button6.BackgroundImage = global::EducationalSoftware.Properties.Resources.num_6;
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button6.Location = new System.Drawing.Point(74, 257);
+            this.button6.Location = new System.Drawing.Point(137, 152);
             this.button6.Name = "button6";
             this.button6.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button6.Size = new System.Drawing.Size(62, 58);
@@ -256,7 +244,7 @@
             // 
             this.button5.BackgroundImage = global::EducationalSoftware.Properties.Resources.num_5;
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.Location = new System.Drawing.Point(6, 257);
+            this.button5.Location = new System.Drawing.Point(69, 152);
             this.button5.Name = "button5";
             this.button5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button5.Size = new System.Drawing.Size(62, 58);
@@ -269,7 +257,7 @@
             // 
             this.button4.BackgroundImage = global::EducationalSoftware.Properties.Resources.num_4;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.Location = new System.Drawing.Point(278, 193);
+            this.button4.Location = new System.Drawing.Point(341, 88);
             this.button4.Name = "button4";
             this.button4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button4.Size = new System.Drawing.Size(62, 58);
@@ -282,7 +270,7 @@
             // 
             this.button3.BackgroundImage = global::EducationalSoftware.Properties.Resources.num_3;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(210, 193);
+            this.button3.Location = new System.Drawing.Point(273, 88);
             this.button3.Name = "button3";
             this.button3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button3.Size = new System.Drawing.Size(62, 58);
@@ -295,7 +283,7 @@
             // 
             this.button2.BackgroundImage = global::EducationalSoftware.Properties.Resources.num_2;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(142, 193);
+            this.button2.Location = new System.Drawing.Point(205, 88);
             this.button2.Name = "button2";
             this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button2.Size = new System.Drawing.Size(62, 58);
@@ -308,7 +296,7 @@
             // 
             this.button1.BackgroundImage = global::EducationalSoftware.Properties.Resources.num_1;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(74, 193);
+            this.button1.Location = new System.Drawing.Point(137, 88);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button1.Size = new System.Drawing.Size(62, 58);
@@ -321,7 +309,7 @@
             // 
             this.button0.BackgroundImage = global::EducationalSoftware.Properties.Resources.num_0;
             this.button0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button0.Location = new System.Drawing.Point(6, 193);
+            this.button0.Location = new System.Drawing.Point(69, 88);
             this.button0.Name = "button0";
             this.button0.Size = new System.Drawing.Size(62, 58);
             this.button0.TabIndex = 33;
@@ -333,7 +321,7 @@
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.InitialImage = null;
-            this.pictureBox6.Location = new System.Drawing.Point(346, 91);
+            this.pictureBox6.Location = new System.Drawing.Point(350, 10);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(62, 57);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -344,7 +332,7 @@
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.InitialImage = null;
-            this.pictureBox5.Location = new System.Drawing.Point(142, 91);
+            this.pictureBox5.Location = new System.Drawing.Point(146, 10);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(62, 57);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -354,7 +342,7 @@
             // picture_res2
             // 
             this.picture_res2.InitialImage = null;
-            this.picture_res2.Location = new System.Drawing.Point(481, 91);
+            this.picture_res2.Location = new System.Drawing.Point(485, 10);
             this.picture_res2.Name = "picture_res2";
             this.picture_res2.Size = new System.Drawing.Size(62, 57);
             this.picture_res2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -364,7 +352,7 @@
             // picture_res1
             // 
             this.picture_res1.InitialImage = null;
-            this.picture_res1.Location = new System.Drawing.Point(413, 91);
+            this.picture_res1.Location = new System.Drawing.Point(417, 10);
             this.picture_res1.Name = "picture_res1";
             this.picture_res1.Size = new System.Drawing.Size(62, 57);
             this.picture_res1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -374,7 +362,7 @@
             // picture_r2
             // 
             this.picture_r2.InitialImage = null;
-            this.picture_r2.Location = new System.Drawing.Point(278, 91);
+            this.picture_r2.Location = new System.Drawing.Point(282, 10);
             this.picture_r2.Name = "picture_r2";
             this.picture_r2.Size = new System.Drawing.Size(62, 57);
             this.picture_r2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -384,7 +372,7 @@
             // picture_l2
             // 
             this.picture_l2.InitialImage = null;
-            this.picture_l2.Location = new System.Drawing.Point(74, 91);
+            this.picture_l2.Location = new System.Drawing.Point(78, 10);
             this.picture_l2.Name = "picture_l2";
             this.picture_l2.Size = new System.Drawing.Size(62, 57);
             this.picture_l2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -394,7 +382,7 @@
             // ResultNum
             // 
             this.ResultNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResultNum.Location = new System.Drawing.Point(413, 28);
+            this.ResultNum.Location = new System.Drawing.Point(584, 3);
             this.ResultNum.Maximum = new decimal(new int[] {
             999,
             0,
@@ -409,7 +397,7 @@
             // 
             this.ConfirmButton.BackgroundImage = global::EducationalSoftware.Properties.Resources.confirm;
             this.ConfirmButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ConfirmButton.Location = new System.Drawing.Point(524, 229);
+            this.ConfirmButton.Location = new System.Drawing.Point(525, 128);
             this.ConfirmButton.Name = "ConfirmButton";
             this.ConfirmButton.Size = new System.Drawing.Size(87, 86);
             this.ConfirmButton.TabIndex = 10;
@@ -419,7 +407,7 @@
             // RightNum
             // 
             this.RightNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RightNum.Location = new System.Drawing.Point(210, 28);
+            this.RightNum.Location = new System.Drawing.Point(381, 12);
             this.RightNum.Name = "RightNum";
             this.RightNum.Size = new System.Drawing.Size(62, 29);
             this.RightNum.TabIndex = 14;
@@ -428,7 +416,7 @@
             // LeftNum
             // 
             this.LeftNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LeftNum.Location = new System.Drawing.Point(6, 28);
+            this.LeftNum.Location = new System.Drawing.Point(197, 12);
             this.LeftNum.Name = "LeftNum";
             this.LeftNum.Size = new System.Drawing.Size(62, 29);
             this.LeftNum.TabIndex = 13;
@@ -509,24 +497,51 @@
             this.msglabel.Text = "Correct!";
             this.msglabel.Visible = false;
             // 
+            // QuestionGroup
+            // 
+            this.QuestionGroup.BackColor = System.Drawing.Color.Transparent;
+            this.QuestionGroup.Controls.Add(this.button8);
+            this.QuestionGroup.Controls.Add(this.ConfirmButton);
+            this.QuestionGroup.Controls.Add(this.button0);
+            this.QuestionGroup.Controls.Add(this.groupbox);
+            this.QuestionGroup.Controls.Add(this.del_button);
+            this.QuestionGroup.Controls.Add(this.button1);
+            this.QuestionGroup.Controls.Add(this.button9);
+            this.QuestionGroup.Controls.Add(this.button2);
+            this.QuestionGroup.Controls.Add(this.button3);
+            this.QuestionGroup.Controls.Add(this.button7);
+            this.QuestionGroup.Controls.Add(this.button4);
+            this.QuestionGroup.Controls.Add(this.button6);
+            this.QuestionGroup.Controls.Add(this.button5);
+            this.QuestionGroup.Location = new System.Drawing.Point(164, 154);
+            this.QuestionGroup.Name = "QuestionGroup";
+            this.QuestionGroup.Size = new System.Drawing.Size(632, 217);
+            this.QuestionGroup.TabIndex = 21;
+            // 
             // TestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::EducationalSoftware.Properties.Resources.final_Exam_Backgroun;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(852, 486);
             this.Controls.Add(this.msglabel);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.DifficultyGroup);
-            this.Controls.Add(this.QuestionGroup);
             this.Controls.Add(this.TotalQuestionsText);
             this.Controls.Add(this.QuestionSlash);
             this.Controls.Add(this.ThisQuestionsText);
             this.Controls.Add(this.QuestionLabel);
+            this.Controls.Add(this.ResultNum);
+            this.Controls.Add(this.QuestionGroup);
+            this.Controls.Add(this.RightNum);
+            this.Controls.Add(this.LeftNum);
+            this.DoubleBuffered = true;
             this.Name = "TestForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Evaluation Test";
             this.Load += new System.EventHandler(this.TestForm_Load);
-            this.QuestionGroup.ResumeLayout(false);
+            this.groupbox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picture_res3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_r1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_l1)).EndInit();
@@ -541,6 +556,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.LeftNum)).EndInit();
             this.DifficultyGroup.ResumeLayout(false);
             this.DifficultyGroup.PerformLayout();
+            this.QuestionGroup.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -552,7 +568,7 @@
         private System.Windows.Forms.Label ThisQuestionsText;
         private System.Windows.Forms.Label QuestionSlash;
         private System.Windows.Forms.Label TotalQuestionsText;
-        private System.Windows.Forms.GroupBox QuestionGroup;
+        private System.Windows.Forms.GroupBox groupbox;
         private System.Windows.Forms.Button EasyButton;
         private System.Windows.Forms.Button MediumButton;
         private System.Windows.Forms.Button HardButton;
@@ -584,6 +600,7 @@
         private System.Windows.Forms.PictureBox picture_l1;
         private System.Windows.Forms.PictureBox picture_res3;
         private System.Windows.Forms.Label msglabel;
+        private System.Windows.Forms.Panel QuestionGroup;
     }
 }
 
