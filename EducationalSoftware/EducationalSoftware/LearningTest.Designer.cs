@@ -412,6 +412,7 @@
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.QuestionGroup);
             this.Name = "LearningTest";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LearningTest";
             this.Load += new System.EventHandler(this.LearningTest_Load);
             this.QuestionGroup.ResumeLayout(false);

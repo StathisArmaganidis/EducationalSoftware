@@ -63,7 +63,7 @@ namespace EducationalSoftware
             picture_res2.Image = null;
             picture_res3.Image = null;
 
-           
+
             int rightnum = rnd.Next(0, 11);
             string chosen_number = RandomProbability.Choose(probabilities,numbers);
             int leftnum = Int32.Parse(chosen_number);
@@ -91,7 +91,7 @@ namespace EducationalSoftware
 
                 if (eq.equal_digits.Count >= 2)
                 {
-                    if (eq.right_mult_digits.Count == 3)
+                    if (eq.equal_digits.Count == 3)
                     {
                         picture_res1.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + eq.equal_digits[2]);
                         picture_res2.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + eq.equal_digits[1]);
