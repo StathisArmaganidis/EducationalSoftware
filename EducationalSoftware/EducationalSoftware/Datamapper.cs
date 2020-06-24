@@ -293,7 +293,13 @@ namespace EducationalSoftware
                 exists=Convert.ToInt32(command.ExecuteScalar());
                 if (exists > 0)
                 {
-                    cmd = "UPDATE [Statistics] SET [right_1]=@right_1,[wrong_1]=@wrong_1,[right_2]=@right_2,[wrong_2]=@wrong_2,[right_3]=@right_3,[wrong_3]=@wrong_3,[right_4]=@right_4,[wrong_4]=@wrong_4,[right_5]=@right_5,[wrong_5]=@wrong_5,[right_6]=@right_6,[wrong_6]=@wrong_6,[right_7]=@right_7,[wrong_7]=@wrong_7,[right_8]=@right_8,[wrong_8]=@wrong_8,[right_9]=@right_9,[wrong_9]=@wrong_9,[right_10]=@right_10,[wrong_10]=@wrong_10 WHERE [username]=@username AND [date]= #06/24/2020#";
+                    cmd = "UPDATE [Statistics] SET [right_1]="+ statistics[0]+ ",[wrong_1]=" + statistics[1] + ",[right_2]=" + statistics[2] + ",[wrong_2]=" + statistics[3] + "," +
+                        "[right_3]=" + statistics[4] + ",[wrong_3]=" + statistics[5] + ",[right_4]=" + statistics[6] + ",[wrong_4]=" + statistics[7] + "," +
+                        "[right_5]=" + statistics[8] + ",[wrong_5]=" + statistics[9] + ",[right_6]=" + statistics[10] + ",[wrong_6]=" + statistics[11] + "," +
+                        "[right_7]=" + statistics[12] + ",[wrong_7]=" + statistics[13] + ",[right_8]=" + statistics[14] + ",[wrong_8]=" + statistics[15] + "," +
+                        "[right_9]=" + statistics[16] + ",[wrong_9]=" + statistics[17] + ",[right_10]=" + statistics[18] + ",[wrong_10]=" + statistics[19] + " " +
+                        "WHERE [username]=@username AND [date]=#" + date+"#";
+                
                 }
                 else
                 {
@@ -302,7 +308,7 @@ namespace EducationalSoftware
 
                 command = new OleDbCommand(cmd, connection);
                 command.Parameters.AddWithValue("@username", username);
-                command.Parameters.AddWithValue("@right_1", statistics[0]);
+                command.Parameters.AddWithValue("@wrong_1", statistics[0]);
                 command.Parameters.AddWithValue("@wrong_1", statistics[1]);
                 command.Parameters.AddWithValue("@right_2", statistics[2]);
                 command.Parameters.AddWithValue("@wrong_2", statistics[3]);
