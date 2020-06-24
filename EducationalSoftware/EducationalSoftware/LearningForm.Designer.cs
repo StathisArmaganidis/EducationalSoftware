@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.learntitle = new System.Windows.Forms.Label();
             this.Ten = new System.Windows.Forms.Button();
             this.Nine = new System.Windows.Forms.Button();
             this.Eight = new System.Windows.Forms.Button();
@@ -38,8 +39,17 @@
             this.Three = new System.Windows.Forms.Button();
             this.Two = new System.Windows.Forms.Button();
             this.One = new System.Windows.Forms.Button();
-            this.learntitle = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // learntitle
+            // 
+            this.learntitle.AutoSize = true;
+            this.learntitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.learntitle.Location = new System.Drawing.Point(269, 9);
+            this.learntitle.Name = "learntitle";
+            this.learntitle.Size = new System.Drawing.Size(293, 37);
+            this.learntitle.TabIndex = 31;
+            this.learntitle.Text = "Learn Multiplication";
             // 
             // Ten
             // 
@@ -161,20 +171,12 @@
             this.One.UseVisualStyleBackColor = true;
             this.One.Click += new System.EventHandler(this.number_button_Click);
             // 
-            // learntitle
-            // 
-            this.learntitle.AutoSize = true;
-            this.learntitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.learntitle.Location = new System.Drawing.Point(269, 9);
-            this.learntitle.Name = "learntitle";
-            this.learntitle.Size = new System.Drawing.Size(293, 37);
-            this.learntitle.TabIndex = 31;
-            this.learntitle.Text = "Learn Multiplication";
-            // 
             // LearningForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::EducationalSoftware.Properties.Resources.multiplication_background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(806, 570);
             this.Controls.Add(this.Ten);
             this.Controls.Add(this.Nine);

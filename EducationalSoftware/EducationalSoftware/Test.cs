@@ -31,6 +31,7 @@ namespace EducationalSoftware
             msglabel.Location = new Point(300, 200);
             DifficultyGroup.Location = new Point(this.Size.Width / 2 - DifficultyGroup.Size.Width / 2, this.Size.Height / 2 - DifficultyGroup.Size.Height / 2);
             keys = new NumKeyboard(picture_r1, picture_r2, picture_res1, picture_res2, picture_res3, RightNum, ResultNum);
+            QuestionGroup.Visible = false;
         }
 
         private void EasyButton_Click(object sender, EventArgs e)
@@ -57,7 +58,6 @@ namespace EducationalSoftware
         private void CreateQuestionaire()
         {
             DifficultyGroup.Visible = false;
-            QuestionGroup.Location = new Point(this.Size.Width / 2 - QuestionGroup.Size.Width / 2, this.Size.Height / 2 - QuestionGroup.Size.Height / 2);
             QuestionGroup.Visible = true;
             QuestionLabel.Visible = true;
             ThisQuestionsText.Visible = true;
@@ -171,7 +171,7 @@ namespace EducationalSoftware
                 picture_r2.Tag = "given";
             }
         }
-
+               
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
             keys.FixResult();
@@ -180,7 +180,7 @@ namespace EducationalSoftware
                 points++;
                 msglabel.Text = "Correct!";
                 msglabel.ForeColor = Color.Green;
-                QuestionGroup.Visible = false;
+                groupbox.Visible = false;
                 msglabel.Visible = true;
                 Wait();
             }
@@ -188,7 +188,7 @@ namespace EducationalSoftware
             {
                 msglabel.Text = "Wrong!";
                 msglabel.ForeColor = Color.Maroon;
-                QuestionGroup.Visible = false;
+                groupbox.Visible = false;
                 msglabel.Visible = true;
                 Wait();
             }
@@ -200,7 +200,7 @@ namespace EducationalSoftware
             }
             else
             {
-                MessageBox.Show("yay! "+points.ToString()+" out of "+TotalQuestionsNum.ToString()+" correct answets!");//test
+                MessageBox.Show("yay! "+points.ToString()+" out of "+TotalQuestionsNum.ToString()+" correct answets!");//THIS NEEDS TO BE EDITED! ASAP.
                 BackButton.Enabled = true;
                 ConfirmButton.Enabled = false;
             }            
@@ -227,7 +227,7 @@ namespace EducationalSoftware
         {
             await Task.Delay(1000);
             msglabel.Visible = false;
-            QuestionGroup.Visible = true;
+            groupbox.Visible = true;
 
         }
 

@@ -24,7 +24,7 @@ namespace EducationalSoftware
         {
             
             InitializeComponent();
-            this.pictureBox1.Image = (Image)Properties.Resources.ResourceManager.GetObject(snumber);
+            this.pictureBox1.Image = (Image)Properties.Resources.ResourceManager.GetObject(snumber+"_chalk");
             for (int i = 0; i <= 10; i++)
             {
                 equations.Add((new Equation(innumber, i, "right"),0));
@@ -37,6 +37,11 @@ namespace EducationalSoftware
             keyboard = new NumKeyboard(Right_mult_2, Right_mult_1, Equal_3, Equal_2, Equal_1, rightnum, eqnum);
         }
 
+        /// <summary>
+        /// Checks if any questions are left unanswered and shows them else proceeds to next screen.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Next_Click(object sender, EventArgs e)
         {
             this.eqnum.Value = 0;
@@ -88,6 +93,11 @@ namespace EducationalSoftware
             }
         }
 
+        /// <summary>
+        /// Shows different color according to the correctness of the answer.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
             this.ConfirmButton.Enabled = false;
@@ -96,13 +106,13 @@ namespace EducationalSoftware
             keyboard.FixResult();
             if (this.eqnum.Value == equations[current_index].Item1.equal_number)
             {
-                this.panel1.BackColor = Color.Green;
+                this.panel1.BackColor = Color.FromArgb(128, 255, 128);
                 equations.RemoveAt(current_index);
             }
             else
             {
-                
-                this.panel1.BackColor = Color.Red;
+
+                this.panel1.BackColor = Color.FromArgb(255, 128, 128);
                 this.panel1.Location = new Point(this.panel1.Location.X + 5, this.panel1.Location.Y);
                 System.Threading.Thread.Sleep(100);
                 this.panel1.Location = new Point(this.panel1.Location.X - 5, this.panel1.Location.Y);

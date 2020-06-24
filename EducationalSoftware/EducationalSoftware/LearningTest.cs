@@ -33,7 +33,6 @@ namespace EducationalSoftware
         }
         Random rnd = new Random();
 
-        private int[] done = new int[10];
         NumKeyboard keys;
         private void LearningTest_Load(object sender, EventArgs e)
         {
@@ -198,11 +197,17 @@ namespace EducationalSoftware
             keys.CheckEmpty(sender);
         }
 
-
         private void del_button_Click(object sender, EventArgs e)
         {
             keys.DelNumber();
         }
+
+        /// <summary>
+        /// Balances mutlipliers and calculates new probabilities.
+        /// </summary>
+        /// <param name="index"></param>
+        /// <param name="operation"></param>
+        /// <param name="dif"></param>
         private void fix_probabilities(int index, string operation,float dif)
         {
             if (operation == "+")

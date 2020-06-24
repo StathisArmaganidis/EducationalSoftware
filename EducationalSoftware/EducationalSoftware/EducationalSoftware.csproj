@@ -304,6 +304,23 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Database.accdb" />
+    <None Include="Resources\90-908119_exam-transparent-background-final-exam-transparent-background.png" />
+    <None Include="Resources\Practise_Test_Background.jpg" />
+    <None Include="Resources\liprofile-656x369.png" />
+    <None Include="Resources\Hd Desktop Wallpapers Daily Pics Update HD Wallpapers Download.jpeg" />
+    <None Include="Resources\Childrens Ministry.jpg" />
+    <None Include="Resources\FreeVector-Kids-Background-Vector.jpg" />
+    <None Include="Resources\learning_background.jpg" />
+    <None Include="Resources\two_chalk.png" />
+    <None Include="Resources\three_chalk.png" />
+    <None Include="Resources\ten_chalk.png" />
+    <None Include="Resources\six_chalk.png" />
+    <None Include="Resources\seven_chalk.png" />
+    <None Include="Resources\one_chalk.png" />
+    <None Include="Resources\nine_chalk.png" />
+    <None Include="Resources\four_chalk.png" />
+    <None Include="Resources\five_chalk.png" />
+    <None Include="Resources\eight_chalk.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

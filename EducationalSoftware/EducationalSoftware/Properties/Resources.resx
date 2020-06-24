@@ -196,4 +196,55 @@
   <data name="Two" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Two.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Eight_chalk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eight_chalk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Five_chalk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\five_chalk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Four_chalk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\four_chalk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="learning_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\learning_background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Login_Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hd Desktop Wallpapers Daily Pics Update HD Wallpapers Download.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Main_Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Childrens Ministry.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="multiplication_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FreeVector-Kids-Background-Vector.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Nine_chalk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nine_chalk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="One_chalk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\one_chalk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Seven_chalk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\seven_chalk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Six_chalk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\six_chalk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ten_chalk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ten_chalk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Three_chalk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\three_chalk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Two_chalk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\two_chalk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="final_Exam_Backgroun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\90-908119_exam-transparent-background-final-exam-transparent-background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Practise_Test_Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Practise_Test_Background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="profile_backround" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\liprofile-656x369.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
