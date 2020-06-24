@@ -88,7 +88,6 @@
             this.Controls.Add(this.GotoLearningForm);
             this.Controls.Add(this.GotoTestForm);
             this.Name = "User_Form";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "User_Form";
             this.ResumeLayout(false);
 

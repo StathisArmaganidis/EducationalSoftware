@@ -28,7 +28,6 @@ namespace EducationalSoftware
         NumKeyboard keys;
         private void TestForm_Load(object sender, EventArgs e)
         {
-            msglabel.Location = new Point(300, 200);
             DifficultyGroup.Location = new Point(this.Size.Width / 2 - DifficultyGroup.Size.Width / 2, this.Size.Height / 2 - DifficultyGroup.Size.Height / 2);
             keys = new NumKeyboard(picture_r1, picture_r2, picture_res1, picture_res2, picture_res3, RightNum, ResultNum);
         }
@@ -81,7 +80,7 @@ namespace EducationalSoftware
 
             ThisQuestionNum++;
             ThisQuestionsText.Text = ThisQuestionNum.ToString();
-
+            
             int rightnum = rnd.Next(0, 11);
             int leftnum;
             do
@@ -95,7 +94,7 @@ namespace EducationalSoftware
             }
             Equation eq = new Equation(leftnum, rightnum, "right");
 
-            int blank = 0;// rnd.Next(0, 2);//chooses randomly which number box of the multiplication will be blank.
+            int blank = rnd.Next(0, 2);//chooses randomly which number box of the multiplication will be blank.
 
             
             if (eq.left_mult_digits.Count == 2)
@@ -117,7 +116,7 @@ namespace EducationalSoftware
 
                 if (eq.equal_digits.Count >= 2)
                 {
-                    if (eq.equal_digits.Count == 3)
+                    if (eq.right_mult_digits.Count == 3)
                     {
                         picture_res1.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + eq.equal_digits[2]);
                         picture_res2.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + eq.equal_digits[1]);
@@ -178,19 +177,11 @@ namespace EducationalSoftware
             if (LeftNum.Value * RightNum.Value == ResultNum.Value)
             {
                 points++;
-                msglabel.Text = "Correct!";
-                msglabel.ForeColor = Color.Green;
-                QuestionGroup.Visible = false;
-                msglabel.Visible = true;
-                Wait();
+                MessageBox.Show("Correct Answer! Well Done");
             }
             else
             {
-                msglabel.Text = "Wrong!";
-                msglabel.ForeColor = Color.Maroon;
-                QuestionGroup.Visible = false;
-                msglabel.Visible = true;
-                Wait();
+                MessageBox.Show("Oh, no! Wrong answer. \nBetter luck next time!");
             }
             if (ThisQuestionNum < TotalQuestionsNum)
             {
@@ -221,14 +212,6 @@ namespace EducationalSoftware
         private void BackButton_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        public async void Wait()
-        {
-            await Task.Delay(1000);
-            msglabel.Visible = false;
-            QuestionGroup.Visible = true;
-
         }
 
     }

@@ -19,30 +19,23 @@ namespace EducationalSoftware
 
         private void GotoLearningForm_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
-            new LearningForm().ShowDialog();
-            this.Visible = true;
+             new LearningForm().ShowDialog();
+
         }
 
         private void GotoTestForm_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
-            new TestForm().ShowDialog();
-            this.Visible = true;
+             new TestForm().ShowDialog();
         }
 
         private void GotoLearningTest_Click_1(object sender, EventArgs e)
         {
-            this.Visible = false;
             new LearningTest().ShowDialog();
-            this.Visible = true;
         }
 
         private void GotoProfile(object sender, EventArgs e)
         {
-            this.Visible = false;
             new Profile_Form().ShowDialog();
-            this.Visible = true;
         }
     }
 }
