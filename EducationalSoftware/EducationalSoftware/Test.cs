@@ -171,7 +171,7 @@ namespace EducationalSoftware
                 picture_r2.Tag = "given";
             }
         }
-
+               
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
             keys.FixResult();

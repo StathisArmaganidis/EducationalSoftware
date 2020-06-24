@@ -57,6 +57,12 @@ namespace EducationalSoftware
             return true;
         }
 
+        /// <summary>
+        /// Adds password string with salt byte array and generates the hash.
+        /// </summary>
+        /// <param name="pass"></param>
+        /// <param name="salt"></param>
+        /// <returns></returns>
         private byte[] GenerateHash(string pass,byte[] salt)
         {
             byte[] text = Encoding.ASCII.GetBytes(pass);
@@ -242,6 +248,12 @@ namespace EducationalSoftware
             }
         }
 
+        /// <summary>
+        /// returns an int array with the statistics from the practice test.
+        /// </summary>
+        /// <param name="username"></param>
+        /// <param name="date"></param>
+        /// <returns></returns>
         public int[] GetStatistics(string username, DateTime date)
         {
             try
@@ -277,6 +289,13 @@ namespace EducationalSoftware
             }
         }
 
+        /// <summary>
+        /// returns true or false if the new statistics could be saves in the database.
+        /// </summary>
+        /// <param name="username"></param>
+        /// <param name="statistics"></param>
+        /// <param name="datet"></param>
+        /// <returns></returns>
         public bool SaveStatistics(string username,int[] statistics, DateTime datet)
         {
             try
@@ -291,7 +310,7 @@ namespace EducationalSoftware
                 command.Parameters.AddWithValue("@date", date);
                 OpenConnection();
                 exists=Convert.ToInt32(command.ExecuteScalar());
-                if (exists > 0)
+                if (exists > 0)//if tuple already exists.
                 {
                     cmd = "UPDATE [Statistics] SET [right_1]="+ statistics[0]+ ",[wrong_1]=" + statistics[1] + ",[right_2]=" + statistics[2] + ",[wrong_2]=" + statistics[3] + "," +
                         "[right_3]=" + statistics[4] + ",[wrong_3]=" + statistics[5] + ",[right_4]=" + statistics[6] + ",[wrong_4]=" + statistics[7] + "," +
@@ -342,6 +361,12 @@ namespace EducationalSoftware
             }
         }
         
+        /// <summary>
+        /// Tests if user credentials are correct
+        /// </summary>
+        /// <param name="username"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
         public bool LoginUser(string username, string password)
         {
             try

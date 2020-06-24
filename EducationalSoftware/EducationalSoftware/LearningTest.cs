@@ -197,11 +197,11 @@ namespace EducationalSoftware
             keys.CheckEmpty(sender);
         }
 
-
         private void del_button_Click(object sender, EventArgs e)
         {
             keys.DelNumber();
         }
+
         private void fix_probabilities(int index, string operation,float dif)
         {
             if (operation == "+")

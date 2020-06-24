@@ -37,6 +37,11 @@ namespace EducationalSoftware
             keyboard = new NumKeyboard(Right_mult_2, Right_mult_1, Equal_3, Equal_2, Equal_1, rightnum, eqnum);
         }
 
+        /// <summary>
+        /// Checks if any questions are left unanswered and shows them else proceeds to next screen.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Next_Click(object sender, EventArgs e)
         {
             this.eqnum.Value = 0;
@@ -88,6 +93,11 @@ namespace EducationalSoftware
             }
         }
 
+        /// <summary>
+        /// Shows different color according to the correctness of the answer.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
             this.ConfirmButton.Enabled = false;

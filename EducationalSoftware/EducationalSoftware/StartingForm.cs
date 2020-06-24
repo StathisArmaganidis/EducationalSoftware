@@ -29,10 +29,6 @@ namespace EducationalSoftware
             RegisterGroup.Visible = false;
         }
 
-
-
-
-
         private void GoRegister_Click(object sender, EventArgs e)
         {
             LoginGroup.Visible = false;
