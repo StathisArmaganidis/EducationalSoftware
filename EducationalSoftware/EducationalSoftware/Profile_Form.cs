@@ -54,18 +54,21 @@ namespace EducationalSoftware
             {
                 case "Last Month":
                     date = date.AddMonths(-1);
+                    date = new DateTime(date.Year, date.Month, 1);
                     break;
                 case "Last Three Months":
                     date = date.AddMonths(-3);
+                    date = new DateTime(date.Year, date.Month, 1);
                     break;
                 case "This Year":
-                    date = date.AddMonths(-(date.Month));
+                    date = new DateTime(date.Year, 1, 1);
                     break;
                 case "Last Year":
                     date = date.AddYears(-1);
-                    date = date.AddMonths(-(date.Month));
+                    date = new DateTime(date.Year, 1, 1);
                     break;
                 default:
+                    date = new DateTime(date.Year, date.Month, 1);
                     break;
             }
             refresh_chart(date);
