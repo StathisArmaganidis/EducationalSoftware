@@ -277,24 +277,15 @@ namespace EducationalSoftware
             }
         }
 
-        public bool SaveStatistics(string username,int[] statistics)
+        public bool SaveStatistics(string username,int[] statistics, DateTime datet)
         {
             try
             {
                 int exists = 0;
-                /*
+            
                 string date;
-                if (datet.Month > 9)
-                {
-                    date = datet.ToString("MM/dd/yyyy");
-                }
-                else
-                {
-                    date = datet.ToString("M/dd/yyyy");
-                }
-                */
-                int date = Convert.ToInt32(DateTime.Now.ToOADate());//αυτη η γραμμη μετατρέπει σε αριθμό, εαν την σβησεις ΘΥΜΗΣΟΥ ΝΑ ΑΛΛΑΞΕΙΣ ΣΤΗΝ ΒΑΣΗ ΤΟΝ ΤΥΠΟ του date
-                string cmd = "SELECT * FROM [Statistics] WHERE [username]=@username AND [date]=@date";
+                date = datet.ToString("MM/dd/yyyy");
+                string cmd = "SELECT * FROM [Statistics] WHERE [username]=@username AND [date]=Datevalue(@date)";
                 OleDbCommand command = new OleDbCommand(cmd, connection);
                 command.Parameters.AddWithValue("@username", username);
                 command.Parameters.AddWithValue("@date", date);
@@ -302,7 +293,7 @@ namespace EducationalSoftware
                 exists=Convert.ToInt32(command.ExecuteScalar());
                 if (exists > 0)
                 {
-                    cmd = "UPDATE [Statistics] SET [right_1]=@right_1,[wrong_1]=@wrong_1,[right_2]=@right_2,[wrong_2]=@wrong_2,[right_3]=@right_3,[wrong_3]=@wrong_3,[right_4]=@right_4,[wrong_4]=@wrong_4,[right_5]=@right_5,[wrong_5]=@wrong_5,[right_6]=@right_6,[wrong_6]=@wrong_6,[right_7]=@right_7,[wrong_7]=@wrong_7,[right_8]=@right_8,[wrong_8]=@wrong_8,[right_9]=@right_9,[wrong_9]=@wrong_9,[right_10]=@right_10,[wrong_10]=@wrong_10 WHERE [username]=@username AND [date]=44006";
+                    cmd = "UPDATE [Statistics] SET [right_1]=@right_1,[wrong_1]=@wrong_1,[right_2]=@right_2,[wrong_2]=@wrong_2,[right_3]=@right_3,[wrong_3]=@wrong_3,[right_4]=@right_4,[wrong_4]=@wrong_4,[right_5]=@right_5,[wrong_5]=@wrong_5,[right_6]=@right_6,[wrong_6]=@wrong_6,[right_7]=@right_7,[wrong_7]=@wrong_7,[right_8]=@right_8,[wrong_8]=@wrong_8,[right_9]=@right_9,[wrong_9]=@wrong_9,[right_10]=@right_10,[wrong_10]=@wrong_10 WHERE [username]=@username AND [date]= #06/24/2020#";
                 }
                 else
                 {
@@ -311,7 +302,6 @@ namespace EducationalSoftware
 
                 command = new OleDbCommand(cmd, connection);
                 command.Parameters.AddWithValue("@username", username);
-                //command.Parameters.AddWithValue("@date", date);
                 command.Parameters.AddWithValue("@right_1", statistics[0]);
                 command.Parameters.AddWithValue("@wrong_1", statistics[1]);
                 command.Parameters.AddWithValue("@right_2", statistics[2]);
