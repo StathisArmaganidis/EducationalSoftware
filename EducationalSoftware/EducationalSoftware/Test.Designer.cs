@@ -64,6 +64,7 @@
             this.ChooseText = new System.Windows.Forms.Label();
             this.DifficultyGroup = new System.Windows.Forms.GroupBox();
             this.BackButton = new System.Windows.Forms.Button();
+            this.msglabel = new System.Windows.Forms.Label();
             this.QuestionGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture_res3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_r1)).BeginInit();
@@ -496,11 +497,24 @@
             this.BackButton.UseVisualStyleBackColor = true;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
+            // msglabel
+            // 
+            this.msglabel.AutoSize = true;
+            this.msglabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.msglabel.ForeColor = System.Drawing.Color.Green;
+            this.msglabel.Location = new System.Drawing.Point(-158, 174);
+            this.msglabel.Name = "msglabel";
+            this.msglabel.Size = new System.Drawing.Size(323, 91);
+            this.msglabel.TabIndex = 20;
+            this.msglabel.Text = "Correct!";
+            this.msglabel.Visible = false;
+            // 
             // TestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(852, 486);
+            this.Controls.Add(this.msglabel);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.DifficultyGroup);
             this.Controls.Add(this.QuestionGroup);
@@ -569,6 +583,7 @@
         private System.Windows.Forms.PictureBox picture_r1;
         private System.Windows.Forms.PictureBox picture_l1;
         private System.Windows.Forms.PictureBox picture_res3;
+        private System.Windows.Forms.Label msglabel;
     }
 }
 

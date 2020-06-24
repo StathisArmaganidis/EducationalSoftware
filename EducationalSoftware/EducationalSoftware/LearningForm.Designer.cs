@@ -188,6 +188,7 @@
             this.Controls.Add(this.One);
             this.Controls.Add(this.learntitle);
             this.Name = "LearningForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "LearningForm";
             this.ResumeLayout(false);
             this.PerformLayout();
