@@ -202,6 +202,12 @@ namespace EducationalSoftware
             keys.DelNumber();
         }
 
+        /// <summary>
+        /// Balances mutlipliers and calculates new probabilities.
+        /// </summary>
+        /// <param name="index"></param>
+        /// <param name="operation"></param>
+        /// <param name="dif"></param>
         private void fix_probabilities(int index, string operation,float dif)
         {
             if (operation == "+")
