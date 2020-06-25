@@ -61,6 +61,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button10 = new System.Windows.Forms.Button();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.eqnum)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Equal_1)).BeginInit();
@@ -81,8 +82,10 @@
             // 
             // Next
             // 
+            this.helpProvider1.SetHelpString(this.Next, resources.GetString("Next.HelpString"));
             resources.ApplyResources(this.Next, "Next");
             this.Next.Name = "Next";
+            this.helpProvider1.SetShowHelp(this.Next, ((bool)(resources.GetObject("Next.ShowHelp"))));
             this.Next.UseVisualStyleBackColor = true;
             this.Next.Click += new System.EventHandler(this.Next_Click);
             // 
@@ -98,10 +101,10 @@
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Controls.Add(this.Equal_1);
             this.panel1.Controls.Add(this.Equal_2);
             this.panel1.Controls.Add(this.Equal_3);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // Equal_1
@@ -139,7 +142,6 @@
             // 
             // questionpanel
             // 
-            resources.ApplyResources(this.questionpanel, "questionpanel");
             this.questionpanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.questionpanel.Controls.Add(this.ConfirmButton);
             this.questionpanel.Controls.Add(this.Right_mult_1);
@@ -149,13 +151,16 @@
             this.questionpanel.Controls.Add(this.times);
             this.questionpanel.Controls.Add(this.Left_mult_2);
             this.questionpanel.Controls.Add(this.panel1);
+            resources.ApplyResources(this.questionpanel, "questionpanel");
             this.questionpanel.Name = "questionpanel";
             // 
             // ConfirmButton
             // 
-            resources.ApplyResources(this.ConfirmButton, "ConfirmButton");
             this.ConfirmButton.BackgroundImage = global::EducationalSoftware.Properties.Resources.confirm;
+            resources.ApplyResources(this.ConfirmButton, "ConfirmButton");
+            this.helpProvider1.SetHelpString(this.ConfirmButton, resources.GetString("ConfirmButton.HelpString"));
             this.ConfirmButton.Name = "ConfirmButton";
+            this.helpProvider1.SetShowHelp(this.ConfirmButton, ((bool)(resources.GetObject("ConfirmButton.ShowHelp"))));
             this.ConfirmButton.UseVisualStyleBackColor = true;
             this.ConfirmButton.Click += new System.EventHandler(this.ConfirmButton_Click);
             // 
@@ -174,8 +179,8 @@
             // 
             // equal
             // 
-            resources.ApplyResources(this.equal, "equal");
             this.equal.Image = global::EducationalSoftware.Properties.Resources.equal;
+            resources.ApplyResources(this.equal, "equal");
             this.equal.Name = "equal";
             this.equal.TabStop = false;
             // 
@@ -188,8 +193,8 @@
             // 
             // times
             // 
-            resources.ApplyResources(this.times, "times");
             this.times.Image = global::EducationalSoftware.Properties.Resources.times;
+            resources.ApplyResources(this.times, "times");
             this.times.Name = "times";
             this.times.TabStop = false;
             // 
@@ -216,7 +221,6 @@
             // 
             // keyboardpanel
             // 
-            resources.ApplyResources(this.keyboardpanel, "keyboardpanel");
             this.keyboardpanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.keyboardpanel.Controls.Add(this.button0);
             this.keyboardpanel.Controls.Add(this.button2);
@@ -229,102 +233,125 @@
             this.keyboardpanel.Controls.Add(this.button5);
             this.keyboardpanel.Controls.Add(this.button11);
             this.keyboardpanel.Controls.Add(this.button6);
+            resources.ApplyResources(this.keyboardpanel, "keyboardpanel");
             this.keyboardpanel.Name = "keyboardpanel";
             // 
             // button0
             // 
-            resources.ApplyResources(this.button0, "button0");
             this.button0.BackgroundImage = global::EducationalSoftware.Properties.Resources.num_0;
+            resources.ApplyResources(this.button0, "button0");
+            this.helpProvider1.SetHelpString(this.button0, resources.GetString("button0.HelpString"));
             this.button0.Name = "button0";
+            this.helpProvider1.SetShowHelp(this.button0, ((bool)(resources.GetObject("button0.ShowHelp"))));
             this.button0.Tag = "0";
             this.button0.UseVisualStyleBackColor = true;
             this.button0.Click += new System.EventHandler(this.keyboard_click);
             // 
             // button2
             // 
-            resources.ApplyResources(this.button2, "button2");
             this.button2.BackgroundImage = global::EducationalSoftware.Properties.Resources.num_2;
+            resources.ApplyResources(this.button2, "button2");
+            this.helpProvider1.SetHelpString(this.button2, resources.GetString("button2.HelpString"));
             this.button2.Name = "button2";
+            this.helpProvider1.SetShowHelp(this.button2, ((bool)(resources.GetObject("button2.ShowHelp"))));
             this.button2.Tag = "2";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.keyboard_click);
             // 
             // button9
             // 
-            resources.ApplyResources(this.button9, "button9");
             this.button9.BackgroundImage = global::EducationalSoftware.Properties.Resources.num_9;
+            resources.ApplyResources(this.button9, "button9");
+            this.helpProvider1.SetHelpString(this.button9, resources.GetString("button9.HelpString"));
             this.button9.Name = "button9";
+            this.helpProvider1.SetShowHelp(this.button9, ((bool)(resources.GetObject("button9.ShowHelp"))));
             this.button9.Tag = "9";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.keyboard_click);
             // 
             // button4
             // 
-            resources.ApplyResources(this.button4, "button4");
             this.button4.BackgroundImage = global::EducationalSoftware.Properties.Resources.num_4;
+            resources.ApplyResources(this.button4, "button4");
+            this.helpProvider1.SetHelpString(this.button4, resources.GetString("button4.HelpString"));
             this.button4.Name = "button4";
+            this.helpProvider1.SetShowHelp(this.button4, ((bool)(resources.GetObject("button4.ShowHelp"))));
             this.button4.Tag = "4";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.keyboard_click);
             // 
             // button8
             // 
-            resources.ApplyResources(this.button8, "button8");
             this.button8.BackgroundImage = global::EducationalSoftware.Properties.Resources.num_8;
+            resources.ApplyResources(this.button8, "button8");
+            this.helpProvider1.SetHelpString(this.button8, resources.GetString("button8.HelpString"));
             this.button8.Name = "button8";
+            this.helpProvider1.SetShowHelp(this.button8, ((bool)(resources.GetObject("button8.ShowHelp"))));
             this.button8.Tag = "8";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.keyboard_click);
             // 
             // button3
             // 
-            resources.ApplyResources(this.button3, "button3");
             this.button3.BackgroundImage = global::EducationalSoftware.Properties.Resources.num_3;
+            resources.ApplyResources(this.button3, "button3");
+            this.helpProvider1.SetHelpString(this.button3, resources.GetString("button3.HelpString"));
             this.button3.Name = "button3";
+            this.helpProvider1.SetShowHelp(this.button3, ((bool)(resources.GetObject("button3.ShowHelp"))));
             this.button3.Tag = "3";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.keyboard_click);
             // 
             // button7
             // 
-            resources.ApplyResources(this.button7, "button7");
             this.button7.BackgroundImage = global::EducationalSoftware.Properties.Resources.num_7;
+            resources.ApplyResources(this.button7, "button7");
+            this.helpProvider1.SetHelpString(this.button7, resources.GetString("button7.HelpString"));
             this.button7.Name = "button7";
+            this.helpProvider1.SetShowHelp(this.button7, ((bool)(resources.GetObject("button7.ShowHelp"))));
             this.button7.Tag = "7";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.keyboard_click);
             // 
             // button1
             // 
-            resources.ApplyResources(this.button1, "button1");
             this.button1.BackgroundImage = global::EducationalSoftware.Properties.Resources.num_1;
+            resources.ApplyResources(this.button1, "button1");
+            this.helpProvider1.SetHelpString(this.button1, resources.GetString("button1.HelpString"));
             this.button1.Name = "button1";
+            this.helpProvider1.SetShowHelp(this.button1, ((bool)(resources.GetObject("button1.ShowHelp"))));
             this.button1.Tag = "1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.keyboard_click);
             // 
             // button5
             // 
-            resources.ApplyResources(this.button5, "button5");
             this.button5.BackgroundImage = global::EducationalSoftware.Properties.Resources.num_5;
+            resources.ApplyResources(this.button5, "button5");
+            this.helpProvider1.SetHelpString(this.button5, resources.GetString("button5.HelpString"));
             this.button5.Name = "button5";
+            this.helpProvider1.SetShowHelp(this.button5, ((bool)(resources.GetObject("button5.ShowHelp"))));
             this.button5.Tag = "5";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.keyboard_click);
             // 
             // button11
             // 
-            resources.ApplyResources(this.button11, "button11");
             this.button11.BackgroundImage = global::EducationalSoftware.Properties.Resources.delete;
+            resources.ApplyResources(this.button11, "button11");
+            this.helpProvider1.SetHelpString(this.button11, resources.GetString("button11.HelpString"));
             this.button11.Name = "button11";
+            this.helpProvider1.SetShowHelp(this.button11, ((bool)(resources.GetObject("button11.ShowHelp"))));
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button6
             // 
-            resources.ApplyResources(this.button6, "button6");
             this.button6.BackgroundImage = global::EducationalSoftware.Properties.Resources.num_6;
+            resources.ApplyResources(this.button6, "button6");
+            this.helpProvider1.SetHelpString(this.button6, resources.GetString("button6.HelpString"));
             this.button6.Name = "button6";
+            this.helpProvider1.SetShowHelp(this.button6, ((bool)(resources.GetObject("button6.ShowHelp"))));
             this.button6.Tag = "6";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.keyboard_click);
@@ -338,7 +365,9 @@
             // button10
             // 
             resources.ApplyResources(this.button10, "button10");
+            this.helpProvider1.SetHelpString(this.button10, resources.GetString("button10.HelpString"));
             this.button10.Name = "button10";
+            this.helpProvider1.SetShowHelp(this.button10, ((bool)(resources.GetObject("button10.ShowHelp"))));
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
@@ -347,7 +376,6 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::EducationalSoftware.Properties.Resources.learning_background;
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.leftnum);
             this.Controls.Add(this.Next);
@@ -357,6 +385,10 @@
             this.Controls.Add(this.questionpanel);
             this.Controls.Add(this.backtomenu);
             this.Controls.Add(this.endlabel);
+            this.Controls.Add(this.pictureBox1);
+            this.HelpButton = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "TimesLearning";
             ((System.ComponentModel.ISupportInitialize)(this.eqnum)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -413,5 +445,6 @@
         private System.Windows.Forms.NumericUpDown rightnum;
         private System.Windows.Forms.Panel keyboardpanel;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }

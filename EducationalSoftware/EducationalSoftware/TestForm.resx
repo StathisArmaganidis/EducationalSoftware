@@ -117,548 +117,266 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;TotalQuestionsText.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;MediumButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button8.TabIndex" type="System.Int32, mscorlib">
-    <value>41</value>
-  </data>
-  <data name="&gt;&gt;pictureBox6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>QuestionGroup</value>
-  </data>
-  <data name="BackButton.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="ThisQuestionsText.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="picture_l1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 57</value>
-  </data>
-  <data name="ChooseText.AutoSize" type="System.Boolean, mscorlib">
+  <data name="QuestionLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="&gt;&gt;button8.Name" xml:space="preserve">
-    <value>button8</value>
-  </data>
-  <data name="&gt;&gt;BackButton.Name" xml:space="preserve">
-    <value>BackButton</value>
-  </data>
-  <data name="&gt;&gt;del_button.Parent" xml:space="preserve">
-    <value>QuestionGroup</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pictureBox5.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="picture_l2.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;HardButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;pictureBox5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TotalQuestionsText.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Italic</value>
-  </data>
-  <data name="&gt;&gt;pictureBox6.Parent" xml:space="preserve">
-    <value>groupbox</value>
-  </data>
-  <data name="&gt;&gt;button6.Name" xml:space="preserve">
-    <value>button6</value>
-  </data>
-  <data name="picture_l2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>78, 10</value>
-  </data>
-  <data name="del_button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>409, 152</value>
-  </data>
-  <data name="&gt;&gt;QuestionGroup.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="ConfirmButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 86</value>
-  </data>
-  <data name="&gt;&gt;QuestionSlash.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="TotalQuestionsText.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;EasyButton.Name" xml:space="preserve">
-    <value>EasyButton</value>
-  </data>
-  <data name="picture_l2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 57</value>
-  </data>
-  <data name="picture_l1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 10</value>
-  </data>
-  <data name="&gt;&gt;pictureBox5.Parent" xml:space="preserve">
-    <value>groupbox</value>
-  </data>
-  <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 152</value>
-  </data>
-  <data name="&gt;&gt;del_button.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;LeftNum.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button8.Parent" xml:space="preserve">
-    <value>QuestionGroup</value>
-  </data>
-  <data name="&gt;&gt;picture_r1.Name" xml:space="preserve">
-    <value>picture_r1</value>
-  </data>
-  <data name="ThisQuestionsText.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;picture_res1.Parent" xml:space="preserve">
-    <value>groupbox</value>
-  </data>
-  <data name="ResultNum.Font" type="System.Drawing.Font, System.Drawing">
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="QuestionLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
-  <data name="picture_res1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 10</value>
-  </data>
-  <data name="&gt;&gt;button8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="MediumButton.Text" xml:space="preserve">
-    <value>Medium</value>
+  <data name="QuestionLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 9</value>
   </data>
   <data name="QuestionLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 24</value>
   </data>
-  <data name="MediumButton.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="picture_res2.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;picture_res2.Name" xml:space="preserve">
-    <value>picture_res2</value>
-  </data>
-  <data name="pictureBox5.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="DifficultyGroup.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="button9.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="picture_res2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>485, 10</value>
-  </data>
-  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 58</value>
-  </data>
-  <data name="HardButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 43</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Evaluation Test</value>
-  </data>
-  <data name="ConfirmButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>525, 128</value>
-  </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>137, 152</value>
-  </data>
-  <data name="&gt;&gt;picture_r1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DifficultyGroup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>246, 385</value>
-  </data>
-  <data name="button7.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="&gt;&gt;button9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DifficultyGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>221, 244</value>
-  </data>
-  <data name="&gt;&gt;ChooseText.Name" xml:space="preserve">
-    <value>ChooseText</value>
-  </data>
-  <data name="picture_r2.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="HardButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 175</value>
-  </data>
-  <data name="ResultNum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>584, 3</value>
-  </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 58</value>
-  </data>
-  <data name="picture_res1.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="button5.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="pictureBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 57</value>
-  </data>
-  <data name="picture_r1.TabIndex" type="System.Int32, mscorlib">
-    <value>46</value>
-  </data>
-  <data name="pictureBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>350, 10</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="&gt;&gt;LeftNum.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;msglabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="LeftNum.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="LeftNum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 29</value>
-  </data>
-  <data name="&gt;&gt;MediumButton.Parent" xml:space="preserve">
-    <value>DifficultyGroup</value>
-  </data>
-  <data name="&gt;&gt;picture_l1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="QuestionGroup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 162</value>
-  </data>
-  <data name="pictureBox6.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="button7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>205, 152</value>
-  </data>
-  <data name="&gt;&gt;ThisQuestionsText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 58</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TotalQuestionsText.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="QuestionGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>632, 217</value>
-  </data>
-  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="button4.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
-  </data>
-  <data name="picture_r2.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;BackButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;EasyButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ResultNum.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="BackButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Ravie, 8.25pt</value>
-  </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 58</value>
-  </data>
   <data name="QuestionLabel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
-  </data>
-  <data name="EasyButton.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;picture_res3.Parent" xml:space="preserve">
-    <value>groupbox</value>
-  </data>
-  <data name="LeftNum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>197, 12</value>
-  </data>
-  <data name="&gt;&gt;ThisQuestionsText.Name" xml:space="preserve">
-    <value>ThisQuestionsText</value>
-  </data>
-  <data name="&gt;&gt;del_button.Name" xml:space="preserve">
-    <value>del_button</value>
-  </data>
-  <data name="&gt;&gt;RightNum.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="picture_res1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="button1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="&gt;&gt;button5.Parent" xml:space="preserve">
-    <value>QuestionGroup</value>
-  </data>
-  <data name="&gt;&gt;picture_res1.Name" xml:space="preserve">
-    <value>picture_res1</value>
-  </data>
-  <data name="ThisQuestionsText.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;picture_r2.Parent" xml:space="preserve">
-    <value>groupbox</value>
-  </data>
-  <data name="pictureBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>146, 10</value>
-  </data>
-  <data name="ResultNum.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="groupbox.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;picture_res1.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="ChooseText.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="button8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 58</value>
-  </data>
-  <data name="&gt;&gt;pictureBox6.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;button5.Name" xml:space="preserve">
-    <value>button5</value>
-  </data>
-  <data name="LeftNum.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt</value>
-  </data>
-  <data name="&gt;&gt;button4.Name" xml:space="preserve">
-    <value>button4</value>
-  </data>
-  <data name="picture_r1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>214, 10</value>
-  </data>
-  <data name="&gt;&gt;picture_r2.Name" xml:space="preserve">
-    <value>picture_r2</value>
-  </data>
-  <data name="&gt;&gt;BackButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;button7.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="pictureBox6.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="&gt;&gt;RightNum.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="button0.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 58</value>
-  </data>
-  <data name="&gt;&gt;picture_l1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
-  </data>
-  <data name="button3.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="&gt;&gt;HardButton.Name" xml:space="preserve">
-    <value>HardButton</value>
-  </data>
-  <data name="picture_res1.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="&gt;&gt;pictureBox5.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
-    <value>QuestionGroup</value>
-  </data>
-  <data name="button2.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="del_button.TabIndex" type="System.Int32, mscorlib">
-    <value>44</value>
-  </data>
-  <data name="&gt;&gt;picture_res2.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="del_button.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="&gt;&gt;picture_res3.Name" xml:space="preserve">
-    <value>picture_res3</value>
-  </data>
-  <data name="&gt;&gt;button0.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;button4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="EasyButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 43</value>
-  </data>
-  <data name="del_button.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="picture_res2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 57</value>
-  </data>
-  <data name="ThisQuestionsText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>104, 12</value>
-  </data>
-  <data name="&gt;&gt;MediumButton.Name" xml:space="preserve">
-    <value>MediumButton</value>
-  </data>
-  <data name="TotalQuestionsText.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="picture_res3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="&gt;&gt;QuestionGroup.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
-    <value>QuestionGroup</value>
-  </data>
-  <data name="picture_r1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 57</value>
-  </data>
-  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>341, 88</value>
-  </data>
-  <data name="&gt;&gt;pictureBox6.Name" xml:space="preserve">
-    <value>pictureBox6</value>
-  </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;button6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="picture_res3.TabIndex" type="System.Int32, mscorlib">
-    <value>47</value>
-  </data>
-  <data name="QuestionGroup.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
   </data>
   <data name="QuestionLabel.Text" xml:space="preserve">
     <value>Question</value>
   </data>
-  <data name="&gt;&gt;picture_r1.Parent" xml:space="preserve">
-    <value>groupbox</value>
-  </data>
-  <data name="&gt;&gt;button6.Parent" xml:space="preserve">
-    <value>QuestionGroup</value>
-  </data>
-  <data name="&gt;&gt;HardButton.Parent" xml:space="preserve">
-    <value>DifficultyGroup</value>
-  </data>
-  <data name="&gt;&gt;LeftNum.Name" xml:space="preserve">
-    <value>LeftNum</value>
-  </data>
-  <data name="&gt;&gt;picture_res3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="QuestionSlash.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;button7.Name" xml:space="preserve">
-    <value>button7</value>
-  </data>
-  <data name="picture_r2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 57</value>
-  </data>
-  <data name="ChooseText.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt</value>
-  </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="LeftNum.Visible" type="System.Boolean, mscorlib">
+  <data name="QuestionLabel.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="button7.TabIndex" type="System.Int32, mscorlib">
-    <value>40</value>
+  <data name="&gt;&gt;QuestionLabel.Name" xml:space="preserve">
+    <value>QuestionLabel</value>
   </data>
-  <data name="picture_l1.TabIndex" type="System.Int32, mscorlib">
-    <value>45</value>
+  <data name="&gt;&gt;QuestionLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="button9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 58</value>
+  <data name="&gt;&gt;QuestionLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;QuestionLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ThisQuestionsText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ThisQuestionsText.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Italic</value>
+  </data>
+  <data name="ThisQuestionsText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 12</value>
+  </data>
+  <data name="ThisQuestionsText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 20</value>
+  </data>
+  <data name="ThisQuestionsText.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="ThisQuestionsText.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ThisQuestionsText.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ThisQuestionsText.Name" xml:space="preserve">
+    <value>ThisQuestionsText</value>
+  </data>
+  <data name="&gt;&gt;ThisQuestionsText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ThisQuestionsText.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button7.Parent" xml:space="preserve">
-    <value>QuestionGroup</value>
+  <data name="&gt;&gt;ThisQuestionsText.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
-  <data name="picture_res3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 57</value>
+  <data name="QuestionSlash.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;ChooseText.Parent" xml:space="preserve">
-    <value>DifficultyGroup</value>
+  <data name="QuestionSlash.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Italic</value>
+  </data>
+  <data name="QuestionSlash.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 12</value>
+  </data>
+  <data name="QuestionSlash.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 20</value>
+  </data>
+  <data name="QuestionSlash.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="QuestionSlash.Text" xml:space="preserve">
+    <value>/</value>
+  </data>
+  <data name="QuestionSlash.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;QuestionSlash.Name" xml:space="preserve">
+    <value>QuestionSlash</value>
+  </data>
+  <data name="&gt;&gt;QuestionSlash.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;QuestionSlash.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;QuestionSlash.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="TotalQuestionsText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TotalQuestionsText.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Italic</value>
+  </data>
+  <data name="TotalQuestionsText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>147, 12</value>
+  </data>
+  <data name="TotalQuestionsText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 20</value>
+  </data>
+  <data name="TotalQuestionsText.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="TotalQuestionsText.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TotalQuestionsText.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;TotalQuestionsText.Name" xml:space="preserve">
+    <value>TotalQuestionsText</value>
   </data>
   <data name="&gt;&gt;TotalQuestionsText.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ResultNum.Name" xml:space="preserve">
-    <value>ResultNum</value>
+  <data name="&gt;&gt;TotalQuestionsText.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="msglabel.Text" xml:space="preserve">
-    <value>Correct!</value>
+  <data name="&gt;&gt;TotalQuestionsText.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="ConfirmButton.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="picture_res3.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
-  <data name="QuestionSlash.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 12</value>
+  <data name="picture_res3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>553, 10</value>
+  </data>
+  <data name="picture_res3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 57</value>
+  </data>
+  <data name="picture_res3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="picture_res3.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="&gt;&gt;picture_res3.Name" xml:space="preserve">
+    <value>picture_res3</value>
+  </data>
+  <data name="&gt;&gt;picture_res3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;picture_res3.Parent" xml:space="preserve">
+    <value>groupbox</value>
+  </data>
+  <data name="&gt;&gt;picture_res3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="picture_r1.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="picture_r1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 10</value>
+  </data>
+  <data name="picture_r1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 57</value>
+  </data>
+  <data name="picture_r1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="picture_r1.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;picture_r1.Name" xml:space="preserve">
+    <value>picture_r1</value>
+  </data>
+  <data name="&gt;&gt;picture_r1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;picture_r1.Parent" xml:space="preserve">
+    <value>groupbox</value>
+  </data>
+  <data name="&gt;&gt;picture_r1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="picture_l1.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="picture_l1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 10</value>
+  </data>
+  <data name="picture_l1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 57</value>
+  </data>
+  <data name="picture_l1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="picture_l1.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="&gt;&gt;picture_l1.Name" xml:space="preserve">
+    <value>picture_l1</value>
+  </data>
+  <data name="&gt;&gt;picture_l1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;picture_l1.Parent" xml:space="preserve">
+    <value>groupbox</value>
+  </data>
+  <data name="&gt;&gt;picture_l1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pictureBox6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGMAAABkCAYAAACSPo4tAAAABGdBTUEAALGPC/xhBQAAAudJREFUeF7t
+        m8tqFFEQhgeEBFR0qaMLEV2oL6C4F1zFS7yheSHd6jO4Me8j4sKAPoFujJtj/T2dPnOpHgJS3cc+30c+
+        ZhNSp/6Tmb5M1wwAAAAAAAAAAAAAAAAAAKBWku+O+cL8aH4zj800cX+Zn031/NxUBhvZhOIUfGJ+Nb0F
+        16QyeGqu5BNKU+Tgjl7PmG9Nb2E1q0yUzaCbsbkRl8+ldHee0qObKb2+nez3pqf6Un/qU/2uZ7BQ2Qy0
+        GbPZMzMXv7Cb0oNr/uKnrvpW/8t5LFRGsVgBHai+twVTunQ2pZe3/IXWovpXDnkj5A9zp40tBivwpiuo
+        /4jaN+JE5bD5DjloY4vBCnzqij287i+sVpVH3gh52MYWgxU4agrN7eDlLah2lUvejKM2thiswO+m0D07
+        m/AWU7vKJW/GcRtbDF0hnd55i6ld5ZI3w34C6QpN9TriX1UuJxk1cQXSFeIsyneUzdjjY8r18bAfUz+b
+        Qvev+oupXeWSNyP8AP6lKXTlvL+Y2p1bLnkzwk9tuejrc4SLPm6HeCqHi8PfDuFG4brq379RuNvGFoMV
+        kPqaMRfWO6TWjyz17d9CV0axqIAtQq/v2qJZHbx0O0Cnd1O9KHxl74K9G4s+Vw/WyyqbJqtQmiL5a9f3
+        preYmv1gDvi166r7Jg8kLDJovt1bNpT1Yq06qOss69DUozp/TG/BU1I9qlf1rN6LeFQHtxhKsv8JPL2h
+        eAWx31C8gthvKF5B7DcUryD2G4pXEPsNxSuI/YbiFcR+Q/EKYr+h6M/j6Q3FK2jqvgxjZE42oTgFGSNb
+        yBhZgTJGNpjqizGyQmWMrDD7nw5hjGwUlcPmO4QxstEc4YlCxsi2yRhZQTJGVpCMkRXkKJNLnEX5jrIZ
+        jJH5MkZWkIyRFSRjZIU4wkUft0M8lQNjZAWo/hkjK0D17d9CZ4wsXMbI/isZIytAxshGdPwxMgAAAAAA
+        AAAAAAAAAAAAAIDtzGZ/AT0OQLzhGcsEAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="pictureBox6.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="pictureBox6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>350, 10</value>
+  </data>
+  <data name="pictureBox6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 57</value>
+  </data>
+  <data name="pictureBox6.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pictureBox6.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;pictureBox6.Name" xml:space="preserve">
+    <value>pictureBox6</value>
+  </data>
+  <data name="&gt;&gt;pictureBox6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox6.Parent" xml:space="preserve">
+    <value>groupbox</value>
+  </data>
+  <data name="&gt;&gt;pictureBox6.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="pictureBox5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -704,508 +422,892 @@
         KpVKpVKpVCqVSqVSqVQqlUqlUqlUKpVKpUpExvwPWFo1ngHl1MMAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="picture_res1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pictureBox5.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="pictureBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 10</value>
+  </data>
+  <data name="pictureBox5.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 57</value>
   </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="pictureBox5.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
-  <data name="button9.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="button8.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="&gt;&gt;button7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>137, 88</value>
-  </data>
-  <data name="&gt;&gt;button5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LeftNum.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;ResultNum.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="TotalQuestionsText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 12</value>
-  </data>
-  <data name="&gt;&gt;picture_res3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="QuestionSlash.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;button0.Parent" xml:space="preserve">
-    <value>QuestionGroup</value>
-  </data>
-  <data name="QuestionLabel.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="msglabel.TabIndex" type="System.Int32, mscorlib">
+  <data name="pictureBox5.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
-  <data name="button6.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
+  <data name="&gt;&gt;pictureBox5.Name" xml:space="preserve">
+    <value>pictureBox5</value>
   </data>
-  <data name="TotalQuestionsText.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;pictureBox5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button0.Name" xml:space="preserve">
-    <value>button0</value>
+  <data name="&gt;&gt;pictureBox5.Parent" xml:space="preserve">
+    <value>groupbox</value>
+  </data>
+  <data name="&gt;&gt;pictureBox5.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="picture_res2.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
+  <data name="picture_res2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>485, 10</value>
+  </data>
+  <data name="picture_res2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 57</value>
+  </data>
+  <data name="picture_res2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="picture_res2.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;picture_res2.Name" xml:space="preserve">
+    <value>picture_res2</value>
+  </data>
+  <data name="&gt;&gt;picture_res2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;picture_res2.Parent" xml:space="preserve">
+    <value>groupbox</value>
+  </data>
+  <data name="&gt;&gt;picture_res2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="picture_res1.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="picture_res1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>417, 10</value>
+  </data>
+  <data name="picture_res1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 57</value>
+  </data>
+  <data name="picture_res1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="picture_res1.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;picture_res1.Name" xml:space="preserve">
+    <value>picture_res1</value>
+  </data>
+  <data name="&gt;&gt;picture_res1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;picture_res1.Parent" xml:space="preserve">
+    <value>groupbox</value>
+  </data>
+  <data name="&gt;&gt;picture_res1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="picture_r2.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="picture_r2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>282, 10</value>
+  </data>
+  <data name="picture_r2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 57</value>
+  </data>
+  <data name="picture_r2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="picture_r2.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;picture_r2.Name" xml:space="preserve">
+    <value>picture_r2</value>
+  </data>
+  <data name="&gt;&gt;picture_r2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;picture_r2.Parent" xml:space="preserve">
+    <value>groupbox</value>
+  </data>
+  <data name="&gt;&gt;picture_r2.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="picture_l2.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="picture_l2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>78, 10</value>
+  </data>
+  <data name="picture_l2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 57</value>
+  </data>
+  <data name="picture_l2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="picture_l2.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;picture_l2.Name" xml:space="preserve">
+    <value>picture_l2</value>
+  </data>
+  <data name="&gt;&gt;picture_l2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;picture_l2.Parent" xml:space="preserve">
+    <value>groupbox</value>
+  </data>
+  <data name="&gt;&gt;picture_l2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="groupbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 11</value>
+  </data>
+  <data name="groupbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>624, 71</value>
+  </data>
+  <data name="groupbox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;groupbox.Name" xml:space="preserve">
+    <value>groupbox</value>
+  </data>
+  <data name="&gt;&gt;groupbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupbox.Parent" xml:space="preserve">
+    <value>QuestionGroup</value>
+  </data>
+  <data name="&gt;&gt;groupbox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="del_button.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <metadata name="helpProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="del_button.HelpString" xml:space="preserve">
+    <value>Press to delete last number.</value>
+  </data>
+  <data name="del_button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>409, 152</value>
+  </data>
+  <data name="del_button.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="del_button.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="del_button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 58</value>
+  </data>
+  <data name="del_button.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;del_button.Name" xml:space="preserve">
+    <value>del_button</value>
+  </data>
+  <data name="&gt;&gt;del_button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;del_button.Parent" xml:space="preserve">
+    <value>QuestionGroup</value>
+  </data>
+  <data name="&gt;&gt;del_button.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="button9.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="button9.HelpString" xml:space="preserve">
+    <value>Press to insert number.</value>
+  </data>
+  <data name="button9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>341, 152</value>
+  </data>
+  <data name="button9.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="button9.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 58</value>
+  </data>
+  <data name="button9.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;button9.Name" xml:space="preserve">
+    <value>button9</value>
+  </data>
+  <data name="&gt;&gt;button9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button9.Parent" xml:space="preserve">
+    <value>QuestionGroup</value>
+  </data>
+  <data name="&gt;&gt;button9.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="button8.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="button8.HelpString" xml:space="preserve">
+    <value>Press to insert number.</value>
+  </data>
+  <data name="button8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>273, 152</value>
+  </data>
+  <data name="button8.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="button8.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 58</value>
+  </data>
+  <data name="button8.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;button8.Name" xml:space="preserve">
+    <value>button8</value>
+  </data>
+  <data name="&gt;&gt;button8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button8.Parent" xml:space="preserve">
+    <value>QuestionGroup</value>
+  </data>
+  <data name="&gt;&gt;button8.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button7.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="button7.HelpString" xml:space="preserve">
+    <value>Press to insert number.</value>
+  </data>
+  <data name="button7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>205, 152</value>
+  </data>
+  <data name="button7.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="button7.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 58</value>
+  </data>
+  <data name="button7.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;button7.Name" xml:space="preserve">
+    <value>button7</value>
+  </data>
+  <data name="&gt;&gt;button7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button7.Parent" xml:space="preserve">
+    <value>QuestionGroup</value>
+  </data>
+  <data name="&gt;&gt;button7.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="button6.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="button6.HelpString" xml:space="preserve">
+    <value>Press to insert number.</value>
+  </data>
+  <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 152</value>
+  </data>
+  <data name="button6.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="button6.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 58</value>
+  </data>
+  <data name="button6.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;button6.Name" xml:space="preserve">
+    <value>button6</value>
+  </data>
+  <data name="&gt;&gt;button6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button6.Parent" xml:space="preserve">
+    <value>QuestionGroup</value>
+  </data>
+  <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="button5.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="button5.HelpString" xml:space="preserve">
+    <value>Press to insert number.</value>
+  </data>
+  <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>69, 152</value>
+  </data>
+  <data name="button5.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="button5.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 58</value>
+  </data>
+  <data name="button5.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;button5.Name" xml:space="preserve">
+    <value>button5</value>
+  </data>
+  <data name="&gt;&gt;button5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button5.Parent" xml:space="preserve">
+    <value>QuestionGroup</value>
+  </data>
+  <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="button4.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="button4.HelpString" xml:space="preserve">
+    <value>Press to insert number.</value>
+  </data>
+  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>341, 88</value>
+  </data>
   <data name="button4.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
+  <data name="button4.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 58</value>
+  </data>
+  <data name="button4.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;button4.Name" xml:space="preserve">
+    <value>button4</value>
+  </data>
+  <data name="&gt;&gt;button4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
+    <value>QuestionGroup</value>
+  </data>
+  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="button3.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="button3.HelpString" xml:space="preserve">
+    <value>Press to insert number.</value>
+  </data>
+  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>273, 88</value>
+  </data>
+  <data name="button3.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="button3.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 58</value>
+  </data>
+  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;button3.Name" xml:space="preserve">
+    <value>button3</value>
+  </data>
+  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+    <value>QuestionGroup</value>
+  </data>
+  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="button2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="button2.HelpString" xml:space="preserve">
+    <value>Press to insert number.</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>205, 88</value>
+  </data>
+  <data name="button2.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="button2.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 58</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>QuestionGroup</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="button1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="button1.HelpString" xml:space="preserve">
+    <value>Press to insert number.</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 88</value>
+  </data>
+  <data name="button1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="button1.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 58</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>QuestionGroup</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="button0.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="button0.HelpString" xml:space="preserve">
+    <value>Press to insert number.</value>
+  </data>
+  <data name="button0.Location" type="System.Drawing.Point, System.Drawing">
+    <value>69, 88</value>
+  </data>
+  <data name="button0.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button0.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 58</value>
+  </data>
+  <data name="button0.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;button0.Name" xml:space="preserve">
+    <value>button0</value>
+  </data>
   <data name="&gt;&gt;button0.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button0.Parent" xml:space="preserve">
+    <value>QuestionGroup</value>
+  </data>
+  <data name="&gt;&gt;button0.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ResultNum.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="ResultNum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>584, 3</value>
+  </data>
+  <data name="ResultNum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 29</value>
+  </data>
+  <data name="ResultNum.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="ResultNum.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ResultNum.Name" xml:space="preserve">
+    <value>ResultNum</value>
+  </data>
+  <data name="&gt;&gt;ResultNum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ResultNum.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ResultNum.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ConfirmButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="ConfirmButton.HelpString" xml:space="preserve">
+    <value>Press to confirm question.</value>
+  </data>
+  <data name="ConfirmButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>525, 128</value>
+  </data>
+  <data name="ConfirmButton.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ConfirmButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 86</value>
+  </data>
+  <data name="ConfirmButton.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;ConfirmButton.Name" xml:space="preserve">
+    <value>ConfirmButton</value>
+  </data>
+  <data name="&gt;&gt;ConfirmButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ConfirmButton.Parent" xml:space="preserve">
     <value>QuestionGroup</value>
   </data>
-  <data name="&gt;&gt;pictureBox5.Name" xml:space="preserve">
-    <value>pictureBox5</value>
+  <data name="&gt;&gt;ConfirmButton.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;DifficultyGroup.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="RightNum.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
-  <data name="&gt;&gt;button9.Name" xml:space="preserve">
-    <value>button9</value>
+  <data name="RightNum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 12</value>
   </data>
-  <data name="picture_res3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>553, 10</value>
+  <data name="RightNum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 29</value>
   </data>
-  <data name="msglabel.AutoSize" type="System.Boolean, mscorlib">
+  <data name="RightNum.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="RightNum.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;RightNum.Name" xml:space="preserve">
+    <value>RightNum</value>
+  </data>
+  <data name="&gt;&gt;RightNum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RightNum.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;RightNum.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="LeftNum.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="LeftNum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>197, 12</value>
+  </data>
+  <data name="LeftNum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 29</value>
+  </data>
+  <data name="LeftNum.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="LeftNum.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;LeftNum.Name" xml:space="preserve">
+    <value>LeftNum</value>
+  </data>
+  <data name="&gt;&gt;LeftNum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LeftNum.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LeftNum.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="EasyButton.HelpString" xml:space="preserve">
+    <value>Choose to start the test with 10 questions.</value>
+  </data>
+  <data name="EasyButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 77</value>
+  </data>
+  <data name="EasyButton.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="QuestionSlash.Size" type="System.Drawing.Size, System.Drawing">
-    <value>13, 20</value>
+  <data name="EasyButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 43</value>
   </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+  <data name="EasyButton.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="EasyButton.Text" xml:space="preserve">
+    <value>Easy</value>
+  </data>
+  <data name="&gt;&gt;EasyButton.Name" xml:space="preserve">
+    <value>EasyButton</value>
+  </data>
+  <data name="&gt;&gt;EasyButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="picture_res2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
+  <data name="&gt;&gt;EasyButton.Parent" xml:space="preserve">
+    <value>DifficultyGroup</value>
   </data>
-  <data name="&gt;&gt;DifficultyGroup.Name" xml:space="preserve">
+  <data name="&gt;&gt;EasyButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="MediumButton.HelpString" xml:space="preserve">
+    <value>Choose to start the test with 15 questions.</value>
+  </data>
+  <data name="MediumButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 126</value>
+  </data>
+  <data name="MediumButton.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="MediumButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 43</value>
+  </data>
+  <data name="MediumButton.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="MediumButton.Text" xml:space="preserve">
+    <value>Medium</value>
+  </data>
+  <data name="&gt;&gt;MediumButton.Name" xml:space="preserve">
+    <value>MediumButton</value>
+  </data>
+  <data name="&gt;&gt;MediumButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MediumButton.Parent" xml:space="preserve">
+    <value>DifficultyGroup</value>
+  </data>
+  <data name="&gt;&gt;MediumButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="HardButton.HelpString" xml:space="preserve">
+    <value>Choose to start the test with 20 questions.</value>
+  </data>
+  <data name="HardButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 175</value>
+  </data>
+  <data name="HardButton.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="HardButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 43</value>
+  </data>
+  <data name="HardButton.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="HardButton.Text" xml:space="preserve">
+    <value>Hard</value>
+  </data>
+  <data name="&gt;&gt;HardButton.Name" xml:space="preserve">
+    <value>HardButton</value>
+  </data>
+  <data name="&gt;&gt;HardButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HardButton.Parent" xml:space="preserve">
+    <value>DifficultyGroup</value>
+  </data>
+  <data name="&gt;&gt;HardButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ChooseText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ChooseText.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="ChooseText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 16</value>
+  </data>
+  <data name="ChooseText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 24</value>
+  </data>
+  <data name="ChooseText.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="ChooseText.Text" xml:space="preserve">
+    <value>Choose Difficulty</value>
+  </data>
+  <data name="&gt;&gt;ChooseText.Name" xml:space="preserve">
+    <value>ChooseText</value>
+  </data>
+  <data name="&gt;&gt;ChooseText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ChooseText.Parent" xml:space="preserve">
     <value>DifficultyGroup</value>
   </data>
   <data name="&gt;&gt;ChooseText.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
+  <data name="DifficultyGroup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>331, 401</value>
   </data>
-  <data name="&gt;&gt;QuestionLabel.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="DifficultyGroup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 244</value>
   </data>
-  <data name="&gt;&gt;ChooseText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="DifficultyGroup.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
-  <data name="picture_l1.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="&gt;&gt;DifficultyGroup.Name" xml:space="preserve">
+    <value>DifficultyGroup</value>
+  </data>
+  <data name="&gt;&gt;DifficultyGroup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;DifficultyGroup.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;groupbox.Name" xml:space="preserve">
-    <value>groupbox</value>
+  <data name="&gt;&gt;DifficultyGroup.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="msglabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="HardButton.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;QuestionGroup.Name" xml:space="preserve">
-    <value>QuestionGroup</value>
-  </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
-    <value>QuestionGroup</value>
-  </data>
-  <data name="&gt;&gt;ResultNum.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="QuestionSlash.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Italic</value>
-  </data>
-  <data name="&gt;&gt;QuestionLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="QuestionSlash.Text" xml:space="preserve">
-    <value>/</value>
-  </data>
-  <data name="button7.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>TestForm</value>
-  </data>
-  <data name="&gt;&gt;QuestionLabel.Name" xml:space="preserve">
-    <value>QuestionLabel</value>
-  </data>
-  <data name="BackButton.Text" xml:space="preserve">
-    <value>Back</value>
-  </data>
-  <data name="picture_res3.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="&gt;&gt;TotalQuestionsText.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 58</value>
-  </data>
-  <data name="&gt;&gt;msglabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="button6.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="button4.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="&gt;&gt;QuestionSlash.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ConfirmButton.Name" xml:space="preserve">
-    <value>ConfirmButton</value>
-  </data>
-  <data name="button6.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="pictureBox6.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
+  <data name="msglabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 60pt</value>
   </data>
   <data name="msglabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>-158, 174</value>
   </data>
-  <data name="BackButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 401</value>
-  </data>
-  <data name="&gt;&gt;picture_l2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pictureBox5.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="EasyButton.Text" xml:space="preserve">
-    <value>Easy</value>
-  </data>
-  <data name="button2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="&gt;&gt;MediumButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>273, 88</value>
-  </data>
-  <data name="&gt;&gt;picture_r2.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;groupbox.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="msglabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>323, 91</value>
   </data>
-  <data name="&gt;&gt;QuestionSlash.Name" xml:space="preserve">
-    <value>QuestionSlash</value>
+  <data name="msglabel.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
   </data>
-  <data name="&gt;&gt;button8.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="msglabel.Text" xml:space="preserve">
+    <value>Correct!</value>
   </data>
-  <data name="QuestionLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt</value>
-  </data>
-  <data name="&gt;&gt;button9.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="MediumButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 126</value>
+  <data name="msglabel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;msglabel.Name" xml:space="preserve">
     <value>msglabel</value>
   </data>
-  <data name="button7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 58</value>
-  </data>
-  <data name="picture_l2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="QuestionLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="ChooseText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 24</value>
-  </data>
-  <data name="button0.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
-  <data name="&gt;&gt;picture_r1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;QuestionSlash.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="pictureBox6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 57</value>
-  </data>
-  <data name="ResultNum.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="button9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>341, 152</value>
-  </data>
-  <data name="&gt;&gt;QuestionLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="picture_r2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="button8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>273, 152</value>
-  </data>
-  <data name="&gt;&gt;RightNum.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="del_button.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 58</value>
-  </data>
-  <data name="RightNum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>381, 12</value>
-  </data>
-  <data name="button3.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="&gt;&gt;picture_res2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ThisQuestionsText.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="RightNum.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt</value>
-  </data>
-  <data name="&gt;&gt;picture_res1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="QuestionSlash.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;groupbox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
+  <data name="&gt;&gt;msglabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;msglabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="button9.TabIndex" type="System.Int32, mscorlib">
-    <value>42</value>
+  <data name="&gt;&gt;msglabel.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="RightNum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 29</value>
+  <data name="QuestionGroup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 162</value>
   </data>
-  <data name="ChooseText.Text" xml:space="preserve">
-    <value>Choose Difficulty</value>
+  <data name="QuestionGroup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>632, 217</value>
+  </data>
+  <data name="QuestionGroup.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;QuestionGroup.Name" xml:space="preserve">
+    <value>QuestionGroup</value>
   </data>
   <data name="&gt;&gt;QuestionGroup.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;HardButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;QuestionGroup.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;picture_res2.Parent" xml:space="preserve">
-    <value>groupbox</value>
-  </data>
-  <data name="QuestionLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 9</value>
-  </data>
-  <data name="picture_r1.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="&gt;&gt;picture_l2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;QuestionGroup.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="ThisQuestionsText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>18, 20</value>
+  <data name="BackButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Ravie, 8.25pt</value>
   </data>
-  <data name="&gt;&gt;button9.Parent" xml:space="preserve">
-    <value>QuestionGroup</value>
+  <data name="BackButton.HelpString" xml:space="preserve">
+    <value>Press to go back to home form.</value>
   </data>
-  <data name="&gt;&gt;RightNum.Name" xml:space="preserve">
-    <value>RightNum</value>
+  <data name="BackButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 401</value>
   </data>
-  <data name="&gt;&gt;EasyButton.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="BackButton.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;picture_l2.Name" xml:space="preserve">
-    <value>picture_l2</value>
+  <data name="BackButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 75</value>
   </data>
-  <data name="button8.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="BackButton.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="BackButton.Text" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="&gt;&gt;BackButton.Name" xml:space="preserve">
+    <value>BackButton</value>
+  </data>
+  <data name="&gt;&gt;BackButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BackButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BackButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>852, 486</value>
   </data>
-  <data name="&gt;&gt;DifficultyGroup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
-  <data name="groupbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 11</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Evaluation Test</value>
   </data>
-  <data name="&gt;&gt;picture_r2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;helpProvider1.Name" xml:space="preserve">
+    <value>helpProvider1</value>
   </data>
-  <data name="button0.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
+  <data name="&gt;&gt;helpProvider1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.HelpProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="BackButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 75</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TestForm</value>
   </data>
-  <data name="TotalQuestionsText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>18, 20</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="groupbox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>624, 71</value>
-  </data>
-  <data name="button0.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 88</value>
-  </data>
-  <data name="&gt;&gt;ConfirmButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TotalQuestionsText.Name" xml:space="preserve">
-    <value>TotalQuestionsText</value>
-  </data>
-  <data name="&gt;&gt;ConfirmButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="picture_l1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="&gt;&gt;groupbox.Parent" xml:space="preserve">
-    <value>QuestionGroup</value>
-  </data>
-  <data name="MediumButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 43</value>
-  </data>
-  <data name="button5.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
-  </data>
-  <data name="EasyButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 77</value>
-  </data>
-  <data name="&gt;&gt;picture_l1.Name" xml:space="preserve">
-    <value>picture_l1</value>
-  </data>
-  <data name="ChooseText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 16</value>
-  </data>
-  <data name="msglabel.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="picture_r2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>282, 10</value>
-  </data>
-  <data name="&gt;&gt;BackButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ResultNum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 29</value>
-  </data>
-  <data name="ThisQuestionsText.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Italic</value>
-  </data>
-  <data name="&gt;&gt;picture_l2.Parent" xml:space="preserve">
-    <value>groupbox</value>
-  </data>
-  <data name="ThisQuestionsText.Text" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;del_button.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="RightNum.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="button1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="picture_r1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="ConfirmButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>205, 88</value>
-  </data>
-  <data name="picture_l2.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="msglabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 60pt</value>
-  </data>
-  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="&gt;&gt;EasyButton.Parent" xml:space="preserve">
-    <value>DifficultyGroup</value>
-  </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 58</value>
-  </data>
-  <data name="pictureBox6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAGMAAABkCAYAAACSPo4tAAAABGdBTUEAALGPC/xhBQAAAudJREFUeF7t
-        m8tqFFEQhgeEBFR0qaMLEV2oL6C4F1zFS7yheSHd6jO4Me8j4sKAPoFujJtj/T2dPnOpHgJS3cc+30c+
-        ZhNSp/6Tmb5M1wwAAAAAAAAAAAAAAAAAAKBWku+O+cL8aH4zj800cX+Zn031/NxUBhvZhOIUfGJ+Nb0F
-        16QyeGqu5BNKU+Tgjl7PmG9Nb2E1q0yUzaCbsbkRl8+ldHee0qObKb2+nez3pqf6Un/qU/2uZ7BQ2Qy0
-        GbPZMzMXv7Cb0oNr/uKnrvpW/8t5LFRGsVgBHai+twVTunQ2pZe3/IXWovpXDnkj5A9zp40tBivwpiuo
-        /4jaN+JE5bD5DjloY4vBCnzqij287i+sVpVH3gh52MYWgxU4agrN7eDlLah2lUvejKM2thiswO+m0D07
-        m/AWU7vKJW/GcRtbDF0hnd55i6ld5ZI3w34C6QpN9TriX1UuJxk1cQXSFeIsyneUzdjjY8r18bAfUz+b
-        Qvev+oupXeWSNyP8AP6lKXTlvL+Y2p1bLnkzwk9tuejrc4SLPm6HeCqHi8PfDuFG4brq379RuNvGFoMV
-        kPqaMRfWO6TWjyz17d9CV0axqIAtQq/v2qJZHbx0O0Cnd1O9KHxl74K9G4s+Vw/WyyqbJqtQmiL5a9f3
-        preYmv1gDvi166r7Jg8kLDJovt1bNpT1Yq06qOss69DUozp/TG/BU1I9qlf1rN6LeFQHtxhKsv8JPL2h
-        eAWx31C8gthvKF5B7DcUryD2G4pXEPsNxSuI/YbiFcR+Q/EKYr+h6M/j6Q3FK2jqvgxjZE42oTgFGSNb
-        yBhZgTJGNpjqizGyQmWMrDD7nw5hjGwUlcPmO4QxstEc4YlCxsi2yRhZQTJGVpCMkRXkKJNLnEX5jrIZ
-        jJH5MkZWkIyRFSRjZIU4wkUft0M8lQNjZAWo/hkjK0D17d9CZ4wsXMbI/isZIytAxshGdPwxMgAAAAAA
-        AAAAAAAAAAAAAIDtzGZ/AT0OQLzhGcsEAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="button5.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="&gt;&gt;picture_l1.Parent" xml:space="preserve">
-    <value>groupbox</value>
-  </data>
-  <data name="HardButton.Text" xml:space="preserve">
-    <value>Hard</value>
-  </data>
-  <data name="RightNum.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>el</value>
-  </metadata>
 </root>

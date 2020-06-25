@@ -127,6 +127,12 @@
   <data name="need_practise_photo.Location" type="System.Drawing.Point, System.Drawing">
     <value>228, 134</value>
   </data>
+  <data name="corr_chart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>339, 39</value>
+  </data>
+  <data name="corr_chart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>464, 304</value>
+  </data>
   <data name="datecombo.Items" xml:space="preserve">
     <value>Αυτός ο μήνας</value>
   </data>

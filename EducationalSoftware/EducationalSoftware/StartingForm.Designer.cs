@@ -45,6 +45,7 @@
             this.registerUserLabel = new System.Windows.Forms.Label();
             this.registerPassBox = new System.Windows.Forms.TextBox();
             this.registerUserBox = new System.Windows.Forms.TextBox();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.LoginGroup.SuspendLayout();
             this.RegisterGroup.SuspendLayout();
             this.SuspendLayout();
@@ -52,11 +53,12 @@
             // loginUserBox
             // 
             resources.ApplyResources(this.loginUserBox, "loginUserBox");
+            this.helpProvider1.SetHelpString(this.loginUserBox, resources.GetString("loginUserBox.HelpString"));
             this.loginUserBox.Name = "loginUserBox";
+            this.helpProvider1.SetShowHelp(this.loginUserBox, ((bool)(resources.GetObject("loginUserBox.ShowHelp"))));
             // 
             // LoginGroup
             // 
-            resources.ApplyResources(this.LoginGroup, "LoginGroup");
             this.LoginGroup.Controls.Add(this.GoRegister);
             this.LoginGroup.Controls.Add(this.LoginButton);
             this.LoginGroup.Controls.Add(this.loginLabel);
@@ -64,20 +66,25 @@
             this.LoginGroup.Controls.Add(this.loginUserLabel);
             this.LoginGroup.Controls.Add(this.loginPassBox);
             this.LoginGroup.Controls.Add(this.loginUserBox);
+            resources.ApplyResources(this.LoginGroup, "LoginGroup");
             this.LoginGroup.Name = "LoginGroup";
             this.LoginGroup.TabStop = false;
             // 
             // GoRegister
             // 
             resources.ApplyResources(this.GoRegister, "GoRegister");
+            this.helpProvider1.SetHelpString(this.GoRegister, resources.GetString("GoRegister.HelpString"));
             this.GoRegister.Name = "GoRegister";
+            this.helpProvider1.SetShowHelp(this.GoRegister, ((bool)(resources.GetObject("GoRegister.ShowHelp"))));
             this.GoRegister.UseVisualStyleBackColor = true;
             this.GoRegister.Click += new System.EventHandler(this.GoRegister_Click);
             // 
             // LoginButton
             // 
             resources.ApplyResources(this.LoginButton, "LoginButton");
+            this.helpProvider1.SetHelpKeyword(this.LoginButton, resources.GetString("LoginButton.HelpKeyword"));
             this.LoginButton.Name = "LoginButton";
+            this.helpProvider1.SetShowHelp(this.LoginButton, ((bool)(resources.GetObject("LoginButton.ShowHelp"))));
             this.LoginButton.UseVisualStyleBackColor = true;
             this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
@@ -101,11 +108,12 @@
             // loginPassBox
             // 
             resources.ApplyResources(this.loginPassBox, "loginPassBox");
+            this.helpProvider1.SetHelpString(this.loginPassBox, resources.GetString("loginPassBox.HelpString"));
             this.loginPassBox.Name = "loginPassBox";
+            this.helpProvider1.SetShowHelp(this.loginPassBox, ((bool)(resources.GetObject("loginPassBox.ShowHelp"))));
             // 
             // RegisterGroup
             // 
-            resources.ApplyResources(this.RegisterGroup, "RegisterGroup");
             this.RegisterGroup.Controls.Add(this.GoLogin);
             this.RegisterGroup.Controls.Add(this.RegisterButton);
             this.RegisterGroup.Controls.Add(this.registerLabel);
@@ -113,20 +121,25 @@
             this.RegisterGroup.Controls.Add(this.registerUserLabel);
             this.RegisterGroup.Controls.Add(this.registerPassBox);
             this.RegisterGroup.Controls.Add(this.registerUserBox);
+            resources.ApplyResources(this.RegisterGroup, "RegisterGroup");
             this.RegisterGroup.Name = "RegisterGroup";
             this.RegisterGroup.TabStop = false;
             // 
             // GoLogin
             // 
             resources.ApplyResources(this.GoLogin, "GoLogin");
+            this.helpProvider1.SetHelpKeyword(this.GoLogin, resources.GetString("GoLogin.HelpKeyword"));
             this.GoLogin.Name = "GoLogin";
+            this.helpProvider1.SetShowHelp(this.GoLogin, ((bool)(resources.GetObject("GoLogin.ShowHelp"))));
             this.GoLogin.UseVisualStyleBackColor = true;
             this.GoLogin.Click += new System.EventHandler(this.GoLogin_Click);
             // 
             // RegisterButton
             // 
             resources.ApplyResources(this.RegisterButton, "RegisterButton");
+            this.helpProvider1.SetHelpKeyword(this.RegisterButton, resources.GetString("RegisterButton.HelpKeyword"));
             this.RegisterButton.Name = "RegisterButton";
+            this.helpProvider1.SetShowHelp(this.RegisterButton, ((bool)(resources.GetObject("RegisterButton.ShowHelp"))));
             this.RegisterButton.UseVisualStyleBackColor = true;
             this.RegisterButton.Click += new System.EventHandler(this.RegisterButton_Click);
             // 
@@ -150,12 +163,16 @@
             // registerPassBox
             // 
             resources.ApplyResources(this.registerPassBox, "registerPassBox");
+            this.helpProvider1.SetHelpString(this.registerPassBox, resources.GetString("registerPassBox.HelpString"));
             this.registerPassBox.Name = "registerPassBox";
+            this.helpProvider1.SetShowHelp(this.registerPassBox, ((bool)(resources.GetObject("registerPassBox.ShowHelp"))));
             // 
             // registerUserBox
             // 
             resources.ApplyResources(this.registerUserBox, "registerUserBox");
+            this.helpProvider1.SetHelpString(this.registerUserBox, resources.GetString("registerUserBox.HelpString"));
             this.registerUserBox.Name = "registerUserBox";
+            this.helpProvider1.SetShowHelp(this.registerUserBox, ((bool)(resources.GetObject("registerUserBox.ShowHelp"))));
             // 
             // StartingForm
             // 
@@ -164,6 +181,9 @@
             this.BackgroundImage = global::EducationalSoftware.Properties.Resources.Login_Background;
             this.Controls.Add(this.RegisterGroup);
             this.Controls.Add(this.LoginGroup);
+            this.HelpButton = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "StartingForm";
             this.Load += new System.EventHandler(this.StartingForm_Load);
             this.LoginGroup.ResumeLayout(false);
@@ -192,5 +212,6 @@
         private System.Windows.Forms.Button LoginButton;
         private System.Windows.Forms.Button GoLogin;
         private System.Windows.Forms.Button RegisterButton;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }

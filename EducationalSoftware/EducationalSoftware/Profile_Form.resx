@@ -117,46 +117,191 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="datecombo.Items3" xml:space="preserve">
-    <value>This Year</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;testcombo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;corr_chart.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="practise_label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+  <data name="practise_label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
   </data>
-  <data name="need_practise_photo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 90</value>
+  <data name="practise_label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 94</value>
   </data>
-  <data name="&gt;&gt;need_practise_photo.Parent" xml:space="preserve">
+  <data name="practise_label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>243, 24</value>
+  </data>
+  <data name="practise_label.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="practise_label.Text" xml:space="preserve">
+    <value>You will need more practise</value>
+  </data>
+  <data name="&gt;&gt;practise_label.Name" xml:space="preserve">
+    <value>practise_label</value>
+  </data>
+  <data name="&gt;&gt;practise_label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;practise_label.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;practise_label.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="practise_label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>243, 24</value>
+  <data name="need_practise_photo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>261, 62</value>
+  </data>
+  <data name="need_practise_photo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 90</value>
+  </data>
+  <data name="need_practise_photo.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;need_practise_photo.Name" xml:space="preserve">
+    <value>need_practise_photo</value>
+  </data>
+  <data name="&gt;&gt;need_practise_photo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;need_practise_photo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;need_practise_photo.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="helpProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="corr_chart.HelpString" xml:space="preserve">
+    <value>Chart of correct and wrong answers.</value>
+  </data>
+  <data name="corr_chart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>372, 39</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="corr_chart.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="corr_chart.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="corr_chart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>431, 304</value>
+  </data>
+  <data name="corr_chart.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="corr_chart.Text" xml:space="preserve">
+    <value>chart1</value>
+  </data>
+  <data name="&gt;&gt;corr_chart.Name" xml:space="preserve">
+    <value>corr_chart</value>
+  </data>
+  <data name="&gt;&gt;corr_chart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;corr_chart.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;corr_chart.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="datecombo.HelpString" xml:space="preserve">
+    <value>Choose timeline for the chart.</value>
+  </data>
+  <data name="datecombo.Items" xml:space="preserve">
+    <value>This Month</value>
+  </data>
+  <data name="datecombo.Items1" xml:space="preserve">
+    <value>Last Month</value>
+  </data>
+  <data name="datecombo.Items2" xml:space="preserve">
+    <value>Last Three Months</value>
+  </data>
+  <data name="datecombo.Items3" xml:space="preserve">
+    <value>This Year</value>
+  </data>
+  <data name="datecombo.Items4" xml:space="preserve">
+    <value>Last Year</value>
+  </data>
+  <data name="datecombo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>611, 12</value>
+  </data>
+  <data name="datecombo.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="datecombo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
   </data>
   <data name="datecombo.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 363</value>
+  <data name="&gt;&gt;datecombo.Name" xml:space="preserve">
+    <value>datecombo</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;datecombo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;datecombo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;datecombo.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="testcombo.HelpString" xml:space="preserve">
+    <value>Choose type for the chart.</value>
+  </data>
+  <data name="testcombo.Items" xml:space="preserve">
+    <value>Practice Test</value>
+  </data>
+  <data name="testcombo.Items1" xml:space="preserve">
+    <value>Final Test</value>
+  </data>
+  <data name="testcombo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>446, 12</value>
+  </data>
+  <data name="testcombo.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="testcombo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="testcombo.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;testcombo.Name" xml:space="preserve">
+    <value>testcombo</value>
+  </data>
+  <data name="&gt;&gt;testcombo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;testcombo.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;testcombo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Ravie, 8.25pt</value>
+  </data>
+  <data name="button2.HelpString" xml:space="preserve">
+    <value>Go back to home form.</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 363</value>
+  </data>
+  <data name="button2.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 75</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>Back</value>
   </data>
   <data name="&gt;&gt;button2.Name" xml:space="preserve">
     <value>button2</value>
@@ -164,155 +309,40 @@
   <data name="&gt;&gt;button2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="datecombo.Items" xml:space="preserve">
-    <value>This Month</value>
-  </data>
-  <data name="&gt;&gt;testcombo.Name" xml:space="preserve">
-    <value>testcombo</value>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;practise_label.Parent" xml:space="preserve">
-    <value>$this</value>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
   </data>
-  <data name="&gt;&gt;corr_chart.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
-  </data>
-  <data name="practise_label.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;need_practise_photo.Name" xml:space="preserve">
-    <value>need_practise_photo</value>
-  </data>
-  <data name="&gt;&gt;datecombo.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>815, 450</value>
   </data>
-  <data name="&gt;&gt;corr_chart.Name" xml:space="preserve">
-    <value>corr_chart</value>
-  </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
-  </data>
-  <data name="&gt;&gt;practise_label.Name" xml:space="preserve">
-    <value>practise_label</value>
-  </data>
-  <data name="corr_chart.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Ravie, 8.25pt</value>
-  </data>
-  <data name="&gt;&gt;testcombo.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="testcombo.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="practise_label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 94</value>
-  </data>
-  <data name="datecombo.Items1" xml:space="preserve">
-    <value>Last Month</value>
-  </data>
-  <data name="&gt;&gt;datecombo.Name" xml:space="preserve">
-    <value>datecombo</value>
-  </data>
-  <data name="&gt;&gt;corr_chart.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
-  </data>
-  <data name="need_practise_photo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>261, 62</value>
-  </data>
-  <data name="corr_chart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>372, 39</value>
-  </data>
-  <data name="&gt;&gt;practise_label.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Profile_Form</value>
-  </data>
-  <data name="corr_chart.Text" xml:space="preserve">
-    <value>chart1</value>
-  </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 75</value>
-  </data>
-  <data name="corr_chart.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="datecombo.Items4" xml:space="preserve">
-    <value>Last Year</value>
-  </data>
-  <data name="practise_label.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14pt</value>
-  </data>
-  <data name="&gt;&gt;need_practise_photo.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="datecombo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>611, 12</value>
-  </data>
-  <data name="&gt;&gt;datecombo.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="datecombo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 21</value>
-  </data>
-  <data name="testcombo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>446, 12</value>
-  </data>
-  <data name="practise_label.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="practise_label.Text" xml:space="preserve">
-    <value>You will need more practise</value>
-  </data>
-  <data name="datecombo.Items2" xml:space="preserve">
-    <value>Last Three Months</value>
-  </data>
-  <data name="testcombo.Items1" xml:space="preserve">
-    <value>Final Test</value>
-  </data>
-  <data name="&gt;&gt;datecombo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="testcombo.Items" xml:space="preserve">
-    <value>Practice Test</value>
-  </data>
-  <data name="&gt;&gt;need_practise_photo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="need_practise_photo.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="corr_chart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>431, 304</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Profile_Form</value>
   </data>
-  <data name="testcombo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 21</value>
+  <data name="&gt;&gt;helpProvider1.Name" xml:space="preserve">
+    <value>helpProvider1</value>
   </data>
-  <data name="button2.Text" xml:space="preserve">
-    <value>Back</value>
+  <data name="&gt;&gt;helpProvider1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.HelpProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Profile_Form</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>el</value>
-  </metadata>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

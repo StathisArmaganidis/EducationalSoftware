@@ -30,14 +30,17 @@
         {
             this.ENButton = new System.Windows.Forms.Button();
             this.GRButton = new System.Windows.Forms.Button();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.SuspendLayout();
             // 
             // ENButton
             // 
             this.ENButton.Font = new System.Drawing.Font("Ravie", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.helpProvider1.SetHelpString(this.ENButton, "Change language to English.");
             this.ENButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.ENButton.Location = new System.Drawing.Point(190, 154);
             this.ENButton.Name = "ENButton";
+            this.helpProvider1.SetShowHelp(this.ENButton, true);
             this.ENButton.Size = new System.Drawing.Size(123, 92);
             this.ENButton.TabIndex = 6;
             this.ENButton.Text = "English";
@@ -47,9 +50,11 @@
             // GRButton
             // 
             this.GRButton.Font = new System.Drawing.Font("Ravie", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.helpProvider1.SetHelpString(this.GRButton, "\'α\'");
             this.GRButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.GRButton.Location = new System.Drawing.Point(467, 154);
             this.GRButton.Name = "GRButton";
+            this.helpProvider1.SetShowHelp(this.GRButton, true);
             this.GRButton.Size = new System.Drawing.Size(123, 92);
             this.GRButton.TabIndex = 7;
             this.GRButton.Text = "Ελληνικά";
@@ -63,6 +68,9 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.GRButton);
             this.Controls.Add(this.ENButton);
+            this.HelpButton = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "LanguageSelector";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LanguageSelector";
@@ -74,5 +82,6 @@
 
         private System.Windows.Forms.Button ENButton;
         private System.Windows.Forms.Button GRButton;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }
