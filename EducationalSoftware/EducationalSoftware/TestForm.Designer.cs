@@ -85,50 +85,27 @@
             // 
             // QuestionLabel
             // 
-            this.QuestionLabel.AutoSize = true;
-            this.QuestionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.QuestionLabel.Location = new System.Drawing.Point(12, 9);
+            resources.ApplyResources(this.QuestionLabel, "QuestionLabel");
             this.QuestionLabel.Name = "QuestionLabel";
-            this.QuestionLabel.Size = new System.Drawing.Size(86, 24);
-            this.QuestionLabel.TabIndex = 0;
-            this.QuestionLabel.Text = "Question";
-            this.QuestionLabel.Visible = false;
             // 
             // ThisQuestionsText
             // 
-            this.ThisQuestionsText.AutoSize = true;
-            this.ThisQuestionsText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ThisQuestionsText.Location = new System.Drawing.Point(104, 12);
+            resources.ApplyResources(this.ThisQuestionsText, "ThisQuestionsText");
             this.ThisQuestionsText.Name = "ThisQuestionsText";
-            this.ThisQuestionsText.Size = new System.Drawing.Size(18, 20);
-            this.ThisQuestionsText.TabIndex = 1;
-            this.ThisQuestionsText.Text = "1";
-            this.ThisQuestionsText.Visible = false;
             // 
             // QuestionSlash
             // 
-            this.QuestionSlash.AutoSize = true;
-            this.QuestionSlash.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.QuestionSlash.Location = new System.Drawing.Point(128, 12);
+            resources.ApplyResources(this.QuestionSlash, "QuestionSlash");
             this.QuestionSlash.Name = "QuestionSlash";
-            this.QuestionSlash.Size = new System.Drawing.Size(13, 20);
-            this.QuestionSlash.TabIndex = 2;
-            this.QuestionSlash.Text = "/";
-            this.QuestionSlash.Visible = false;
             // 
             // TotalQuestionsText
             // 
-            this.TotalQuestionsText.AutoSize = true;
-            this.TotalQuestionsText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalQuestionsText.Location = new System.Drawing.Point(147, 12);
+            resources.ApplyResources(this.TotalQuestionsText, "TotalQuestionsText");
             this.TotalQuestionsText.Name = "TotalQuestionsText";
-            this.TotalQuestionsText.Size = new System.Drawing.Size(18, 20);
-            this.TotalQuestionsText.TabIndex = 3;
-            this.TotalQuestionsText.Text = "0";
-            this.TotalQuestionsText.Visible = false;
             // 
             // groupbox
             // 
+            resources.ApplyResources(this.groupbox, "groupbox");
             this.groupbox.BackColor = System.Drawing.Color.Gray;
             this.groupbox.Controls.Add(this.picture_res3);
             this.groupbox.Controls.Add(this.picture_r1);
@@ -139,354 +116,234 @@
             this.groupbox.Controls.Add(this.picture_res1);
             this.groupbox.Controls.Add(this.picture_r2);
             this.groupbox.Controls.Add(this.picture_l2);
-            this.groupbox.Location = new System.Drawing.Point(8, 11);
             this.groupbox.Name = "groupbox";
-            this.groupbox.Size = new System.Drawing.Size(624, 71);
-            this.groupbox.TabIndex = 9;
             this.groupbox.TabStop = false;
             // 
             // picture_res3
             // 
-            this.picture_res3.InitialImage = null;
-            this.picture_res3.Location = new System.Drawing.Point(553, 10);
+            resources.ApplyResources(this.picture_res3, "picture_res3");
             this.picture_res3.Name = "picture_res3";
-            this.picture_res3.Size = new System.Drawing.Size(62, 57);
-            this.picture_res3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picture_res3.TabIndex = 47;
             this.picture_res3.TabStop = false;
             // 
             // picture_r1
             // 
-            this.picture_r1.InitialImage = null;
-            this.picture_r1.Location = new System.Drawing.Point(214, 10);
+            resources.ApplyResources(this.picture_r1, "picture_r1");
             this.picture_r1.Name = "picture_r1";
-            this.picture_r1.Size = new System.Drawing.Size(62, 57);
-            this.picture_r1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picture_r1.TabIndex = 46;
             this.picture_r1.TabStop = false;
             // 
             // picture_l1
             // 
-            this.picture_l1.InitialImage = null;
-            this.picture_l1.Location = new System.Drawing.Point(10, 10);
+            resources.ApplyResources(this.picture_l1, "picture_l1");
             this.picture_l1.Name = "picture_l1";
-            this.picture_l1.Size = new System.Drawing.Size(62, 57);
-            this.picture_l1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picture_l1.TabIndex = 45;
             this.picture_l1.TabStop = false;
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.InitialImage = null;
-            this.pictureBox6.Location = new System.Drawing.Point(350, 10);
+            resources.ApplyResources(this.pictureBox6, "pictureBox6");
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(62, 57);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 21;
             this.pictureBox6.TabStop = false;
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.InitialImage = null;
-            this.pictureBox5.Location = new System.Drawing.Point(146, 10);
+            resources.ApplyResources(this.pictureBox5, "pictureBox5");
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(62, 57);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 20;
             this.pictureBox5.TabStop = false;
             // 
             // picture_res2
             // 
-            this.picture_res2.InitialImage = null;
-            this.picture_res2.Location = new System.Drawing.Point(485, 10);
+            resources.ApplyResources(this.picture_res2, "picture_res2");
             this.picture_res2.Name = "picture_res2";
-            this.picture_res2.Size = new System.Drawing.Size(62, 57);
-            this.picture_res2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picture_res2.TabIndex = 19;
             this.picture_res2.TabStop = false;
             // 
             // picture_res1
             // 
-            this.picture_res1.InitialImage = null;
-            this.picture_res1.Location = new System.Drawing.Point(417, 10);
+            resources.ApplyResources(this.picture_res1, "picture_res1");
             this.picture_res1.Name = "picture_res1";
-            this.picture_res1.Size = new System.Drawing.Size(62, 57);
-            this.picture_res1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picture_res1.TabIndex = 18;
             this.picture_res1.TabStop = false;
             // 
             // picture_r2
             // 
-            this.picture_r2.InitialImage = null;
-            this.picture_r2.Location = new System.Drawing.Point(282, 10);
+            resources.ApplyResources(this.picture_r2, "picture_r2");
             this.picture_r2.Name = "picture_r2";
-            this.picture_r2.Size = new System.Drawing.Size(62, 57);
-            this.picture_r2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picture_r2.TabIndex = 17;
             this.picture_r2.TabStop = false;
             // 
             // picture_l2
             // 
-            this.picture_l2.InitialImage = null;
-            this.picture_l2.Location = new System.Drawing.Point(78, 10);
+            resources.ApplyResources(this.picture_l2, "picture_l2");
             this.picture_l2.Name = "picture_l2";
-            this.picture_l2.Size = new System.Drawing.Size(62, 57);
-            this.picture_l2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picture_l2.TabIndex = 16;
             this.picture_l2.TabStop = false;
             // 
             // del_button
             // 
+            resources.ApplyResources(this.del_button, "del_button");
             this.del_button.BackgroundImage = global::EducationalSoftware.Properties.Resources.delete;
-            this.del_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.del_button.Location = new System.Drawing.Point(409, 152);
             this.del_button.Name = "del_button";
-            this.del_button.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.del_button.Size = new System.Drawing.Size(62, 58);
-            this.del_button.TabIndex = 44;
             this.del_button.UseVisualStyleBackColor = true;
             this.del_button.Click += new System.EventHandler(this.del_button_Click);
             // 
             // button9
             // 
+            resources.ApplyResources(this.button9, "button9");
             this.button9.BackgroundImage = global::EducationalSoftware.Properties.Resources.num_9;
-            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button9.Location = new System.Drawing.Point(341, 152);
             this.button9.Name = "button9";
-            this.button9.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button9.Size = new System.Drawing.Size(62, 58);
-            this.button9.TabIndex = 42;
             this.button9.Tag = "9";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.AddNumber);
             // 
             // button8
             // 
+            resources.ApplyResources(this.button8, "button8");
             this.button8.BackgroundImage = global::EducationalSoftware.Properties.Resources.num_8;
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button8.Location = new System.Drawing.Point(273, 152);
             this.button8.Name = "button8";
-            this.button8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button8.Size = new System.Drawing.Size(62, 58);
-            this.button8.TabIndex = 41;
             this.button8.Tag = "8";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.AddNumber);
             // 
             // button7
             // 
+            resources.ApplyResources(this.button7, "button7");
             this.button7.BackgroundImage = global::EducationalSoftware.Properties.Resources.num_7;
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button7.Location = new System.Drawing.Point(205, 152);
             this.button7.Name = "button7";
-            this.button7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button7.Size = new System.Drawing.Size(62, 58);
-            this.button7.TabIndex = 40;
             this.button7.Tag = "7";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.AddNumber);
             // 
             // button6
             // 
+            resources.ApplyResources(this.button6, "button6");
             this.button6.BackgroundImage = global::EducationalSoftware.Properties.Resources.num_6;
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button6.Location = new System.Drawing.Point(137, 152);
             this.button6.Name = "button6";
-            this.button6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button6.Size = new System.Drawing.Size(62, 58);
-            this.button6.TabIndex = 39;
             this.button6.Tag = "6";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.AddNumber);
             // 
             // button5
             // 
+            resources.ApplyResources(this.button5, "button5");
             this.button5.BackgroundImage = global::EducationalSoftware.Properties.Resources.num_5;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.Location = new System.Drawing.Point(69, 152);
             this.button5.Name = "button5";
-            this.button5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button5.Size = new System.Drawing.Size(62, 58);
-            this.button5.TabIndex = 38;
             this.button5.Tag = "5";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.AddNumber);
             // 
             // button4
             // 
+            resources.ApplyResources(this.button4, "button4");
             this.button4.BackgroundImage = global::EducationalSoftware.Properties.Resources.num_4;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.Location = new System.Drawing.Point(341, 88);
             this.button4.Name = "button4";
-            this.button4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button4.Size = new System.Drawing.Size(62, 58);
-            this.button4.TabIndex = 37;
             this.button4.Tag = "4";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.AddNumber);
             // 
             // button3
             // 
+            resources.ApplyResources(this.button3, "button3");
             this.button3.BackgroundImage = global::EducationalSoftware.Properties.Resources.num_3;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(273, 88);
             this.button3.Name = "button3";
-            this.button3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button3.Size = new System.Drawing.Size(62, 58);
-            this.button3.TabIndex = 36;
             this.button3.Tag = "3";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.AddNumber);
             // 
             // button2
             // 
+            resources.ApplyResources(this.button2, "button2");
             this.button2.BackgroundImage = global::EducationalSoftware.Properties.Resources.num_2;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(205, 88);
             this.button2.Name = "button2";
-            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button2.Size = new System.Drawing.Size(62, 58);
-            this.button2.TabIndex = 35;
             this.button2.Tag = "2";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.AddNumber);
             // 
             // button1
             // 
+            resources.ApplyResources(this.button1, "button1");
             this.button1.BackgroundImage = global::EducationalSoftware.Properties.Resources.num_1;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(137, 88);
             this.button1.Name = "button1";
-            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button1.Size = new System.Drawing.Size(62, 58);
-            this.button1.TabIndex = 34;
             this.button1.Tag = "1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.AddNumber);
             // 
             // button0
             // 
+            resources.ApplyResources(this.button0, "button0");
             this.button0.BackgroundImage = global::EducationalSoftware.Properties.Resources.num_0;
-            this.button0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button0.Location = new System.Drawing.Point(69, 88);
             this.button0.Name = "button0";
-            this.button0.Size = new System.Drawing.Size(62, 58);
-            this.button0.TabIndex = 33;
             this.button0.Tag = "0";
             this.button0.UseVisualStyleBackColor = true;
             this.button0.Click += new System.EventHandler(this.AddNumber);
             // 
             // ResultNum
             // 
-            this.ResultNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResultNum.Location = new System.Drawing.Point(584, 3);
+            resources.ApplyResources(this.ResultNum, "ResultNum");
             this.ResultNum.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
             this.ResultNum.Name = "ResultNum";
-            this.ResultNum.Size = new System.Drawing.Size(62, 29);
-            this.ResultNum.TabIndex = 15;
-            this.ResultNum.Visible = false;
             // 
             // ConfirmButton
             // 
+            resources.ApplyResources(this.ConfirmButton, "ConfirmButton");
             this.ConfirmButton.BackgroundImage = global::EducationalSoftware.Properties.Resources.confirm;
-            this.ConfirmButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ConfirmButton.Location = new System.Drawing.Point(525, 128);
             this.ConfirmButton.Name = "ConfirmButton";
-            this.ConfirmButton.Size = new System.Drawing.Size(87, 86);
-            this.ConfirmButton.TabIndex = 10;
             this.ConfirmButton.UseVisualStyleBackColor = true;
             this.ConfirmButton.Click += new System.EventHandler(this.ConfirmButton_Click);
             // 
             // RightNum
             // 
-            this.RightNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RightNum.Location = new System.Drawing.Point(381, 12);
+            resources.ApplyResources(this.RightNum, "RightNum");
             this.RightNum.Name = "RightNum";
-            this.RightNum.Size = new System.Drawing.Size(62, 29);
-            this.RightNum.TabIndex = 14;
-            this.RightNum.Visible = false;
             // 
             // LeftNum
             // 
-            this.LeftNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LeftNum.Location = new System.Drawing.Point(197, 12);
+            resources.ApplyResources(this.LeftNum, "LeftNum");
             this.LeftNum.Name = "LeftNum";
-            this.LeftNum.Size = new System.Drawing.Size(62, 29);
-            this.LeftNum.TabIndex = 13;
-            this.LeftNum.Visible = false;
             // 
             // EasyButton
             // 
-            this.EasyButton.Location = new System.Drawing.Point(59, 77);
+            resources.ApplyResources(this.EasyButton, "EasyButton");
             this.EasyButton.Name = "EasyButton";
-            this.EasyButton.Size = new System.Drawing.Size(101, 43);
-            this.EasyButton.TabIndex = 9;
-            this.EasyButton.Text = "Easy";
             this.EasyButton.UseVisualStyleBackColor = true;
             this.EasyButton.Click += new System.EventHandler(this.EasyButton_Click);
             // 
             // MediumButton
             // 
-            this.MediumButton.Location = new System.Drawing.Point(59, 126);
+            resources.ApplyResources(this.MediumButton, "MediumButton");
             this.MediumButton.Name = "MediumButton";
-            this.MediumButton.Size = new System.Drawing.Size(101, 43);
-            this.MediumButton.TabIndex = 10;
-            this.MediumButton.Text = "Medium";
             this.MediumButton.UseVisualStyleBackColor = true;
             this.MediumButton.Click += new System.EventHandler(this.MediumButton_Click);
             // 
             // HardButton
             // 
-            this.HardButton.Location = new System.Drawing.Point(59, 175);
+            resources.ApplyResources(this.HardButton, "HardButton");
             this.HardButton.Name = "HardButton";
-            this.HardButton.Size = new System.Drawing.Size(101, 43);
-            this.HardButton.TabIndex = 11;
-            this.HardButton.Text = "Hard";
             this.HardButton.UseVisualStyleBackColor = true;
             this.HardButton.Click += new System.EventHandler(this.HardButton_Click);
             // 
             // ChooseText
             // 
-            this.ChooseText.AutoSize = true;
-            this.ChooseText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChooseText.Location = new System.Drawing.Point(37, 16);
+            resources.ApplyResources(this.ChooseText, "ChooseText");
             this.ChooseText.Name = "ChooseText";
-            this.ChooseText.Size = new System.Drawing.Size(148, 24);
-            this.ChooseText.TabIndex = 12;
-            this.ChooseText.Text = "Choose Difficulty";
             // 
             // DifficultyGroup
             // 
+            resources.ApplyResources(this.DifficultyGroup, "DifficultyGroup");
             this.DifficultyGroup.Controls.Add(this.ChooseText);
             this.DifficultyGroup.Controls.Add(this.HardButton);
             this.DifficultyGroup.Controls.Add(this.MediumButton);
             this.DifficultyGroup.Controls.Add(this.EasyButton);
-            this.DifficultyGroup.Location = new System.Drawing.Point(246, 385);
             this.DifficultyGroup.Name = "DifficultyGroup";
-            this.DifficultyGroup.Size = new System.Drawing.Size(221, 244);
-            this.DifficultyGroup.TabIndex = 12;
             this.DifficultyGroup.TabStop = false;
             // 
             // msglabel
             // 
-            this.msglabel.AutoSize = true;
-            this.msglabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            resources.ApplyResources(this.msglabel, "msglabel");
             this.msglabel.ForeColor = System.Drawing.Color.Green;
-            this.msglabel.Location = new System.Drawing.Point(-158, 174);
             this.msglabel.Name = "msglabel";
-            this.msglabel.Size = new System.Drawing.Size(323, 91);
-            this.msglabel.TabIndex = 20;
-            this.msglabel.Text = "Correct!";
-            this.msglabel.Visible = false;
             // 
             // QuestionGroup
             // 
+            resources.ApplyResources(this.QuestionGroup, "QuestionGroup");
             this.QuestionGroup.BackColor = System.Drawing.Color.Transparent;
             this.QuestionGroup.Controls.Add(this.button8);
             this.QuestionGroup.Controls.Add(this.ConfirmButton);
@@ -501,29 +358,20 @@
             this.QuestionGroup.Controls.Add(this.button4);
             this.QuestionGroup.Controls.Add(this.button6);
             this.QuestionGroup.Controls.Add(this.button5);
-            this.QuestionGroup.Location = new System.Drawing.Point(132, 162);
             this.QuestionGroup.Name = "QuestionGroup";
-            this.QuestionGroup.Size = new System.Drawing.Size(632, 217);
-            this.QuestionGroup.TabIndex = 21;
             // 
             // BackButton
             // 
-            this.BackButton.Font = new System.Drawing.Font("Ravie", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BackButton.Location = new System.Drawing.Point(12, 401);
+            resources.ApplyResources(this.BackButton, "BackButton");
             this.BackButton.Name = "BackButton";
-            this.BackButton.Size = new System.Drawing.Size(95, 75);
-            this.BackButton.TabIndex = 22;
-            this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = true;
             this.BackButton.Click += new System.EventHandler(this.button10_Click);
             // 
             // TestForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::EducationalSoftware.Properties.Resources.final_Exam_Backgroun;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(852, 486);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.msglabel);
             this.Controls.Add(this.DifficultyGroup);
@@ -537,8 +385,6 @@
             this.Controls.Add(this.LeftNum);
             this.DoubleBuffered = true;
             this.Name = "TestForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Evaluation Test";
             this.Load += new System.EventHandler(this.TestForm_Load);
             this.groupbox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picture_res3)).EndInit();

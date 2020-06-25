@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,8 +17,8 @@ namespace EducationalSoftware
         public Profile_Form()
         {
             InitializeComponent();
-            testcombo.SelectedItem = "Practice Test";
-            datecombo.SelectedItem = "This Month";
+            testcombo.SelectedIndex = 0;
+            datecombo.SelectedIndex = 0;
         }
         /// <summary>
         /// Refreshes the chart from database data depending on user selection.
@@ -29,21 +30,21 @@ namespace EducationalSoftware
             {
                 datecombo.SelectedIndex = 0;
             }
-            string selected_el = datecombo.SelectedItem.ToString();
+            int selected_el = datecombo.SelectedIndex;
             switch (selected_el)
             {
-                case "Last Month":
+                case 1:
                     date = date.AddMonths(-1);
                     date = new DateTime(date.Year, date.Month, 1);
                     break;
-                case "Last Three Months":
+                case 2:
                     date = date.AddMonths(-3);
                     date = new DateTime(date.Year, date.Month, 1);
                     break;
-                case "This Year":
+                case 3:
                     date = new DateTime(date.Year, 1, 1);
                     break;
-                case "Last Year":
+                case 4:
                     date = date.AddYears(-1);
                     date = new DateTime(date.Year, 1, 1);
                     break;
@@ -51,13 +52,25 @@ namespace EducationalSoftware
                     date = new DateTime(date.Year, date.Month, 1);
                     break;
             }
-            corr_chart.Series["Correct"].Points.Clear();
-            corr_chart.Series["Wrong"].Points.Clear();
+            string correct;
+            string wrong;
+            if (CultureInfo.CurrentCulture.Equals("en-EN"))
+            {
+                correct = "Correct";
+                wrong = "Wrong";
+            }
+            else
+            {
+                correct = "Σωστά";
+                wrong = "Λανθασμένα";
+            }
+            corr_chart.Series[correct].Points.Clear();
+            corr_chart.Series[wrong].Points.Clear();
             Datamapper dm = new Datamapper();
             dm.GetConnection();
             List<(int, int)> differences = new List<(int, int)>();
             int[] statistics;
-            if ((string)testcombo.SelectedItem == "Practice Test")
+            if (testcombo.SelectedIndex == 0)
             {
                 statistics = dm.GetStatistics("Practice_Statistics", username, date);
             }
@@ -68,8 +81,8 @@ namespace EducationalSoftware
             int label = 1;
             for (int i = 0; i < 20; i += 2)
             {
-                corr_chart.Series["Correct"].Points.AddXY(label, statistics[i]);
-                corr_chart.Series["Wrong"].Points.AddXY(label, statistics[i + 1]);
+                corr_chart.Series[correct].Points.AddXY(label, statistics[i]);
+                corr_chart.Series[wrong].Points.AddXY(label, statistics[i + 1]);
                 if (statistics[i] < statistics[i + 1])
                 {
                     differences.Add((label, statistics[i + 1] - statistics[i]));
@@ -77,15 +90,27 @@ namespace EducationalSoftware
                 label++;
 
             }
+            string lbl;
+            string lbl2;
+            if (CultureInfo.CurrentCulture.Equals("en-EN"))
+            {
+                lbl = "You are doing Great!";
+                lbl2 = "You need to practise more";
+            }
+            else
+            {
+                lbl = "Τα πηγαίνεις Εξαιρετικά!";
+                lbl2 = "Χρειάζεσαι περισσότερη εξάσκηση";
+            }
             if (differences.Any())
             {
-                practise_label.Text = "You need to practise more";
+                practise_label.Text = lbl2;
                 differences.Sort((p, q) => p.Item2.CompareTo(q.Item2));
                 this.need_practise_photo.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + differences.Last().Item1);
             }
             else
             {
-                practise_label.Text = "You are doing Great!";
+                practise_label.Text = lbl;
                 this.need_practise_photo.Image = null;
             }            
         }

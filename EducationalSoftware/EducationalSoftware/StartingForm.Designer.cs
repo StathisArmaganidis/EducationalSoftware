@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {  
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartingForm));
             this.loginUserBox = new System.Windows.Forms.TextBox();
             this.LoginGroup = new System.Windows.Forms.GroupBox();
             this.GoRegister = new System.Windows.Forms.Button();
@@ -50,14 +51,12 @@
             // 
             // loginUserBox
             // 
-            this.loginUserBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginUserBox.Location = new System.Drawing.Point(184, 63);
+            resources.ApplyResources(this.loginUserBox, "loginUserBox");
             this.loginUserBox.Name = "loginUserBox";
-            this.loginUserBox.Size = new System.Drawing.Size(100, 29);
-            this.loginUserBox.TabIndex = 0;
             // 
             // LoginGroup
             // 
+            resources.ApplyResources(this.LoginGroup, "LoginGroup");
             this.LoginGroup.Controls.Add(this.GoRegister);
             this.LoginGroup.Controls.Add(this.LoginButton);
             this.LoginGroup.Controls.Add(this.loginLabel);
@@ -65,77 +64,48 @@
             this.LoginGroup.Controls.Add(this.loginUserLabel);
             this.LoginGroup.Controls.Add(this.loginPassBox);
             this.LoginGroup.Controls.Add(this.loginUserBox);
-            this.LoginGroup.Location = new System.Drawing.Point(12, 12);
             this.LoginGroup.Name = "LoginGroup";
-            this.LoginGroup.Size = new System.Drawing.Size(300, 206);
-            this.LoginGroup.TabIndex = 1;
             this.LoginGroup.TabStop = false;
             // 
             // GoRegister
             // 
-            this.GoRegister.Font = new System.Drawing.Font("Ravie", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GoRegister.Location = new System.Drawing.Point(6, 177);
+            resources.ApplyResources(this.GoRegister, "GoRegister");
             this.GoRegister.Name = "GoRegister";
-            this.GoRegister.Size = new System.Drawing.Size(137, 23);
-            this.GoRegister.TabIndex = 8;
-            this.GoRegister.Text = "Create Account";
             this.GoRegister.UseVisualStyleBackColor = true;
             this.GoRegister.Click += new System.EventHandler(this.GoRegister_Click);
             // 
             // LoginButton
             // 
-            this.LoginButton.Font = new System.Drawing.Font("Ravie", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoginButton.Location = new System.Drawing.Point(184, 162);
+            resources.ApplyResources(this.LoginButton, "LoginButton");
             this.LoginButton.Name = "LoginButton";
-            this.LoginButton.Size = new System.Drawing.Size(110, 38);
-            this.LoginButton.TabIndex = 7;
-            this.LoginButton.Text = "Login";
             this.LoginButton.UseVisualStyleBackColor = true;
             this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // loginLabel
             // 
-            this.loginLabel.AutoSize = true;
-            this.loginLabel.Font = new System.Drawing.Font("Ravie", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.loginLabel, "loginLabel");
             this.loginLabel.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.loginLabel.Location = new System.Drawing.Point(99, 16);
             this.loginLabel.Name = "loginLabel";
-            this.loginLabel.Size = new System.Drawing.Size(78, 26);
-            this.loginLabel.TabIndex = 4;
-            this.loginLabel.Text = "Login";
             // 
             // loginPassLabel
             // 
-            this.loginPassLabel.AutoSize = true;
-            this.loginPassLabel.Font = new System.Drawing.Font("Ravie", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginPassLabel.Location = new System.Drawing.Point(19, 117);
+            resources.ApplyResources(this.loginPassLabel, "loginPassLabel");
             this.loginPassLabel.Name = "loginPassLabel";
-            this.loginPassLabel.Size = new System.Drawing.Size(137, 26);
-            this.loginPassLabel.TabIndex = 3;
-            this.loginPassLabel.Text = "Password";
             // 
             // loginUserLabel
             // 
-            this.loginUserLabel.AutoSize = true;
-            this.loginUserLabel.Font = new System.Drawing.Font("Ravie", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.loginUserLabel, "loginUserLabel");
             this.loginUserLabel.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.loginUserLabel.Location = new System.Drawing.Point(19, 64);
             this.loginUserLabel.Name = "loginUserLabel";
-            this.loginUserLabel.Size = new System.Drawing.Size(139, 26);
-            this.loginUserLabel.TabIndex = 2;
-            this.loginUserLabel.Text = "Username";
             // 
             // loginPassBox
             // 
-            this.loginPassBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginPassBox.Location = new System.Drawing.Point(184, 116);
+            resources.ApplyResources(this.loginPassBox, "loginPassBox");
             this.loginPassBox.Name = "loginPassBox";
-            this.loginPassBox.PasswordChar = '*';
-            this.loginPassBox.Size = new System.Drawing.Size(100, 29);
-            this.loginPassBox.TabIndex = 1;
             // 
             // RegisterGroup
             // 
+            resources.ApplyResources(this.RegisterGroup, "RegisterGroup");
             this.RegisterGroup.Controls.Add(this.GoLogin);
             this.RegisterGroup.Controls.Add(this.RegisterButton);
             this.RegisterGroup.Controls.Add(this.registerLabel);
@@ -143,95 +113,58 @@
             this.RegisterGroup.Controls.Add(this.registerUserLabel);
             this.RegisterGroup.Controls.Add(this.registerPassBox);
             this.RegisterGroup.Controls.Add(this.registerUserBox);
-            this.RegisterGroup.Location = new System.Drawing.Point(488, 232);
             this.RegisterGroup.Name = "RegisterGroup";
-            this.RegisterGroup.Size = new System.Drawing.Size(300, 206);
-            this.RegisterGroup.TabIndex = 5;
             this.RegisterGroup.TabStop = false;
             // 
             // GoLogin
             // 
-            this.GoLogin.Font = new System.Drawing.Font("Ravie", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GoLogin.Location = new System.Drawing.Point(6, 176);
+            resources.ApplyResources(this.GoLogin, "GoLogin");
             this.GoLogin.Name = "GoLogin";
-            this.GoLogin.Size = new System.Drawing.Size(109, 24);
-            this.GoLogin.TabIndex = 6;
-            this.GoLogin.Text = "Back to login";
             this.GoLogin.UseVisualStyleBackColor = true;
             this.GoLogin.Click += new System.EventHandler(this.GoLogin_Click);
             // 
             // RegisterButton
             // 
-            this.RegisterButton.Font = new System.Drawing.Font("Ravie", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegisterButton.Location = new System.Drawing.Point(184, 162);
+            resources.ApplyResources(this.RegisterButton, "RegisterButton");
             this.RegisterButton.Name = "RegisterButton";
-            this.RegisterButton.Size = new System.Drawing.Size(110, 38);
-            this.RegisterButton.TabIndex = 5;
-            this.RegisterButton.Text = "Register";
             this.RegisterButton.UseVisualStyleBackColor = true;
             this.RegisterButton.Click += new System.EventHandler(this.RegisterButton_Click);
             // 
             // registerLabel
             // 
-            this.registerLabel.AutoSize = true;
-            this.registerLabel.Font = new System.Drawing.Font("Ravie", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.registerLabel, "registerLabel");
             this.registerLabel.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.registerLabel.Location = new System.Drawing.Point(99, 16);
             this.registerLabel.Name = "registerLabel";
-            this.registerLabel.Size = new System.Drawing.Size(127, 26);
-            this.registerLabel.TabIndex = 4;
-            this.registerLabel.Text = "Register";
             // 
             // registerPassLabel
             // 
-            this.registerPassLabel.AutoSize = true;
-            this.registerPassLabel.Font = new System.Drawing.Font("Ravie", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.registerPassLabel.Location = new System.Drawing.Point(19, 117);
+            resources.ApplyResources(this.registerPassLabel, "registerPassLabel");
             this.registerPassLabel.Name = "registerPassLabel";
-            this.registerPassLabel.Size = new System.Drawing.Size(137, 26);
-            this.registerPassLabel.TabIndex = 3;
-            this.registerPassLabel.Text = "Password";
             // 
             // registerUserLabel
             // 
-            this.registerUserLabel.AutoSize = true;
-            this.registerUserLabel.Font = new System.Drawing.Font("Ravie", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.registerUserLabel, "registerUserLabel");
             this.registerUserLabel.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.registerUserLabel.Location = new System.Drawing.Point(19, 64);
             this.registerUserLabel.Name = "registerUserLabel";
-            this.registerUserLabel.Size = new System.Drawing.Size(139, 26);
-            this.registerUserLabel.TabIndex = 2;
-            this.registerUserLabel.Text = "Username";
             // 
             // registerPassBox
             // 
-            this.registerPassBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.registerPassBox.Location = new System.Drawing.Point(184, 116);
+            resources.ApplyResources(this.registerPassBox, "registerPassBox");
             this.registerPassBox.Name = "registerPassBox";
-            this.registerPassBox.PasswordChar = '*';
-            this.registerPassBox.Size = new System.Drawing.Size(100, 29);
-            this.registerPassBox.TabIndex = 1;
             // 
             // registerUserBox
             // 
-            this.registerUserBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.registerUserBox.Location = new System.Drawing.Point(184, 63);
+            resources.ApplyResources(this.registerUserBox, "registerUserBox");
             this.registerUserBox.Name = "registerUserBox";
-            this.registerUserBox.Size = new System.Drawing.Size(100, 29);
-            this.registerUserBox.TabIndex = 0;
             // 
             // StartingForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::EducationalSoftware.Properties.Resources.Login_Background;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.RegisterGroup);
             this.Controls.Add(this.LoginGroup);
             this.Name = "StartingForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "StartingForm";
             this.Load += new System.EventHandler(this.StartingForm_Load);
             this.LoginGroup.ResumeLayout(false);
             this.LoginGroup.PerformLayout();

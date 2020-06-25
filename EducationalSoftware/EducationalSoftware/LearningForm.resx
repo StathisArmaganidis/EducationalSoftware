@@ -117,4 +117,331 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Eight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 241</value>
+  </data>
+  <data name="&gt;&gt;learntitle.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="One.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="One.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 241</value>
+  </data>
+  <data name="&gt;&gt;Four.Name" xml:space="preserve">
+    <value>Four</value>
+  </data>
+  <data name="&gt;&gt;Nine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Seven.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;Six.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Ten.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;learntitle.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="learntitle.Text" xml:space="preserve">
+    <value>Learn Multiplication</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Seven.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>LearningForm</value>
+  </data>
+  <data name="Three.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 60</value>
+  </data>
+  <data name="Ten.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="Nine.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="&gt;&gt;Three.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Two.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;Eight.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Three.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Nine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>513, 317</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="learntitle.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="Seven.Location" type="System.Drawing.Point, System.Drawing">
+    <value>190, 317</value>
+  </data>
+  <data name="&gt;&gt;One.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="Four.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 241</value>
+  </data>
+  <data name="&gt;&gt;Two.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Six.Name" xml:space="preserve">
+    <value>Six</value>
+  </data>
+  <data name="&gt;&gt;Two.Name" xml:space="preserve">
+    <value>Two</value>
+  </data>
+  <data name="&gt;&gt;Seven.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Five.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="Two.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 241</value>
+  </data>
+  <data name="Four.Location" type="System.Drawing.Point, System.Drawing">
+    <value>513, 60</value>
+  </data>
+  <data name="Three.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 241</value>
+  </data>
+  <data name="Ten.Location" type="System.Drawing.Point, System.Drawing">
+    <value>673, 317</value>
+  </data>
+  <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Ravie, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;Ten.Name" xml:space="preserve">
+    <value>Ten</value>
+  </data>
+  <data name="Four.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="Five.Location" type="System.Drawing.Point, System.Drawing">
+    <value>673, 60</value>
+  </data>
+  <data name="&gt;&gt;Two.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;Seven.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Ten.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Five.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;Four.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="Four.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;Nine.Name" xml:space="preserve">
+    <value>Nine</value>
+  </data>
+  <data name="&gt;&gt;Three.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;Five.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Six.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="Six.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="Five.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 241</value>
+  </data>
+  <data name="&gt;&gt;Five.Name" xml:space="preserve">
+    <value>Five</value>
+  </data>
+  <data name="Six.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 241</value>
+  </data>
+  <data name="&gt;&gt;Ten.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Two.Location" type="System.Drawing.Point, System.Drawing">
+    <value>190, 60</value>
+  </data>
+  <data name="&gt;&gt;Seven.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;Two.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="learntitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24pt</value>
+  </data>
+  <data name="learntitle.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;Eight.Name" xml:space="preserve">
+    <value>Eight</value>
+  </data>
+  <data name="&gt;&gt;Seven.Name" xml:space="preserve">
+    <value>Seven</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 9</value>
+  </data>
+  <data name="&gt;&gt;learntitle.Name" xml:space="preserve">
+    <value>learntitle</value>
+  </data>
+  <data name="&gt;&gt;Eight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Eight.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="One.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;Nine.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="learntitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>269, 9</value>
+  </data>
+  <data name="Eight.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="Nine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 241</value>
+  </data>
+  <data name="&gt;&gt;Three.Name" xml:space="preserve">
+    <value>Three</value>
+  </data>
+  <data name="Ten.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 241</value>
+  </data>
+  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="Six.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 317</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>LearningForm</value>
+  </data>
+  <data name="&gt;&gt;One.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="Three.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;One.Name" xml:space="preserve">
+    <value>One</value>
+  </data>
+  <data name="Eight.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="Six.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;Six.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="One.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 60</value>
+  </data>
+  <data name="Eight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 317</value>
+  </data>
+  <data name="&gt;&gt;One.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Three.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Five.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="learntitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>293, 37</value>
+  </data>
+  <data name="Nine.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;Four.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>806, 570</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 37</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Ten.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;Nine.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Two.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="Seven.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 241</value>
+  </data>
+  <data name="&gt;&gt;learntitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Four.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Five.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>el</value>
+  </metadata>
 </root>

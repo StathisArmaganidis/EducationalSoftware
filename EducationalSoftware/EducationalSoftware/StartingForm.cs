@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.OleDb;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,7 @@ namespace EducationalSoftware
         public static string username ="";
         public StartingForm()
         {
+            
             InitializeComponent();
             dm = new Datamapper();
             dm.GetConnection();
@@ -89,7 +91,15 @@ namespace EducationalSoftware
                 }
                 else
                 {
-                    MessageBox.Show("Wrong credentials. Please make sure that the user exists and the password is correct.");
+                    if (CultureInfo.CurrentCulture.Equals("en-EN"))
+                    {
+                        MessageBox.Show("Wrong credentials. Please make sure that the user exists and the password is correct.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Λάθος στοιχεία. Παρακαλώ, επιβεβαιώστε πως υπάρχει ο χρήστης και ο κωδικός του είναι σωστός.");
+                    }
+
                 }
             }
         }

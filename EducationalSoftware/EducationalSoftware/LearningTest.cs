@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -149,9 +150,21 @@ namespace EducationalSoftware
         {
             keys.FixResult();
             int index = (int)LeftNum.Value - 1;
+            string lbl;
+            string lbl2;
+            if (CultureInfo.CurrentCulture.Equals("en-EN"))
+            {
+                lbl = "Correct!";
+                lbl2 = "Wrong!";
+            }
+            else
+            {
+                lbl = "Σωστό!";
+                lbl2 = "Λάθος!";
+            }
             if (LeftNum.Value * RightNum.Value == ResultNum.Value)
             {
-                msglabel.Text = "Correct!";
+                msglabel.Text = lbl;
                 statistics[2 * index]++;
                 msglabel.ForeColor = Color.Green;
                 QuestionGroup.Visible = false;
@@ -166,7 +179,7 @@ namespace EducationalSoftware
             }
             else
             {
-                msglabel.Text = "Wrong!";
+                msglabel.Text = lbl2;
                 statistics[(2 * index)+1]++;
                 msglabel.ForeColor = Color.Maroon;
                 QuestionGroup.Visible = false;

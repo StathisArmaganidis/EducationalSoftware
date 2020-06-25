@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -118,7 +119,16 @@ namespace EducationalSoftware
                 this.panel1.Location = new Point(this.panel1.Location.X - 5, this.panel1.Location.Y);
                 if (equations[current_index].Item2 >= 2)
                 {
-                    DialogResult wrong = MessageBox.Show("Would you like to see the solution?", "Wrong", MessageBoxButtons.YesNo);
+                    string txt;
+                    if (CultureInfo.CurrentCulture.Equals("en-En"))
+                    {
+                        txt = "Would you like to see the solution?";
+                    }
+                    else
+                    {
+                        txt = "Θα θέλατε να δείτε την λύση;";
+                    }
+                    DialogResult wrong = MessageBox.Show(txt, "Wrong", MessageBoxButtons.YesNo);
                     if (wrong == DialogResult.Yes)
                     {
                         for (int i = 0; i < eq_pict.Length; i++)
