@@ -44,5 +44,10 @@ namespace EducationalSoftware
             new Profile_Form().ShowDialog();
             this.Visible = true;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

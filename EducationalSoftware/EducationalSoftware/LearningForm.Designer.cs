@@ -39,6 +39,7 @@
             this.Three = new System.Windows.Forms.Button();
             this.Two = new System.Windows.Forms.Button();
             this.One = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // learntitle
@@ -171,6 +172,17 @@
             this.One.UseVisualStyleBackColor = true;
             this.One.Click += new System.EventHandler(this.number_button_Click);
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Ravie", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(12, 9);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(95, 37);
+            this.button2.TabIndex = 51;
+            this.button2.Text = "Back";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // LearningForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -178,6 +190,7 @@
             this.BackgroundImage = global::EducationalSoftware.Properties.Resources.multiplication_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(806, 570);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.Ten);
             this.Controls.Add(this.Nine);
             this.Controls.Add(this.Eight);
@@ -209,5 +222,6 @@
         private System.Windows.Forms.Button Two;
         private System.Windows.Forms.Button One;
         private System.Windows.Forms.Label learntitle;
+        private System.Windows.Forms.Button button2;
     }
 }

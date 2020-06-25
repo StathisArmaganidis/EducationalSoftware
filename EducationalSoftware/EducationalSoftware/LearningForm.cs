@@ -23,5 +23,10 @@ namespace EducationalSoftware
             new TimesLearning(((Button)sender).Name, int.Parse(((Button)sender).Tag.ToString())).ShowDialog();
             this.Visible = true;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -87,6 +87,10 @@ namespace EducationalSoftware
                     new User_Form().ShowDialog();
                     this.Visible = true;
                 }
+                else
+                {
+                    MessageBox.Show("Wrong credentials. Please make sure that the user exists and the password is correct.");
+                }
             }
         }
     }

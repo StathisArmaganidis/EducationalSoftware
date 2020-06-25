@@ -59,6 +59,7 @@
             this.button11 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button10 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.eqnum)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Equal_1)).BeginInit();
@@ -441,6 +442,17 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // button10
+            // 
+            this.button10.Font = new System.Drawing.Font("Ravie", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Location = new System.Drawing.Point(12, 398);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(95, 40);
+            this.button10.TabIndex = 64;
+            this.button10.Text = "Back";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
             // TimesLearning
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -448,6 +460,7 @@
             this.BackgroundImage = global::EducationalSoftware.Properties.Resources.learning_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button10);
             this.Controls.Add(this.leftnum);
             this.Controls.Add(this.Next);
             this.Controls.Add(this.rightnum);
@@ -514,5 +527,6 @@
         private System.Windows.Forms.NumericUpDown leftnum;
         private System.Windows.Forms.NumericUpDown rightnum;
         private System.Windows.Forms.Panel keyboardpanel;
+        private System.Windows.Forms.Button button10;
     }
 }

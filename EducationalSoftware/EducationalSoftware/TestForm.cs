@@ -218,11 +218,6 @@ namespace EducationalSoftware
             keys.DelNumber();
         }
 
-        private void BackButton_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         public async void Wait()
         {
             await Task.Delay(1000);
@@ -231,5 +226,9 @@ namespace EducationalSoftware
 
         }
 
+        private void button10_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

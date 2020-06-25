@@ -28,15 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.practise_label = new System.Windows.Forms.Label();
             this.need_practise_photo = new System.Windows.Forms.PictureBox();
             this.corr_chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.datecombo = new System.Windows.Forms.ComboBox();
             this.testcombo = new System.Windows.Forms.ComboBox();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.need_practise_photo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.corr_chart)).BeginInit();
             this.SuspendLayout();
@@ -65,23 +66,23 @@
             // corr_chart
             // 
             this.corr_chart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(184)))), ((int)(((byte)(255)))));
-            chartArea4.Name = "ChartArea1";
-            this.corr_chart.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.corr_chart.Legends.Add(legend4);
+            chartArea1.Name = "ChartArea1";
+            this.corr_chart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.corr_chart.Legends.Add(legend1);
             this.corr_chart.Location = new System.Drawing.Point(372, 39);
             this.corr_chart.Name = "corr_chart";
             this.corr_chart.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            series7.ChartArea = "ChartArea1";
-            series7.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            series7.Legend = "Legend1";
-            series7.Name = "Correct";
-            series8.ChartArea = "ChartArea1";
-            series8.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            series8.Legend = "Legend1";
-            series8.Name = "Wrong";
-            this.corr_chart.Series.Add(series7);
-            this.corr_chart.Series.Add(series8);
+            series1.ChartArea = "ChartArea1";
+            series1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            series1.Legend = "Legend1";
+            series1.Name = "Correct";
+            series2.ChartArea = "ChartArea1";
+            series2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            series2.Legend = "Legend1";
+            series2.Name = "Wrong";
+            this.corr_chart.Series.Add(series1);
+            this.corr_chart.Series.Add(series2);
             this.corr_chart.Size = new System.Drawing.Size(431, 304);
             this.corr_chart.TabIndex = 2;
             this.corr_chart.Text = "chart1";
@@ -115,6 +116,17 @@
             this.testcombo.TabIndex = 4;
             this.testcombo.SelectedIndexChanged += new System.EventHandler(this.testcombo_SelectedIndexChanged);
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Ravie", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(12, 363);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(95, 75);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Back";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Profile_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -122,6 +134,7 @@
             this.BackgroundImage = global::EducationalSoftware.Properties.Resources.profile_backround;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(815, 450);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.testcombo);
             this.Controls.Add(this.datecombo);
             this.Controls.Add(this.corr_chart);
@@ -145,5 +158,6 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart corr_chart;
         private System.Windows.Forms.ComboBox datecombo;
         private System.Windows.Forms.ComboBox testcombo;
+        private System.Windows.Forms.Button button2;
     }
 }

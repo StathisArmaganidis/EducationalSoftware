@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LearningTest));
-            this.BackButton = new System.Windows.Forms.Button();
             this.picture_res3 = new System.Windows.Forms.PictureBox();
             this.picture_r1 = new System.Windows.Forms.PictureBox();
             this.picture_l1 = new System.Windows.Forms.PictureBox();
@@ -57,6 +56,7 @@
             this.msglabel = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.QuestionGroup = new System.Windows.Forms.Panel();
+            this.button10 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picture_res3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_r1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_l1)).BeginInit();
@@ -72,17 +72,6 @@
             this.groupBox1.SuspendLayout();
             this.QuestionGroup.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // BackButton
-            // 
-            this.BackButton.Location = new System.Drawing.Point(813, 493);
-            this.BackButton.Name = "BackButton";
-            this.BackButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.BackButton.Size = new System.Drawing.Size(93, 36);
-            this.BackButton.TabIndex = 18;
-            this.BackButton.Text = "Go Back";
-            this.BackButton.UseVisualStyleBackColor = true;
-            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // picture_res3
             // 
@@ -413,6 +402,17 @@
             this.QuestionGroup.Size = new System.Drawing.Size(607, 220);
             this.QuestionGroup.TabIndex = 20;
             // 
+            // button10
+            // 
+            this.button10.Font = new System.Drawing.Font("Ravie", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Location = new System.Drawing.Point(12, 454);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(95, 75);
+            this.button10.TabIndex = 45;
+            this.button10.Text = "Back";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
             // LearningTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -420,8 +420,8 @@
             this.BackgroundImage = global::EducationalSoftware.Properties.Resources.Practise_Test_Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(918, 541);
+            this.Controls.Add(this.button10);
             this.Controls.Add(this.QuestionGroup);
-            this.Controls.Add(this.BackButton);
             this.Controls.Add(this.ResultNum);
             this.Controls.Add(this.RightNum);
             this.Controls.Add(this.LeftNum);
@@ -450,8 +450,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.PictureBox picture_res3;
         private System.Windows.Forms.PictureBox picture_r1;
         private System.Windows.Forms.PictureBox picture_l1;
@@ -479,5 +477,6 @@
         private System.Windows.Forms.Label msglabel;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Panel QuestionGroup;
+        private System.Windows.Forms.Button button10;
     }
 }

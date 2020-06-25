@@ -100,6 +100,9 @@ namespace EducationalSoftware
             refresh_chart(DateTime.Now);
         }
 
-
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
