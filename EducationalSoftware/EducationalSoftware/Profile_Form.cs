@@ -16,9 +16,8 @@ namespace EducationalSoftware
         public Profile_Form()
         {
             InitializeComponent();
+            testcombo.SelectedItem = "Practice Test";
             datecombo.SelectedItem = "This Month";
-
-           
         }
         /// <summary>
         /// Refreshes the chart from database data depending on user selection.
@@ -26,39 +25,10 @@ namespace EducationalSoftware
         /// <param name="date"></param>
         public void refresh_chart(DateTime date)
         {
-            corr_chart.Series["Correct"].Points.Clear();
-            corr_chart.Series["Wrong"].Points.Clear();
-            Datamapper dm = new Datamapper();
-            dm.GetConnection();
-            List<(int, int)> differences = new List<(int, int)>();
-            int[] statistics = dm.GetStatistics(username,date);
-            int label = 1;
-            for (int i = 0; i < 20; i += 2)
+            if (datecombo.SelectedIndex == -1)
             {
-                corr_chart.Series["Correct"].Points.AddXY(label, statistics[i]);
-                corr_chart.Series["Wrong"].Points.AddXY(label, statistics[i + 1]);
-                if (statistics[i] < statistics[i + 1])
-                {
-                    differences.Add((label, statistics[i + 1] - statistics[i]));
-                }
-                    label++;
-                
+                datecombo.SelectedIndex = 0;
             }
-            if (differences.Any())
-            {
-                practise_label.Text = "You need to practise more";
-                differences.Sort((p, q) => p.Item2.CompareTo(q.Item2));
-                this.need_practise_photo.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + differences.Last().Item1);
-            }
-            else
-            {
-                practise_label.Text = "You are doing Great!";
-            }
-        }
-
-        private void datecombo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            DateTime date = DateTime.Now;
             string selected_el = datecombo.SelectedItem.ToString();
             switch (selected_el)
             {
@@ -81,7 +51,55 @@ namespace EducationalSoftware
                     date = new DateTime(date.Year, date.Month, 1);
                     break;
             }
-            refresh_chart(date);
+            corr_chart.Series["Correct"].Points.Clear();
+            corr_chart.Series["Wrong"].Points.Clear();
+            Datamapper dm = new Datamapper();
+            dm.GetConnection();
+            List<(int, int)> differences = new List<(int, int)>();
+            int[] statistics;
+            if ((string)testcombo.SelectedItem == "Practice Test")
+            {
+                statistics = dm.GetStatistics("Practice_Statistics", username, date);
+            }
+            else
+            {
+                statistics = dm.GetStatistics("Final_Statistics", username, date);
+            }
+            int label = 1;
+            for (int i = 0; i < 20; i += 2)
+            {
+                corr_chart.Series["Correct"].Points.AddXY(label, statistics[i]);
+                corr_chart.Series["Wrong"].Points.AddXY(label, statistics[i + 1]);
+                if (statistics[i] < statistics[i + 1])
+                {
+                    differences.Add((label, statistics[i + 1] - statistics[i]));
+                }
+                label++;
+
+            }
+            if (differences.Any())
+            {
+                practise_label.Text = "You need to practise more";
+                differences.Sort((p, q) => p.Item2.CompareTo(q.Item2));
+                this.need_practise_photo.Image = (Image)Properties.Resources.ResourceManager.GetObject("num_" + differences.Last().Item1);
+            }
+            else
+            {
+                practise_label.Text = "You are doing Great!";
+                this.need_practise_photo.Image = null;
+            }            
         }
+
+        private void datecombo_SelectedIndexChanged(object sender, EventArgs e)
+        {            
+            refresh_chart(DateTime.Now);
+        }
+
+        private void testcombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            refresh_chart(DateTime.Now);
+        }
+
+
     }
 }

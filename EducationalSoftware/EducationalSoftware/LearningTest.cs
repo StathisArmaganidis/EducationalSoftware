@@ -27,7 +27,7 @@ namespace EducationalSoftware
             dm = new Datamapper();
             probabilities = dm.GetStats(username);
             multipliers = dm.GetMultipliers(username);
-            statistics = dm.GetStatistics(username, DateTime.Now);
+            statistics = dm.GetStatistics("Practice_Statistics",username, DateTime.Now);
             numbers = new string[10] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" };
             starting_Prob = probabilities[0] / multipliers[0];
         }
@@ -188,7 +188,7 @@ namespace EducationalSoftware
             dm.GetConnection();
             dm.SaveMultipliers(multipliers, StartingForm.username);
             dm.SaveStats(probabilities, StartingForm.username);
-            dm.SaveStatistics(StartingForm.username, statistics,DateTime.Now);
+            dm.SaveStatistics("Practice_Statistics",StartingForm.username, statistics,DateTime.Now);
             CreateQuestion();
         }
 

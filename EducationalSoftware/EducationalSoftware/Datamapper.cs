@@ -254,14 +254,14 @@ namespace EducationalSoftware
         /// <param name="username"></param>
         /// <param name="date"></param>
         /// <returns></returns>
-        public int[] GetStatistics(string username, DateTime date)
+        public int[] GetStatistics(string table, string username, DateTime date)
         {
             try
             {
                 string year = date.Year.ToString();
                 string month = date.Month.ToString();
                 string day = date.Day.ToString();
-                string cmd = "SELECT * FROM Statistics WHERE [Username]=@username AND Year([Date]) >= @year AND Month([Date])>= @month AND Day([Date])>=@day";
+                string cmd = "SELECT * FROM "+table+" WHERE [Username]=@username AND Year([Date]) >= @year AND Month([Date])>= @month AND Day([Date])>=@day";
                 int[] statistics = new int[20];
                 OleDbCommand command = new OleDbCommand(cmd, connection);
                 command.Parameters.AddWithValue("@username", username);
@@ -296,7 +296,7 @@ namespace EducationalSoftware
         /// <param name="statistics"></param>
         /// <param name="datet"></param>
         /// <returns></returns>
-        public bool SaveStatistics(string username,int[] statistics, DateTime datet)
+        public bool SaveStatistics(string table, string username,int[] statistics, DateTime datet)
         {
             try
             {
@@ -304,7 +304,7 @@ namespace EducationalSoftware
             
                 string date;
                 date = datet.ToString("MM/dd/yyyy");
-                string cmd = "SELECT * FROM [Statistics] WHERE [username]=@username AND [date]=Datevalue(@date)";
+                string cmd = "SELECT * FROM "+table+" WHERE [username]=@username AND [date]=Datevalue(@date)";
                 OleDbCommand command = new OleDbCommand(cmd, connection);
                 command.Parameters.AddWithValue("@username", username);
                 command.Parameters.AddWithValue("@date", date);
@@ -312,7 +312,7 @@ namespace EducationalSoftware
                 exists=Convert.ToInt32(command.ExecuteScalar());
                 if (exists > 0)//if tuple already exists.
                 {
-                    cmd = "UPDATE [Statistics] SET [right_1]="+ statistics[0]+ ",[wrong_1]=" + statistics[1] + ",[right_2]=" + statistics[2] + ",[wrong_2]=" + statistics[3] + "," +
+                    cmd = "UPDATE "+table+" SET [right_1]="+ statistics[0]+ ",[wrong_1]=" + statistics[1] + ",[right_2]=" + statistics[2] + ",[wrong_2]=" + statistics[3] + "," +
                         "[right_3]=" + statistics[4] + ",[wrong_3]=" + statistics[5] + ",[right_4]=" + statistics[6] + ",[wrong_4]=" + statistics[7] + "," +
                         "[right_5]=" + statistics[8] + ",[wrong_5]=" + statistics[9] + ",[right_6]=" + statistics[10] + ",[wrong_6]=" + statistics[11] + "," +
                         "[right_7]=" + statistics[12] + ",[wrong_7]=" + statistics[13] + ",[right_8]=" + statistics[14] + ",[wrong_8]=" + statistics[15] + "," +
@@ -322,7 +322,7 @@ namespace EducationalSoftware
                 }
                 else
                 {
-                    cmd = "INSERT INTO [Statistics] ([username],[date],[right_1],[wrong_1],[right_2],[wrong_2],[right_3],[wrong_3],[right_4],[wrong_4],[right_5],[wrong_5],[right_6],[wrong_6],[right_7],[wrong_7],[right_8],[wrong_8],[right_9],[wrong_9],[right_10],[wrong_10]) VALUES (@username,@date,@right_1,@wrong_1,@right_2,@wrong_2,@right_3,@wrong_3,@right_4,@wrong_4,@right_5,@wrong_5,@right_6,@wrong_6,@right_7,@wrong_7,@right_8,@wrong_8,@right_9,@wrong_9,@right_10,@wrong_10)";
+                    cmd = "INSERT INTO "+table+" ([username],[date],[right_1],[wrong_1],[right_2],[wrong_2],[right_3],[wrong_3],[right_4],[wrong_4],[right_5],[wrong_5],[right_6],[wrong_6],[right_7],[wrong_7],[right_8],[wrong_8],[right_9],[wrong_9],[right_10],[wrong_10]) VALUES (@username,@date,@right_1,@wrong_1,@right_2,@wrong_2,@right_3,@wrong_3,@right_4,@wrong_4,@right_5,@wrong_5,@right_6,@wrong_6,@right_7,@wrong_7,@right_8,@wrong_8,@right_9,@wrong_9,@right_10,@wrong_10)";
                 }
 
                 command = new OleDbCommand(cmd, connection);
