@@ -232,7 +232,7 @@ namespace EducationalSoftware
                 }
                 else
                 {
-                    MessageBox.Show("Πέτυχες " + points.ToString() + " out of " + TotalQuestionsNum.ToString() + " σωστές απαντήσεις!");
+                    MessageBox.Show("Απάντησες σωστά " + points.ToString() + " από τις " + TotalQuestionsNum.ToString() + " ερωτήσεις!");
                 }
                 BackButton.Enabled = true;
                 ConfirmButton.Enabled = false;
