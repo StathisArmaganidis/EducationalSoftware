@@ -50,7 +50,7 @@
             // GRButton
             // 
             this.GRButton.Font = new System.Drawing.Font("Ravie", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.helpProvider1.SetHelpString(this.GRButton, "\'α\'");
+            this.helpProvider1.SetHelpString(this.GRButton, "Change language to Greek.");
             this.GRButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.GRButton.Location = new System.Drawing.Point(467, 154);
             this.GRButton.Name = "GRButton";

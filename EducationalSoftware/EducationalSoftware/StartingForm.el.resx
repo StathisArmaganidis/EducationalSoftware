@@ -133,6 +133,12 @@
   <data name="LoginButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial Narrow, 12pt</value>
   </data>
+  <data name="LoginButton.HelpKeyword" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LoginButton.HelpString" xml:space="preserve">
+    <value>Login to the application.</value>
+  </data>
   <data name="LoginButton.Text" xml:space="preserve">
     <value>Είσοδος</value>
   </data>
@@ -160,6 +166,12 @@
   <data name="loginUserLabel.Text" xml:space="preserve">
     <value>Όνομα Χρήστη</value>
   </data>
+  <data name="GoLogin.HelpKeyword" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GoLogin.HelpString" xml:space="preserve">
+    <value>Go back to login form.</value>
+  </data>
   <data name="GoLogin.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 162</value>
   </data>
@@ -168,6 +180,12 @@
   </data>
   <data name="GoLogin.Text" xml:space="preserve">
     <value>Πίσω στην Είσοδο</value>
+  </data>
+  <data name="RegisterButton.HelpKeyword" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RegisterButton.HelpString" xml:space="preserve">
+    <value>Register a new account.</value>
   </data>
   <data name="RegisterButton.Text" xml:space="preserve">
     <value>Εγγραφή</value>
@@ -198,5 +216,14 @@
   </data>
   <data name="registerUserLabel.Text" xml:space="preserve">
     <value>Όνομα Χρήστη</value>
+  </data>
+  <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Ravie, 12pt</value>
+  </data>
+  <data name="button2.HelpString" xml:space="preserve">
+    <value>Go back to language selection.</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>Πίσω</value>
   </data>
 </root>
