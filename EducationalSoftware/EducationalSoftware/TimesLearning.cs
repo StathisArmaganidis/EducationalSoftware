@@ -120,7 +120,7 @@ namespace EducationalSoftware
                 if (equations[current_index].Item2 >= 2)
                 {
                     string txt;
-                    if (CultureInfo.CurrentCulture.Equals("en-En"))
+                    if (CultureInfo.CurrentCulture.Name.Equals("en-En"))
                     {
                         txt = "Would you like to see the solution?";
                     }

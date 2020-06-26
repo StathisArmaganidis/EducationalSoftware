@@ -54,7 +54,7 @@ namespace EducationalSoftware
             }
             string correct;
             string wrong;
-            if (CultureInfo.CurrentCulture.Equals("en-EN"))
+            if (CultureInfo.CurrentCulture.Name.Equals("en-EN"))
             {
                 correct = "Correct";
                 wrong = "Wrong";
@@ -64,6 +64,8 @@ namespace EducationalSoftware
                 correct = "Σωστά";
                 wrong = "Λανθασμένα";
             }
+            corr_chart.Series[0].Name = correct;
+            corr_chart.Series[1].Name = wrong;
             corr_chart.Series[correct].Points.Clear();
             corr_chart.Series[wrong].Points.Clear();
             Datamapper dm = new Datamapper();
@@ -92,7 +94,7 @@ namespace EducationalSoftware
             }
             string lbl;
             string lbl2;
-            if (CultureInfo.CurrentCulture.Equals("en-EN"))
+            if (CultureInfo.CurrentCulture.Name.Equals("en-EN"))
             {
                 lbl = "You are doing Great!";
                 lbl2 = "You need to practise more";

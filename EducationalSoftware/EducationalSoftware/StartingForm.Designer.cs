@@ -45,8 +45,8 @@
             this.registerUserLabel = new System.Windows.Forms.Label();
             this.registerPassBox = new System.Windows.Forms.TextBox();
             this.registerUserBox = new System.Windows.Forms.TextBox();
-            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.button2 = new System.Windows.Forms.Button();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.LoginGroup.SuspendLayout();
             this.RegisterGroup.SuspendLayout();
             this.SuspendLayout();
@@ -58,7 +58,6 @@
             this.helpProvider1.SetHelpNavigator(this.loginUserBox, ((System.Windows.Forms.HelpNavigator)(resources.GetObject("loginUserBox.HelpNavigator"))));
             this.helpProvider1.SetHelpString(this.loginUserBox, resources.GetString("loginUserBox.HelpString"));
             this.loginUserBox.Name = "loginUserBox";
-            this.helpProvider1.SetShowHelp(this.loginUserBox, ((bool)(resources.GetObject("loginUserBox.ShowHelp"))));
             // 
             // LoginGroup
             // 
@@ -74,7 +73,6 @@
             this.helpProvider1.SetHelpNavigator(this.LoginGroup, ((System.Windows.Forms.HelpNavigator)(resources.GetObject("LoginGroup.HelpNavigator"))));
             this.helpProvider1.SetHelpString(this.LoginGroup, resources.GetString("LoginGroup.HelpString"));
             this.LoginGroup.Name = "LoginGroup";
-            this.helpProvider1.SetShowHelp(this.LoginGroup, ((bool)(resources.GetObject("LoginGroup.ShowHelp"))));
             this.LoginGroup.TabStop = false;
             // 
             // GoRegister
@@ -84,7 +82,6 @@
             this.helpProvider1.SetHelpNavigator(this.GoRegister, ((System.Windows.Forms.HelpNavigator)(resources.GetObject("GoRegister.HelpNavigator"))));
             this.helpProvider1.SetHelpString(this.GoRegister, resources.GetString("GoRegister.HelpString"));
             this.GoRegister.Name = "GoRegister";
-            this.helpProvider1.SetShowHelp(this.GoRegister, ((bool)(resources.GetObject("GoRegister.ShowHelp"))));
             this.GoRegister.UseVisualStyleBackColor = true;
             this.GoRegister.Click += new System.EventHandler(this.GoRegister_Click);
             // 
@@ -95,7 +92,6 @@
             this.helpProvider1.SetHelpNavigator(this.LoginButton, ((System.Windows.Forms.HelpNavigator)(resources.GetObject("LoginButton.HelpNavigator"))));
             this.helpProvider1.SetHelpString(this.LoginButton, resources.GetString("LoginButton.HelpString"));
             this.LoginButton.Name = "LoginButton";
-            this.helpProvider1.SetShowHelp(this.LoginButton, ((bool)(resources.GetObject("LoginButton.ShowHelp"))));
             this.LoginButton.UseVisualStyleBackColor = true;
             this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
@@ -107,7 +103,6 @@
             this.helpProvider1.SetHelpNavigator(this.loginLabel, ((System.Windows.Forms.HelpNavigator)(resources.GetObject("loginLabel.HelpNavigator"))));
             this.helpProvider1.SetHelpString(this.loginLabel, resources.GetString("loginLabel.HelpString"));
             this.loginLabel.Name = "loginLabel";
-            this.helpProvider1.SetShowHelp(this.loginLabel, ((bool)(resources.GetObject("loginLabel.ShowHelp"))));
             // 
             // loginPassLabel
             // 
@@ -116,7 +111,6 @@
             this.helpProvider1.SetHelpNavigator(this.loginPassLabel, ((System.Windows.Forms.HelpNavigator)(resources.GetObject("loginPassLabel.HelpNavigator"))));
             this.helpProvider1.SetHelpString(this.loginPassLabel, resources.GetString("loginPassLabel.HelpString"));
             this.loginPassLabel.Name = "loginPassLabel";
-            this.helpProvider1.SetShowHelp(this.loginPassLabel, ((bool)(resources.GetObject("loginPassLabel.ShowHelp"))));
             // 
             // loginUserLabel
             // 
@@ -126,7 +120,6 @@
             this.helpProvider1.SetHelpNavigator(this.loginUserLabel, ((System.Windows.Forms.HelpNavigator)(resources.GetObject("loginUserLabel.HelpNavigator"))));
             this.helpProvider1.SetHelpString(this.loginUserLabel, resources.GetString("loginUserLabel.HelpString"));
             this.loginUserLabel.Name = "loginUserLabel";
-            this.helpProvider1.SetShowHelp(this.loginUserLabel, ((bool)(resources.GetObject("loginUserLabel.ShowHelp"))));
             // 
             // loginPassBox
             // 
@@ -135,7 +128,6 @@
             this.helpProvider1.SetHelpNavigator(this.loginPassBox, ((System.Windows.Forms.HelpNavigator)(resources.GetObject("loginPassBox.HelpNavigator"))));
             this.helpProvider1.SetHelpString(this.loginPassBox, resources.GetString("loginPassBox.HelpString"));
             this.loginPassBox.Name = "loginPassBox";
-            this.helpProvider1.SetShowHelp(this.loginPassBox, ((bool)(resources.GetObject("loginPassBox.ShowHelp"))));
             // 
             // RegisterGroup
             // 
@@ -151,7 +143,6 @@
             this.helpProvider1.SetHelpNavigator(this.RegisterGroup, ((System.Windows.Forms.HelpNavigator)(resources.GetObject("RegisterGroup.HelpNavigator"))));
             this.helpProvider1.SetHelpString(this.RegisterGroup, resources.GetString("RegisterGroup.HelpString"));
             this.RegisterGroup.Name = "RegisterGroup";
-            this.helpProvider1.SetShowHelp(this.RegisterGroup, ((bool)(resources.GetObject("RegisterGroup.ShowHelp"))));
             this.RegisterGroup.TabStop = false;
             // 
             // GoLogin
@@ -161,7 +152,6 @@
             this.helpProvider1.SetHelpNavigator(this.GoLogin, ((System.Windows.Forms.HelpNavigator)(resources.GetObject("GoLogin.HelpNavigator"))));
             this.helpProvider1.SetHelpString(this.GoLogin, resources.GetString("GoLogin.HelpString"));
             this.GoLogin.Name = "GoLogin";
-            this.helpProvider1.SetShowHelp(this.GoLogin, ((bool)(resources.GetObject("GoLogin.ShowHelp"))));
             this.GoLogin.UseVisualStyleBackColor = true;
             this.GoLogin.Click += new System.EventHandler(this.GoLogin_Click);
             // 
@@ -172,7 +162,6 @@
             this.helpProvider1.SetHelpNavigator(this.RegisterButton, ((System.Windows.Forms.HelpNavigator)(resources.GetObject("RegisterButton.HelpNavigator"))));
             this.helpProvider1.SetHelpString(this.RegisterButton, resources.GetString("RegisterButton.HelpString"));
             this.RegisterButton.Name = "RegisterButton";
-            this.helpProvider1.SetShowHelp(this.RegisterButton, ((bool)(resources.GetObject("RegisterButton.ShowHelp"))));
             this.RegisterButton.UseVisualStyleBackColor = true;
             this.RegisterButton.Click += new System.EventHandler(this.RegisterButton_Click);
             // 
@@ -184,7 +173,6 @@
             this.helpProvider1.SetHelpNavigator(this.registerLabel, ((System.Windows.Forms.HelpNavigator)(resources.GetObject("registerLabel.HelpNavigator"))));
             this.helpProvider1.SetHelpString(this.registerLabel, resources.GetString("registerLabel.HelpString"));
             this.registerLabel.Name = "registerLabel";
-            this.helpProvider1.SetShowHelp(this.registerLabel, ((bool)(resources.GetObject("registerLabel.ShowHelp"))));
             // 
             // registerPassLabel
             // 
@@ -193,7 +181,6 @@
             this.helpProvider1.SetHelpNavigator(this.registerPassLabel, ((System.Windows.Forms.HelpNavigator)(resources.GetObject("registerPassLabel.HelpNavigator"))));
             this.helpProvider1.SetHelpString(this.registerPassLabel, resources.GetString("registerPassLabel.HelpString"));
             this.registerPassLabel.Name = "registerPassLabel";
-            this.helpProvider1.SetShowHelp(this.registerPassLabel, ((bool)(resources.GetObject("registerPassLabel.ShowHelp"))));
             // 
             // registerUserLabel
             // 
@@ -203,7 +190,6 @@
             this.helpProvider1.SetHelpNavigator(this.registerUserLabel, ((System.Windows.Forms.HelpNavigator)(resources.GetObject("registerUserLabel.HelpNavigator"))));
             this.helpProvider1.SetHelpString(this.registerUserLabel, resources.GetString("registerUserLabel.HelpString"));
             this.registerUserLabel.Name = "registerUserLabel";
-            this.helpProvider1.SetShowHelp(this.registerUserLabel, ((bool)(resources.GetObject("registerUserLabel.ShowHelp"))));
             // 
             // registerPassBox
             // 
@@ -212,7 +198,6 @@
             this.helpProvider1.SetHelpNavigator(this.registerPassBox, ((System.Windows.Forms.HelpNavigator)(resources.GetObject("registerPassBox.HelpNavigator"))));
             this.helpProvider1.SetHelpString(this.registerPassBox, resources.GetString("registerPassBox.HelpString"));
             this.registerPassBox.Name = "registerPassBox";
-            this.helpProvider1.SetShowHelp(this.registerPassBox, ((bool)(resources.GetObject("registerPassBox.ShowHelp"))));
             // 
             // registerUserBox
             // 
@@ -221,11 +206,6 @@
             this.helpProvider1.SetHelpNavigator(this.registerUserBox, ((System.Windows.Forms.HelpNavigator)(resources.GetObject("registerUserBox.HelpNavigator"))));
             this.helpProvider1.SetHelpString(this.registerUserBox, resources.GetString("registerUserBox.HelpString"));
             this.registerUserBox.Name = "registerUserBox";
-            this.helpProvider1.SetShowHelp(this.registerUserBox, ((bool)(resources.GetObject("registerUserBox.ShowHelp"))));
-            // 
-            // helpProvider1
-            // 
-            resources.ApplyResources(this.helpProvider1, "helpProvider1");
             // 
             // button2
             // 
@@ -234,9 +214,12 @@
             this.helpProvider1.SetHelpNavigator(this.button2, ((System.Windows.Forms.HelpNavigator)(resources.GetObject("button2.HelpNavigator"))));
             this.helpProvider1.SetHelpString(this.button2, resources.GetString("button2.HelpString"));
             this.button2.Name = "button2";
-            this.helpProvider1.SetShowHelp(this.button2, ((bool)(resources.GetObject("button2.ShowHelp"))));
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // helpProvider1
+            // 
+            resources.ApplyResources(this.helpProvider1, "helpProvider1");
             // 
             // StartingForm
             // 
@@ -253,7 +236,6 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "StartingForm";
-            this.helpProvider1.SetShowHelp(this, ((bool)(resources.GetObject("$this.ShowHelp"))));
             this.Load += new System.EventHandler(this.StartingForm_Load);
             this.LoginGroup.ResumeLayout(false);
             this.LoginGroup.PerformLayout();
@@ -281,7 +263,7 @@
         private System.Windows.Forms.Button LoginButton;
         private System.Windows.Forms.Button GoLogin;
         private System.Windows.Forms.Button RegisterButton;
-        private System.Windows.Forms.HelpProvider helpProvider1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }

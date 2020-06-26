@@ -127,6 +127,9 @@
     <EmbeddedResource Include="Profile_Form.el.resx">
       <DependentUpon>Profile_Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Profile_Form.en.resx">
+      <DependentUpon>Profile_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Profile_Form.resx">
       <DependentUpon>Profile_Form.cs</DependentUpon>
     </EmbeddedResource>

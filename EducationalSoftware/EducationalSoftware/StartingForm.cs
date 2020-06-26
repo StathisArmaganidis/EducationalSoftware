@@ -91,7 +91,7 @@ namespace EducationalSoftware
                 }
                 else
                 {
-                    if (CultureInfo.CurrentCulture.Equals("en-EN"))
+                    if (CultureInfo.CurrentCulture.Name.Equals("en-EN"))
                     {
                         MessageBox.Show("Wrong credentials. Please make sure that the user exists and the password is correct.");
                     }

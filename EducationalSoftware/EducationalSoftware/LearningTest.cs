@@ -152,7 +152,7 @@ namespace EducationalSoftware
             int index = (int)LeftNum.Value - 1;
             string lbl;
             string lbl2;
-            if (CultureInfo.CurrentCulture.Equals("en-EN"))
+            if (CultureInfo.CurrentCulture.Name.Equals("en-EN"))
             {
                 lbl = "Correct!";
                 lbl2 = "Wrong!";

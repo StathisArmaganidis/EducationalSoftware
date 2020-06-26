@@ -117,120 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="loginUserBox.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="practise_label.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="GoRegister.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Narrow, 12pt</value>
+  <data name="need_practise_photo.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="GoRegister.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="GoRegister.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 149</value>
-  </data>
-  <data name="GoRegister.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 51</value>
-  </data>
-  <data name="GoRegister.Text" xml:space="preserve">
-    <value>Δημιουργία Λογαριασμού</value>
-  </data>
-  <data name="LoginButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Narrow, 12pt</value>
-  </data>
-  <data name="LoginButton.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="LoginButton.Text" xml:space="preserve">
-    <value>Είσοδος</value>
-  </data>
-  <data name="loginLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 26</value>
-  </data>
-  <data name="loginLabel.Text" xml:space="preserve">
-    <value>Είσοδος</value>
-  </data>
-  <data name="loginPassLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Narrow, 18pt</value>
-  </data>
-  <data name="loginPassLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 29</value>
-  </data>
-  <data name="loginPassLabel.Text" xml:space="preserve">
-    <value>Κωδικός</value>
-  </data>
-  <data name="loginUserLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Narrow, 18pt</value>
-  </data>
-  <data name="loginUserLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 29</value>
-  </data>
-  <data name="loginUserLabel.Text" xml:space="preserve">
-    <value>Όνομα Χρήστη</value>
-  </data>
-  <data name="loginPassBox.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="GoLogin.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="GoLogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 162</value>
-  </data>
-  <data name="GoLogin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 38</value>
-  </data>
-  <data name="GoLogin.Text" xml:space="preserve">
-    <value>Πίσω στην Είσοδο</value>
-  </data>
-  <data name="RegisterButton.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="RegisterButton.Text" xml:space="preserve">
-    <value>Εγγραφή</value>
-  </data>
-  <data name="registerLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Narrow, 18pt</value>
-  </data>
-  <data name="registerLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 29</value>
-  </data>
-  <data name="registerLabel.Text" xml:space="preserve">
-    <value>Εγγραφή</value>
-  </data>
-  <data name="registerPassLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Narrow, 18pt</value>
-  </data>
-  <data name="registerPassLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 29</value>
-  </data>
-  <data name="registerPassLabel.Text" xml:space="preserve">
-    <value>Κωδικός</value>
-  </data>
-  <data name="registerUserLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Narrow, 18pt</value>
-  </data>
-  <data name="registerUserLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 29</value>
-  </data>
-  <data name="registerUserLabel.Text" xml:space="preserve">
-    <value>Όνομα Χρήστη</value>
-  </data>
-  <data name="registerPassBox.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="registerUserBox.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Ravie, 12pt</value>
-  </data>
-  <data name="button2.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="button2.Text" xml:space="preserve">
-    <value>Πίσω</value>
+  <data name="$this.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
 </root>

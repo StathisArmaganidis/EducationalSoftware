@@ -118,14 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
   <data name="button2.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="registerUserBox.HelpString" xml:space="preserve">
     <value>Insert the desired username.</value>
   </data>
-  <data name="&gt;&gt;RegisterGroup.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="loginPassBox.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>*</value>
   </data>
   <data name="&gt;&gt;loginUserBox.Name" xml:space="preserve">
     <value>loginUserBox</value>
@@ -155,10 +159,9 @@
   <data name="&gt;&gt;registerPassLabel.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="registerLabel.Text" xml:space="preserve">
-    <value>Register</value>
+  <data name="registerLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 26</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="loginPassLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -243,6 +246,9 @@
   <data name="&gt;&gt;registerUserBox.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="loginPassBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
   <data name="LoginGroup.Size" type="System.Drawing.Size, System.Drawing">
     <value>300, 206</value>
   </data>
@@ -251,6 +257,9 @@
   </data>
   <data name="&gt;&gt;LoginButton.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="LoginButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Ravie, 8.25pt</value>
   </data>
   <data name="registerUserLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>19, 64</value>
@@ -267,8 +276,8 @@
   <data name="GoLogin.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="loginLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="GoRegister.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="GoLogin.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
@@ -297,17 +306,14 @@
   <data name="registerPassLabel.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 75</value>
-  </data>
   <data name="registerUserLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Ravie, 14.25pt</value>
   </data>
   <data name="&gt;&gt;loginPassLabel.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="GoLogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 176</value>
+  <data name="&gt;&gt;RegisterGroup.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="loginUserBox.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -336,11 +342,11 @@
   <data name="&gt;&gt;registerLabel.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="GoRegister.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="&gt;&gt;RegisterGroup.Name" xml:space="preserve">
+    <value>RegisterGroup</value>
   </data>
-  <data name="loginPassBox.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
-    <value>*</value>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 75</value>
   </data>
   <data name="&gt;&gt;GoRegister.Parent" xml:space="preserve">
     <value>LoginGroup</value>
@@ -366,6 +372,9 @@
   <data name="registerLabel.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="GoLogin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 176</value>
+  </data>
   <data name="GoRegister.Size" type="System.Drawing.Size, System.Drawing">
     <value>137, 23</value>
   </data>
@@ -375,8 +384,11 @@
   <data name="LoginButton.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="registerUserLabel.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="RegisterGroup.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
+  </data>
+  <data name="&gt;&gt;registerLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;registerUserBox.Parent" xml:space="preserve">
     <value>RegisterGroup</value>
@@ -384,8 +396,8 @@
   <data name="&gt;&gt;loginPassBox.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="LoginButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Ravie, 8.25pt</value>
+  <data name="loginPassLabel.Text" xml:space="preserve">
+    <value>Password</value>
   </data>
   <data name="&gt;&gt;loginUserLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -395,9 +407,6 @@
   </data>
   <data name="loginLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 26</value>
-  </data>
-  <data name="LoginButton.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
   </data>
   <data name="loginLabel.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
@@ -410,9 +419,6 @@
   </data>
   <data name="&gt;&gt;button2.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="loginPassLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 26</value>
   </data>
   <data name="loginPassBox.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -429,14 +435,14 @@
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
-  <data name="&gt;&gt;RegisterGroup.Name" xml:space="preserve">
-    <value>RegisterGroup</value>
-  </data>
   <data name="&gt;&gt;registerUserBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="$this.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;registerUserLabel.Parent" xml:space="preserve">
+    <value>RegisterGroup</value>
   </data>
   <data name="GoRegister.Font" type="System.Drawing.Font, System.Drawing">
     <value>Ravie, 8.25pt</value>
@@ -483,14 +489,14 @@
   <data name="RegisterButton.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
+  <data name="GoLogin.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
   <data name="&gt;&gt;registerPassBox.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <data name="registerUserBox.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
-  </data>
-  <data name="loginPassLabel.Text" xml:space="preserve">
-    <value>Password</value>
   </data>
   <data name="loginLabel.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -498,14 +504,8 @@
   <data name="loginLabel.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="&gt;&gt;GoRegister.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="loginLabel.Text" xml:space="preserve">
     <value>Login</value>
-  </data>
-  <data name="registerLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 26</value>
   </data>
   <data name="loginPassBox.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -513,17 +513,14 @@
   <data name="registerUserBox.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;registerUserLabel.Parent" xml:space="preserve">
-    <value>RegisterGroup</value>
+  <data name="LoginButton.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="loginUserLabel.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="registerUserBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>184, 63</value>
-  </data>
-  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
   </data>
   <data name="loginUserLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -534,17 +531,14 @@
   <data name="registerPassBox.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="RegisterGroup.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
   <data name="registerPassLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>137, 26</value>
   </data>
-  <data name="GoRegister.Text" xml:space="preserve">
-    <value>Create Account</value>
+  <data name="loginPassLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 26</value>
   </data>
-  <data name="&gt;&gt;registerLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="GoLogin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 24</value>
   </data>
   <data name="loginPassLabel.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
@@ -561,8 +555,8 @@
   <data name="loginUserLabel.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>StartingForm</value>
+  <data name="registerLabel.Text" xml:space="preserve">
+    <value>Register</value>
   </data>
   <data name="GoLogin.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -572,6 +566,9 @@
   </data>
   <data name="registerUserBox.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
+  </data>
+  <data name="&gt;&gt;LoginButton.Parent" xml:space="preserve">
+    <value>LoginGroup</value>
   </data>
   <data name="loginUserBox.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
@@ -606,14 +603,17 @@
   <data name="registerPassLabel.Text" xml:space="preserve">
     <value>Password</value>
   </data>
-  <data name="&gt;&gt;loginPassBox.Name" xml:space="preserve">
-    <value>loginPassBox</value>
+  <data name="loginPassBox.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="GoRegister.Text" xml:space="preserve">
+    <value>Create Account</value>
   </data>
   <data name="registerLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>99, 16</value>
   </data>
-  <data name="loginPassBox.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
   <data name="&gt;&gt;registerPassBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -636,9 +636,6 @@
   <data name="registerPassLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Ravie, 14.25pt</value>
   </data>
-  <data name="&gt;&gt;helpProvider1.Name" xml:space="preserve">
-    <value>helpProvider1</value>
-  </data>
   <data name="&gt;&gt;loginPassBox.Parent" xml:space="preserve">
     <value>LoginGroup</value>
   </data>
@@ -651,8 +648,8 @@
   <data name="loginLabel.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="loginPassBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt</value>
+  <data name="registerPassLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 117</value>
   </data>
   <data name="&gt;&gt;registerLabel.Parent" xml:space="preserve">
     <value>RegisterGroup</value>
@@ -678,8 +675,8 @@
   <data name="button2.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="GoLogin.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
   </data>
   <data name="LoginGroup.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -717,8 +714,8 @@
   <data name="registerLabel.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
   </data>
-  <data name="&gt;&gt;LoginButton.Parent" xml:space="preserve">
-    <value>LoginGroup</value>
+  <data name="&gt;&gt;GoRegister.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>800, 450</value>
@@ -735,11 +732,11 @@
   <data name="registerPassLabel.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="registerPassLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 117</value>
+  <data name="registerUserLabel.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
-  <data name="GoLogin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 24</value>
+  <data name="&gt;&gt;helpProvider1.Name" xml:space="preserve">
+    <value>helpProvider1</value>
   </data>
   <data name="button2.Text" xml:space="preserve">
     <value>Back</value>
@@ -786,8 +783,11 @@
   <data name="&gt;&gt;LoginGroup.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>StartingForm</value>
+  </data>
+  <data name="&gt;&gt;loginPassBox.Name" xml:space="preserve">
+    <value>loginPassBox</value>
   </data>
   <data name="registerPassBox.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
     <value>*</value>
@@ -819,8 +819,8 @@
   <data name="registerUserLabel.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
+  <data name="loginLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="loginUserBox.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>

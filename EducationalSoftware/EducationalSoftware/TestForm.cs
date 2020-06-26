@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,11 +14,7 @@ namespace EducationalSoftware
 {
     public partial class TestForm : Form
     {
-        public TestForm()
-        {
-            InitializeComponent();
-            
-        }
+        
 
         private int TotalQuestionsNum;
         private int ThisQuestionNum = 0;
@@ -26,12 +23,36 @@ namespace EducationalSoftware
 
         private int[] done = new int[10];
         NumKeyboard keys;
+        string lbl;
+        string lbl2;
+
+        int[] statistics;
+        string username = StartingForm.username;
+        Datamapper dm;
+
+        public TestForm()
+        {
+            InitializeComponent();
+            dm = new Datamapper();
+            statistics = dm.GetStatistics("Final_Statistics", username, DateTime.Now);
+        }
+
         private void TestForm_Load(object sender, EventArgs e)
         {
             msglabel.Location = new Point(300, 200);
             DifficultyGroup.Location = new Point(this.Size.Width / 2 - DifficultyGroup.Size.Width / 2, this.Size.Height / 2 - DifficultyGroup.Size.Height / 2);
             keys = new NumKeyboard(picture_r1, picture_r2, picture_res1, picture_res2, picture_res3, RightNum, ResultNum);
             QuestionGroup.Visible = false;
+            if (CultureInfo.CurrentCulture.Name.Equals("en-EN"))
+            {
+                lbl = "Correct!";
+                lbl2 = "Wrong!";
+            }
+            else
+            {
+                lbl = "Σωστό!";
+                lbl2 = "Λάθος!";
+            }
         }
 
         private void EasyButton_Click(object sender, EventArgs e)
@@ -95,7 +116,7 @@ namespace EducationalSoftware
             }
             Equation eq = new Equation(leftnum, rightnum, "right");
 
-            int blank = 0;// rnd.Next(0, 2);//chooses randomly which number box of the multiplication will be blank.
+            int blank = rnd.Next(0, 2);//chooses randomly which number box of the multiplication will be blank.
 
             
             if (eq.left_mult_digits.Count == 2)
@@ -175,20 +196,23 @@ namespace EducationalSoftware
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
             keys.FixResult();
+            int index = (int)LeftNum.Value - 1;
             if (LeftNum.Value * RightNum.Value == ResultNum.Value)
-            {
+            {                
                 points++;
-                msglabel.Text = "Correct!";
+                msglabel.Text = lbl;
+                statistics[2 * index]++;
                 msglabel.ForeColor = Color.Green;
-                groupbox.Visible = false;
+                QuestionGroup.Visible = false;
                 msglabel.Visible = true;
                 Wait();
             }
             else
             {
-                msglabel.Text = "Wrong!";
+                msglabel.Text = lbl2;
+                statistics[(2 * index) + 1]++;
                 msglabel.ForeColor = Color.Maroon;
-                groupbox.Visible = false;
+                QuestionGroup.Visible = false;
                 msglabel.Visible = true;
                 Wait();
             }
@@ -200,7 +224,16 @@ namespace EducationalSoftware
             }
             else
             {
-                MessageBox.Show("yay! "+points.ToString()+" out of "+TotalQuestionsNum.ToString()+" correct answets!");//THIS NEEDS TO BE EDITED! ASAP.
+                dm.GetConnection();
+                dm.SaveStatistics("Final_Statistics", StartingForm.username, statistics, DateTime.Now);
+                if (CultureInfo.CurrentCulture.Name.Equals("en-EN"))
+                {
+                    MessageBox.Show("You've got " + points.ToString() + " out of " + TotalQuestionsNum.ToString() + " correct answets!");
+                }
+                else
+                {
+                    MessageBox.Show("Πέτυχες " + points.ToString() + " out of " + TotalQuestionsNum.ToString() + " σωστές απαντήσεις!");
+                }
                 BackButton.Enabled = true;
                 ConfirmButton.Enabled = false;
             }            
@@ -222,7 +255,7 @@ namespace EducationalSoftware
         {
             await Task.Delay(1000);
             msglabel.Visible = false;
-            groupbox.Visible = true;
+            QuestionGroup.Visible = true;
 
         }
 

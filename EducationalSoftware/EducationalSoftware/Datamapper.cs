@@ -322,7 +322,7 @@ namespace EducationalSoftware
                 }
                 else
                 {
-                    cmd = "INSERT INTO "+table+" ([username],[date],[right_1],[wrong_1],[right_2],[wrong_2],[right_3],[wrong_3],[right_4],[wrong_4],[right_5],[wrong_5],[right_6],[wrong_6],[right_7],[wrong_7],[right_8],[wrong_8],[right_9],[wrong_9],[right_10],[wrong_10]) VALUES (@username,@date,@right_1,@wrong_1,@right_2,@wrong_2,@right_3,@wrong_3,@right_4,@wrong_4,@right_5,@wrong_5,@right_6,@wrong_6,@right_7,@wrong_7,@right_8,@wrong_8,@right_9,@wrong_9,@right_10,@wrong_10)";
+                    cmd = "INSERT INTO "+table+ " ([username],[date],[right_1],[wrong_1],[right_2],[wrong_2],[right_3],[wrong_3],[right_4],[wrong_4],[right_5],[wrong_5],[right_6],[wrong_6],[right_7],[wrong_7],[right_8],[wrong_8],[right_9],[wrong_9],[right_10],[wrong_10]) VALUES (@username,#" + date + "#,@right_1,@wrong_1,@right_2,@wrong_2,@right_3,@wrong_3,@right_4,@wrong_4,@right_5,@wrong_5,@right_6,@wrong_6,@right_7,@wrong_7,@right_8,@wrong_8,@right_9,@wrong_9,@right_10,@wrong_10)";
                 }
 
                 command = new OleDbCommand(cmd, connection);
