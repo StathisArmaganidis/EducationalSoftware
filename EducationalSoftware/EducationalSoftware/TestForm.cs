@@ -192,7 +192,12 @@ namespace EducationalSoftware
                 picture_r2.Tag = "given";
             }
         }
-               
+
+        /// <summary>
+        /// Checks for the correctness of the equation and updates the statistics in the database.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>               
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
             keys.FixResult();

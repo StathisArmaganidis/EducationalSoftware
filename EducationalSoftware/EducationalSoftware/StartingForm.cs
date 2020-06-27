@@ -54,7 +54,6 @@ namespace EducationalSoftware
             if (!string.IsNullOrWhiteSpace(registerUserBox.Text) && !string.IsNullOrWhiteSpace(registerPassBox.Text))
             {
                 bool success = dm.Register(registerUserBox.Text, registerPassBox.Text);
-                Console.WriteLine("Registration Executed Succesfully? Answer: " + success);
                 if (success)
                 {
                     registerUserBox.Text = "";
@@ -64,12 +63,26 @@ namespace EducationalSoftware
                 }
                 else
                 {
-                    MessageBox.Show("There was a problem with the database, please try again...");
+                    if (CultureInfo.CurrentCulture.Name.Equals("en-EN"))
+                    {
+                        MessageBox.Show("There was a problem with the database, please try again...");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Προέκυψε πρόβλημα με την βάση δεδομένων. Παρακαλώ δοκιμάστε ξανά...");
+                    }
                 }
             }
             else
             {
-                MessageBox.Show("Please fill both username and password");
+                if (CultureInfo.CurrentCulture.Name.Equals("en-EN"))
+                {
+                    MessageBox.Show("Please fill both username and password");
+                }
+                else
+                {
+                    MessageBox.Show("Παρακαλώ, συμπληρώστε όνομα και κωδικό");
+                }
             }
         }
 
@@ -79,7 +92,6 @@ namespace EducationalSoftware
             if (!string.IsNullOrWhiteSpace(loginUserBox.Text) && !string.IsNullOrWhiteSpace(loginPassBox.Text))
             {
                 bool success = dm.LoginUser(loginUserBox.Text, loginPassBox.Text);
-                Console.WriteLine("Login Executed Successfully? Answer: " + success);
                 if (success)
                 {
                     username = loginUserBox.Text;
@@ -100,6 +112,17 @@ namespace EducationalSoftware
                         MessageBox.Show("Λάθος στοιχεία. Παρακαλώ, επιβεβαιώστε πως υπάρχει ο χρήστης και ο κωδικός του είναι σωστός.");
                     }
 
+                }
+            }
+            else
+            {
+                if (CultureInfo.CurrentCulture.Name.Equals("en-EN"))
+                {
+                    MessageBox.Show("Please fill both username and password");
+                }
+                else
+                {
+                    MessageBox.Show("Παρακαλώ, συμπληρώστε όνομα και κωδικό");
                 }
             }
         }

@@ -145,7 +145,11 @@ namespace EducationalSoftware
                 picture_r2.Tag = "given";
             }
         }
-
+        /// <summary>
+        /// Checks the correctness of the equation and updates the propabilities for each number and the statistics of the user.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
             keys.FixResult();
